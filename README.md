@@ -12,4 +12,7 @@ This directory contains a notebook (`COSIMA_CookBook_Tutorial.ipynb`) that outli
 This directory includes some notebooks for simple diagnostics which are well-documented and explained. If you can find an example that suits your purpose, this is the best place to start.
 
 ## Contributed Examples
-See here for a hotch-potch of contributed files that may or not be useful or operational. Use at your own risk!
+This directory contains a number of examples which are valuable, but not commented sufficiently to make it into DocumentedExamples. An aspirational goal is to eliminate this class of example.
+
+## Sandbox
+See here for a hotch-potch of old and new contributed files that may or not be useful or operational. Use at your own risk!
