@@ -16,3 +16,5 @@ This directory contains a number of examples which are valuable, but not comment
 
 ## Sandbox
 See here for a hotch-potch of old and new contributed files that may or not be useful or operational. Use at your own risk!
+
+Claire's copy
