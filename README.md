@@ -15,6 +15,4 @@ This directory includes some notebooks for simple diagnostics which are well-doc
 This directory contains a number of examples which are valuable, but not commented sufficiently to make it into DocumentedExamples. An aspirational goal is to eliminate this class of example.
 
 ## Sandbox
-See here for a hotch-potch of old and new contributed files that may or not be useful or operational. Use at your own risk!
-
-Claire's copy
+See here for a hotch-potch of old and new contributed files that may or not be useful or operational. Use at your own risk
