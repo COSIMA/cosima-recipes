@@ -5,10 +5,10 @@ To **Get Started** with the COSIMA Cookbook, clone this repository to your local
 This will give you a bunch of examples with which you can begin to construct your own analysis code.
 If your code is useful, then **contributions back to the repository are always welcome**.
 
-## Tutorials
+## [Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials/index.html)
 This directory contains a notebook (`COSIMA_CookBook_Tutorial.ipynb`) that outlines the basic philosophy of the COSIMA Cookbook. Best to start here if you can. Also some other tutorials regarding the cookbook (e.g., `Make_Your_Own_Database.ipynb`) or more general (`Making_Maps_with_Cartopy.ipynb`).
 
-## Documented Examples
+## [Documented Examples](https://cosima-recipes.readthedocs.io/en/latest/documented_examples/index.html)
 This directory includes some notebooks for simple diagnostics which are well-documented and explained. If you can find an example that suits your purpose, this is the best place to start.
 
 ## Contributed Examples
