@@ -1,3 +1,7 @@
+<a href="https://cosima-recipes.readthedocs.io/en/latest">
+    <img alt="latest docs" src="https://img.shields.io/badge/docs-latest-blue.svg">
+</a>
+    
 # cosima-recipes
 Example recipes using the cosima-cookbook infrastructure.
 
