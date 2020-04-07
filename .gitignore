@@ -1,4 +1,7 @@
-.ipynb_checkpoints
-.DS_Store
 .ipynb_checkpoints/
+.DS_Store
 dask-worker-space/
+
+docs/_build/
+docs/documented_examples/
+docs/tutorials/
