@@ -9,5 +9,7 @@ simple rules:
    as a tooltip
 
 By default, the chosen thumbnail is the last matplotlib figure in the
-notebook. This can be changed by setting the ``thumbnail_figures`` key
-in the notebook metadata to the integer index of the desired figure.
+notebook. This can be changed by setting the ``thumbnail_figure`` key
+in the notebook metadata to the integer index of the desired
+figure. This can be done manually, in a text editor, or through the
+*Edit -> Edit Notebook Metadata* menu in jupyter.
