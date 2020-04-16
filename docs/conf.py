@@ -55,10 +55,11 @@ html_theme = 'default'
 html_static_path = ['_static']
 
 # -- Example Gallery ---------------------------------------------------------
+# don't include any file with "Template" in the name
 example_gallery_config = {
     'examples_dirs': ['../Tutorials', '../DocumentedExamples'],
     'gallery_dirs': ['tutorials', 'documented_examples'],
-    'pattern': r'.+\.ipynb',
+    'pattern': r'(?!Template).+\.ipynb',
     'dont_preprocess': True,
     'toctree_depth': 0,
 }
