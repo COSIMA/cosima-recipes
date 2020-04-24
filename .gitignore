@@ -1,5 +1,6 @@
 .ipynb_checkpoints/
 .DS_Store
+local_cc_test.db
 dask-worker-space/
 
 docs/_build/
