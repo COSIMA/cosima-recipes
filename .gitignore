@@ -7,3 +7,5 @@ dask-worker-space/
 docs/_build/
 docs/documented_examples/
 docs/tutorials/
+
+**/SWMT_temp/
