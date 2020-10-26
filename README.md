@@ -19,8 +19,7 @@ Don't miss out the <a href="https://nbviewer.jupyter.org/github/COSIMA/cosima-re
 This directory includes some notebooks for simple diagnostics which are well-documented and explained. If you can find an example that suits your purpose, this is the best place to start.
 
 ## ACCESS-OM2-GMD-Paper-Figs
-This directory contains notebooks to reproduce (as far as possible) figures from the [2020 ACCESS-OM2 GMD model announcement paper](https://doi.org/10.5194/gmd-13-401-2020
-). These notebooks are mostly uncommented, but they should be functional. They are intended to demonstrate methods to undertake the calculations used in the paper.
+This directory contains notebooks to reproduce (as far as possible) figures from the [2020 ACCESS-OM2 GMD model announcement paper](https://doi.org/10.5194/gmd-13-401-2020). These notebooks are mostly uncommented, but they should be functional. They are intended to demonstrate methods to undertake the calculations used in the paper.
 
 ## Contributed Examples
 This directory contains a number of examples which are valuable, but not commented sufficiently to make it into DocumentedExamples. An aspirational goal is to eliminate this class of example.
