@@ -5,15 +5,15 @@
 # cosima-recipes
 Example recipes using the [`cosima-cookbook`](https://github.com/COSIMA/cosima-cookbook) infrastructure.
 
-To **Get Started** with the COSIMA Cookbook, clone this repository locally, probably best in your local space on one of the NCI HPC machines so you can have access to model output. The repository includes a bunch of examples with which you can begin to construct your own analysis code.
+To **Get Started** with the `cosima-cookbook`, clone this repository locally, probably best in your local space on one of the NCI HPC machines so you can have access to model output. The repository includes a bunch of examples with which you can begin to construct your own analysis code.
 
 If you develop a notebook for analysing something that is not already included in the recipes, then consider **contributing back to the repository via a Pull Requests**. Contributions are always welcome and we are more than happy to help out!
 
 ## [Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials/index.html)
 
-The notebook `COSIMA_CookBook_Tutorial.ipynb` outlines the basic philosophy of the COSIMA Cookbook. This is the best place to start if you are not familiar with the `cosima-cookbook`. Also included here are some other tutorials, either related to the cookbook (e.g., `Make_Your_Own_Database.ipynb`) or more general (`Making_Maps_with_Cartopy.ipynb`).
+The notebook `COSIMA_CookBook_Tutorial.ipynb` outlines the basic philosophy of the `cosima-cookbook`. This is the best place to start if you are not familiar with the `cosima-cookbook`. Also included here are some other tutorials, either related to the cookbook (e.g., `Make_Your_Own_Database.ipynb`) or more general (`Making_Maps_with_Cartopy.ipynb`).
 
-Don't miss out the <a href="https://nbviewer.jupyter.org/github/COSIMA/cosima-recipes/blob/master/Tutorials/Using_Explorer_tools.ipynb" target="_blank">tutorial</a> about using `cosima_cookbook`'s `explore` submodule to find out about available experiments and variables in a database. (The `explorer` tutorial is better viewed either via nbviewer or by running the jupyter notebook yourself.)
+Don't miss out the <a href="https://nbviewer.jupyter.org/github/COSIMA/cosima-recipes/blob/master/Tutorials/Using_Explorer_tools.ipynb" target="_blank">tutorial</a> about using `cosima-cookbook`'s `explore` submodule to find out about available experiments and variables in a database. (The `explorer` tutorial is better viewed either via nbviewer or by running the jupyter notebook yourself.)
 
 ## [Documented Examples](https://cosima-recipes.readthedocs.io/en/latest/documented_examples/index.html)
 Νotebooks for simple and not-so-simple diagnostics which are well-documented and explained. If you can find an example that suits your purpose, this is the best place to start.
