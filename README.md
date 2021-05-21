@@ -7,7 +7,7 @@ Example recipes using the [`cosima-cookbook`](https://github.com/COSIMA/cosima-c
 
 To **Get Started** with the `cosima-cookbook`, clone this repository locally, probably best in your local space on one of the NCI HPC machines so you can have access to model output. The repository includes a bunch of examples with which you can begin to construct your own analysis code.
 
-If you develop a notebook for analysing something that is not already included in the recipes, then consider **contributing back to the repository via a Pull Requests**. Contributions are always welcome and we are more than happy to help out!
+If you develop a notebook for analysing something that is not already included in the recipes, then consider **contributing back to the repository via a Pull Request**. Contributions are always welcome and we are more than happy to help out!
 
 ## [Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials/index.html)
 
