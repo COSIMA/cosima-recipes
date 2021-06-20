@@ -1,7 +1,10 @@
+<img src="https://github.com/COSIMA/logo/blob/master/png/logo_word.png" width="800"/>
+<br/> <br/>
+
 <a href="https://cosima-recipes.readthedocs.io/en/latest">
     <img alt="latest docs" src="https://img.shields.io/badge/docs-latest-blue.svg">
 </a>
-    
+
 # cosima-recipes
 Example recipes using the [`cosima-cookbook`](https://github.com/COSIMA/cosima-cookbook) infrastructure.
 
