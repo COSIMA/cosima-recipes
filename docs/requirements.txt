@@ -1,2 +1,2 @@
-sphinx<4.0
 sphinx-nbexamples
+sphinx<4.0
