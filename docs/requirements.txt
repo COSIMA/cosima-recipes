@@ -1,3 +1,2 @@
-sphinx~=3.5
+sphinx
 sphinx-nbexamples
-sphinx<4.0
