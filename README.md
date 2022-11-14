@@ -27,5 +27,3 @@ Don't miss out the <a href="https://nbviewer.jupyter.org/github/COSIMA/cosima-re
 ## Contributed Examples
 Α number of examples which are valuable, but not commented sufficiently to make it into DocumentedExamples. An aspirational goal is to eliminate this class of example.
 
-## Sandbox
-Α hotch-potch of old contributed files that may or not be useful or operational. **Use at your own risk!**
