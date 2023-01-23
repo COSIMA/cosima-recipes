@@ -14,7 +14,7 @@ To **Get Started** with the `cosima-cookbook`, clone this repository locally, pr
 
 If you made a notebook for analysing something that is not already included in the recipes, then please consider **contributing back to the repository**.
 
-To make a contribution followe the steps layed out in the [beginner's guide on how to contribute](
+To make a contribution follow the steps laid out in the [beginner's guide on how to contribute](
 https://cosima-recipes.readthedocs.io/en/latest/contributing.html). If they sound intimidating then don't worry!
 Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explaining briefly what the contribution you want to make is and we'll help out with the process!
 
