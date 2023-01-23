@@ -5,7 +5,7 @@ local_cc_test.db-journal
 dask-worker-space/
 
 docs/_build/
-docs/documented_examples/
-docs/tutorials/
+docs/DocumentedExamples/
+docs/Tutorials/
 
 **/SWMT_temp/

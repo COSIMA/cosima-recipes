@@ -10,8 +10,8 @@ Welcome to COSIMA Recipes's documentation!
    :maxdepth: 1
    :caption: Contents:
 
-   tutorials/index
-   documented_examples/index
+   tutorials
+   documented_examples
    guidelines
    contributing
 

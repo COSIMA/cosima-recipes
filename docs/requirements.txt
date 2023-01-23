@@ -1,2 +1,4 @@
 sphinx
-sphinx-nbexamples
+nbsphinx
+sphinx-gallery<0.11
+ipywidgets
