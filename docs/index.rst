@@ -13,6 +13,7 @@ Welcome to COSIMA Recipes's documentation!
    tutorials/index
    documented_examples/index
    guidelines
+   contributing
 
 
 Indices and tables
