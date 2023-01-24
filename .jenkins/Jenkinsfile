@@ -1,0 +1,52 @@
+PBS_SCRIPT = """
+#!/bin/bash
+
+#PBS -N test_cc_recipes
+#PBS -P v45
+#PBS -l storage=gdata/ik11+gdata/cj50+gdata/hh5+gdata/jk72
+#PBS -l walltime=2:00:00
+#PBS -l mem=192GB
+#PBS -l ncpus=24
+#PBS -q normalbw
+#PBS -l wd
+#PBS -W block=true
+#PBS -j oe
+#PBS -o log
+
+export set PYTHONNOUSERSITE=1
+
+module purge
+module use /g/data/hh5/public/modules/
+module load conda/analysis3
+
+pytest -v --durations=0
+"""
+
+pipeline {
+    agent {label 'mo1833.gadi'}
+    triggers {
+        // Run every Sunday at 3 am
+        cron('0 3 * * 0')
+    }
+    stages {
+        stage('Tests') {
+            steps {
+                writeFile(file: 'run_tests.pbs', text: PBS_SCRIPT)
+                sh 'qsub run_tests.pbs'
+            }
+        }
+    }
+    post {
+        unsuccessful {
+            emailext (
+                body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
+                subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
+                to: 'micael.oliveira@anu.edu.au, navid.constantinou@anu.edu.au'
+            )
+        }
+        cleanup {
+            archiveArtifacts artifacts: "log"
+            cleanWs()
+        }
+    }
+}
