@@ -54,7 +54,7 @@ def test_Tutorials(notebook_filename):
         #("Compare_SSH_model_obs.ipynb"), # Does not run
         #("Compare_SST_SSS_TemperatureSalinity_to_WOA13.ipynb"), # Does not run
         ("Cross-contour_transport.ipynb"),
-        #("Cross-slope_section.ipynb"), # Does not run
+        ("Cross-slope_section.ipynb"),
         #("Decomposing_kinetic_energy_into_mean_and_transient.ipynb"), # Takes a long time (not sure if it runs till the end)
         #("Equatorial_thermal_and_zonal_velocity_structure.ipynb"), # Does not run
         #("IcePlottingExample.ipynb"), # Does not run
