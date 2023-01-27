@@ -58,6 +58,7 @@ def test_Tutorials(notebook_filename):
         #("Decomposing_kinetic_energy_into_mean_and_transient.ipynb"), # Takes a long time (not sure if it runs till the end)
         #("Equatorial_thermal_and_zonal_velocity_structure.ipynb"), # Does not run
         #("IcePlottingExample.ipynb"), # Does not run
+        ("Meridional_heat_transport.ipynb"),
         #("Model_Resolution_Comparison.ipynb"), # Does not run
         #("Querying_Scalar_Quantities.ipynb"), # Does not run
         #("Regridding.ipynb"), # Does not run
