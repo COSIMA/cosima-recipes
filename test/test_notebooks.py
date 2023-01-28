@@ -51,7 +51,7 @@ def test_Tutorials(notebook_filename):
         ("Barotropic_Streamfunction.ipynb"),
         ("Bathymetry.ipynb"),
         ("Binning_transformation_from_depth_to_potential_density.ipynb"),
-        #("Compare_SSH_model_obs.ipynb"), # Does not run
+        ("Compare_SSH_model_obs.ipynb"),
         #("Compare_SST_SSS_TemperatureSalinity_to_WOA13.ipynb"), # Does not run
         ("Cross-contour_transport.ipynb"),
         ("Cross-slope_section.ipynb"),
