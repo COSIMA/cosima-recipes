@@ -60,7 +60,7 @@ def test_Tutorials(notebook_filename):
         #("IcePlottingExample.ipynb"), # Does not run
         ("Model_Resolution_Comparison.ipynb"),
         #("Querying_Scalar_Quantities.ipynb"), # Does not run
-        #("Regridding.ipynb"), # Does not run
+        ("Regridding.ipynb"),
         ("RelativeVorticity.ipynb"),
         #("SeaIceSeasonality_DFA.ipynb"), # Does not run
         # ("Spatial_selection.ipynb"), # Does not run
