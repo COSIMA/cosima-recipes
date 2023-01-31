@@ -3,7 +3,7 @@ PBS_SCRIPT = """
 
 #PBS -N test_cc_recipes
 #PBS -P v45
-#PBS -l storage=gdata/ik11+gdata/cj50+gdata/hh5+gdata/jk72
+#PBS -l storage=gdata/ik11+gdata/cj50+gdata/hh5+gdata/jk72+gdata/ua8
 #PBS -l walltime=2:30:00
 #PBS -l mem=192GB
 #PBS -l ncpus=24
