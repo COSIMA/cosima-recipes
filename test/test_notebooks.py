@@ -35,6 +35,7 @@ def run_notebook(notebook_filename):
         ("COSIMA_CookBook_Tutorial.ipynb"),
         ("Make_Your_Own_Database.ipynb"),
         ("Making_Maps_with_Cartopy.ipynb"),
+        #("Model_Agnostic_Analysis_converted.ipynb"), # Does not run
         ("Submitting_analysis_jobs_to_gadi.ipynb"),
         ("Template_For_Notebooks.ipynb"),
         # ("Using_Explorer_tools.ipynb"), # Does not run
@@ -46,6 +47,7 @@ def test_Tutorials(notebook_filename):
 @pytest.mark.parametrize(
     ("notebook_filename"),
     [
+        ("Age_at_the_Bottom.ipynb"),
         # ("Annually_Averaged_Scalar_Timeseries.ipynb"), # Does not run
         ("Atlantic_IndoPacific_Basin_Overturning_Circulation.ipynb"),
         ("Barotropic_Streamfunction.ipynb"),
@@ -60,6 +62,7 @@ def test_Tutorials(notebook_filename):
         #("IcePlottingExample.ipynb"), # Does not run
         ("Meridional_heat_transport.ipynb"),
         ("Model_Resolution_Comparison.ipynb"),
+        ("Particle_tracking_with_Parcels.ipynb"),
         #("Querying_Scalar_Quantities.ipynb"), # Does not run
         ("Regridding.ipynb"),
         ("RelativeVorticity.ipynb"),
@@ -67,6 +70,7 @@ def test_Tutorials(notebook_filename):
         # ("Spatial_selection.ipynb"), # Does not run
         ("Surface_Water_Mass_Transformation.ipynb"),
         #("TemperatureSalinityDiagrams.ipynb"), # Does not run
+        ("TemperatureSalinityDiagrams_mom5_mom6.ipynb"),
         #("Transport_Through_Straits.ipynb"), # Does not run
         ("True_Zonal_Mean.ipynb"),
         ("Zonally_Averaged_Global_Meridional_Overturning_Circulation.ipynb"),
