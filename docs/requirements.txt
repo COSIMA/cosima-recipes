@@ -1,2 +1,4 @@
 sphinx
-sphinx-nbexamples
+git+https://github.com/angus-g/nbsphinx@default-thumbnail
+sphinx-gallery<0.11
+ipywidgets

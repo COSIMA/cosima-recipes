@@ -30,16 +30,23 @@ master_doc = 'index'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx_nbexamples',
+    'nbsphinx',
+    'sphinx_gallery.load_style',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
+html_static_path = ['_static']
+
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = [
+    '_build', 'Thumbs.db', '.DS_Store',
+    'DocumentedExamples/README.rst', 'Tutorials/README.rst',
+    'Tutorials/Template_For_Notebooks.ipynb'
+]
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -52,14 +59,11 @@ html_theme = 'default'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
 
-# -- Example Gallery ---------------------------------------------------------
-# don't include any file with "Template" in the name
-example_gallery_config = {
-    'examples_dirs': ['../Tutorials', '../DocumentedExamples'],
-    'gallery_dirs': ['tutorials', 'documented_examples'],
-    'pattern': r'(?!Template).+\.ipynb',
-    'dont_preprocess': True,
-    'toctree_depth': 0,
+nbsphinx_execute = "never"
+nbsphinx_thumbnails = {
+    "Tutorials/Make_Your_Own_Database": "_static/thumbnails/database.png",
+    "Tutorials/Submitting_analysis_jobs_to_gadi": "_static/thumbnails/gadi.png",
+    "Tutorials/Using_Explorer_tools": "_static/thumbnails/explore.png",
+    "Tutorials/COSIMA_CookBook_Tutorial": "_static/thumbnails/cookbook.png",
 }
