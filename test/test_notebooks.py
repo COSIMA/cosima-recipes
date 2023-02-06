@@ -50,7 +50,7 @@ def test_Tutorials(notebook_filename):
         ("Age_at_the_Bottom.ipynb"),
         # ("Annually_Averaged_Scalar_Timeseries.ipynb"), # Does not run
         ("Atlantic_IndoPacific_Basin_Overturning_Circulation.ipynb"),
-        ("Barotropic_Streamfunction.ipynb"),
+        ("Barotropic_Streamfunction_model_agnostic.ipynb"),
         ("Bathymetry.ipynb"),
         ("Binning_transformation_from_depth_to_potential_density.ipynb"),
         ("Compare_SSH_model_obs.ipynb"),
