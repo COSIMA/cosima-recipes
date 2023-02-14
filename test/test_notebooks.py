@@ -71,7 +71,7 @@ def test_Tutorials(notebook_filename):
         ("Surface_Water_Mass_Transformation.ipynb"),
         #("TemperatureSalinityDiagrams.ipynb"), # Does not run
         ("TemperatureSalinityDiagrams_mom5_mom6.ipynb"),
-        #("Transport_Through_Straits.ipynb"), # Does not run
+        ("Transport_Through_Straits.ipynb"), # Does not run
         ("True_Zonal_Mean.ipynb"),
         ("Zonally_Averaged_Global_Meridional_Overturning_Circulation.ipynb"),
         # ("Zonally_Averaged_Wind_Stress.ipynb"), # Does not run
