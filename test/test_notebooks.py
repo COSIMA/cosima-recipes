@@ -48,7 +48,6 @@ def test_Tutorials(notebook_filename):
     ("notebook_filename"),
     [
         ("Age_at_the_Bottom.ipynb"),
-        # ("Annually_Averaged_Scalar_Timeseries.ipynb"), # Does not run
         ("Atlantic_IndoPacific_Basin_Overturning_Circulation.ipynb"),
         ("Barotropic_Streamfunction_model_agnostic.ipynb"),
         ("Bathymetry.ipynb"),
@@ -63,7 +62,7 @@ def test_Tutorials(notebook_filename):
         ("Meridional_heat_transport.ipynb"),
         ("Model_Resolution_Comparison.ipynb"),
         ("Particle_tracking_with_Parcels.ipynb"),
-        #("Querying_Scalar_Quantities.ipynb"), # Does not run
+        ("Querying_Scalar_Quantities_and_Annually_Averaged_Timeseries.ipynb"),
         ("Regridding.ipynb"),
         ("RelativeVorticity.ipynb"),
         #("SeaIceSeasonality_DFA.ipynb"), # Does not run
