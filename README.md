@@ -29,7 +29,7 @@ The notebook `COSIMA_CookBook_Tutorial.ipynb` outlines the basic philosophy of t
 
 Don't miss out the <a href="https://nbviewer.jupyter.org/github/COSIMA/cosima-recipes/blob/master/Tutorials/Using_Explorer_tools.ipynb" target="_blank">tutorial</a> about using `cosima-cookbook`'s `explore` submodule to find out about available experiments and variables in a database. (The `explorer` tutorial is better viewed either via nbviewer or by running the jupyter notebook yourself.)
 
-### [Documented Examples](https://cosima-recipes.readthedocs.io/en/latest/documented_examples/index.html)
+### [Documented Examples](https://cosima-recipes.readthedocs.io/en/latest/documented_examples.html)
 Νotebooks for simple and not-so-simple diagnostics which are well-documented and explained. If you can find an example that suits your purpose, this is the best place to start.
 
 ### ACCESS-OM2-GMD-Paper-Figs
