@@ -23,7 +23,7 @@ Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explainin
 
 ## Repository contents
 
-### [Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials/index.html)
+### [Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials.html)
 
 The notebook `COSIMA_CookBook_Tutorial.ipynb` outlines the basic philosophy of the `cosima-cookbook`. This is the best place to start if you are not familiar with the `cosima-cookbook`. Also included here are some other tutorials, either related to the cookbook (e.g., `Make_Your_Own_Database.ipynb`) or more general (`Making_Maps_with_Cartopy.ipynb`).
 
