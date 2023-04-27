@@ -73,6 +73,7 @@ def test_Tutorials(notebook_filename):
         ("Transport_Through_Straits.ipynb"),
         ("True_Zonal_Mean.ipynb"),
         ("Zonally_Averaged_Global_Meridional_Overturning_Circulation.ipynb"),
+        ("NearestNeighbourDistance.ipynb"),
     ])
 def test_DocumentedExamples(notebook_filename):
     run_notebook("DocumentedExamples/" + notebook_filename)
