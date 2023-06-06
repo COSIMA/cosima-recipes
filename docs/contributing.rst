@@ -66,7 +66,7 @@ notebook as a base.
 .. _ACCESS-Hive Forum: https://forum.access-hive.org.au/
 
 
-Tips to making a good recipe
+Tips for making a good recipe
 ----------------------------
 
 As researchers, we often develop code as part of our research and most of the time the main aim of code development is to find answers to questions that have not yet been explored. Reproducibility may not always be considered as part of the code development process. If this is the case, we are including some tips to writing reproducible code that can be easily followed by other users. 
