@@ -69,7 +69,7 @@ notebook as a base.
 Tips for making a good recipe
 ----------------------------
 
-As researchers, we often develop code as part of our research and most of the time the main aim of code development is to find answers to questions that have not yet been explored. Reproducibility may not always be considered as part of the code development process. If this is the case, we are including some tips to writing reproducible code that can be easily followed by other users. 
+As researchers, we often develop code as part of our research and most of the time the main aim of code development is to find answers to questions that have not yet been explored. Reproducibility may not always be considered as part of the code development process or be a priorty. If this is something that resonates with you, or if you would like to learn more about making your code shareable and reproducible, we are including some tips and good practices to help you achieve this. 
 
 1. Give the recipe a descriptive but generic title. Avoid being too specific as this will make it harder for other users to find code that matches their needs. For example, ``Computing pairwise distances between grid cells`` may be a better title than ``Computing distance between grid cells in the Southern Ocean and ice edge`` because the latter gives users the impression that the recipe is only relevant if they are looking at sea ice.
 2. Include a short introduction summarising what your script is expected to do. You can include some information of the inputs needed to run your script, the expected outputs, and the methods you are using to get there. As with the title, we also recommend that you keep your description as generic as possible.
