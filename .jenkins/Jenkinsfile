@@ -28,6 +28,9 @@ pipeline {
         // Run every Sunday at 3 am
         cron('0 3 * * 0')
     }
+    environment {
+        EMAILS = credentials('CCRecipesEmails')
+    }
     stages {
         stage('Tests') {
             steps {
@@ -41,7 +44,7 @@ pipeline {
             emailext (
                 body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}",
                 subject: "Jenkins Build ${currentBuild.currentResult}: Job ${env.JOB_NAME}",
-                to: 'micael.oliveira@anu.edu.au, navid.constantinou@anu.edu.au'
+                to: "${env.EMAILS}"
             )
         }
         cleanup {
