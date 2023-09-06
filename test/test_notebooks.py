@@ -57,7 +57,7 @@ def test_Tutorials(notebook_filename):
         ("Cross-contour_transport.ipynb"),
         ("Cross-slope_section.ipynb"),
         #("Decomposing_kinetic_energy_into_mean_and_transient.ipynb"), # Takes a long time (not sure if it runs till the end)
-        #("Equatorial_thermal_and_zonal_velocity_structure.ipynb"), # Does not run
+        ("Equatorial_thermal_and_zonal_velocity_structure.ipynb"),
         #("IcePlottingExample.ipynb"), # Does not run
         ("Meridional_heat_transport.ipynb"),
         ("Model_Resolution_Comparison.ipynb"),
