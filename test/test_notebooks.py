@@ -53,11 +53,11 @@ def test_Tutorials(notebook_filename):
         ("Bathymetry.ipynb"),
         ("Binning_transformation_from_depth_to_potential_density.ipynb"),
         ("Compare_SSH_model_obs.ipynb"),
-        #("Compare_SST_SSS_TemperatureSalinity_to_WOA13.ipynb"), # Does not run
+        ("Compare_SST_SSS_TemperatureSalinity_to_WOA13.ipynb"),
         ("Cross-contour_transport.ipynb"),
         ("Cross-slope_section.ipynb"),
         #("Decomposing_kinetic_energy_into_mean_and_transient.ipynb"), # Takes a long time (not sure if it runs till the end)
-        #("Equatorial_thermal_and_zonal_velocity_structure.ipynb"), # Does not run
+        ("Equatorial_thermal_and_zonal_velocity_structure.ipynb"),
         #("IcePlottingExample.ipynb"), # Does not run
         ("Meridional_heat_transport.ipynb"),
         ("Model_Resolution_Comparison.ipynb"),
