@@ -65,7 +65,7 @@ def test_Tutorials(notebook_filename):
         ("Querying_Scalar_Quantities_and_Annually_Averaged_Timeseries.ipynb"),
         ("Regridding.ipynb"),
         ("RelativeVorticity.ipynb"),
-        #("SeaIceSeasonality_DFA.ipynb"), # Does not run
+        ("SeaIceSeasonality_DFA.ipynb"),
         # ("Spatial_selection.ipynb"), # Does not run
         ("Surface_Water_Mass_Transformation.ipynb"),
         #("TemperatureSalinityDiagrams.ipynb"), # Does not run
