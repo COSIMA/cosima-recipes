@@ -39,6 +39,7 @@ def run_notebook(notebook_filename):
         ("Submitting_analysis_jobs_to_gadi.ipynb"),
         ("Template_For_Notebooks.ipynb"),
         # ("Using_Explorer_tools.ipynb"), # Does not run
+        ("Using_The_Intake_Catalog.ipynb"),
     ])
 def test_Tutorials(notebook_filename):
     run_notebook("Tutorials/" + notebook_filename)
