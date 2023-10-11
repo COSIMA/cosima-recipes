@@ -5,10 +5,10 @@
     <img alt="latest docs" src="https://img.shields.io/badge/docs-latest-blue.svg">
 </a>
 <a href='https://accessdev.nci.org.au/jenkins/job/COSIMA/job/CC%20Recipes%20Test/'>
-   <img src='https://accessdev.nci.org.au/jenkins/buildStatus/icon?job=COSIMA%2FCC+Recipes+Test&build=last:${params.MODULE=conda/analysis3}'>
+   <img src='https://accessdev.nci.org.au/jenkins/buildStatus/icon?job=COSIMA%2FCC+Recipes+Test&build=last:${params.MODULE=conda/analysis3}&subject=conda/analysis3'>
 </a>
 <a href='https://accessdev.nci.org.au/jenkins/job/COSIMA/job/CC%20Recipes%20Test/'>
-   <img src='https://accessdev.nci.org.au/jenkins/buildStatus/icon?job=COSIMA%2FCC+Recipes+Test&build=last:${params.MODULE=conda/analysis3-unstable}'>
+   <img src='https://accessdev.nci.org.au/jenkins/buildStatus/icon?job=COSIMA%2FCC+Recipes+Test&build=last:${params.MODULE=conda/analysis3-unstable}&subject=conda/analysis3'>
 </a>
 
 # cosima-recipes
