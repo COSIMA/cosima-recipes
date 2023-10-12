@@ -35,11 +35,11 @@ def run_notebook(notebook_filename):
         ("COSIMA_CookBook_Tutorial.ipynb"),
         ("Make_Your_Own_Database.ipynb"),
         ("Making_Maps_with_Cartopy.ipynb"),
-        # ("Model_Agnostic_Analysis.ipynb"), # Notebook is expected to fail, demonstrates expected error case.
+        ("Model_Agnostic_Analysis.ipynb"), 
         ("Spatial_selection.ipynb"),
         ("Submitting_analysis_jobs_to_gadi.ipynb"),
         ("Template_For_Notebooks.ipynb"),
-        # ("Using_Explorer_tools.ipynb"), # Notebook is expected to fail, demonstrates expected error case.
+        ("Using_Explorer_tools.ipynb"), 
     ])
 def test_Tutorials(notebook_filename):
     run_notebook("Tutorials/" + notebook_filename)
