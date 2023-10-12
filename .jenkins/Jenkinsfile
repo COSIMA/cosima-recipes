@@ -31,7 +31,7 @@ pipeline {
         // Run every Sunday at 3 am
         parameterizedCron('''
             H 3 * * 0 %MODULE=conda/analysis3
-            H 3 * * 0 %MODULE=conda/analysis3-unstable
+            H 4 * * 0 %MODULE=conda/analysis3-unstable
         ''')
     }
     environment {
