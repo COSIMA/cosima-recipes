@@ -35,10 +35,11 @@ def run_notebook(notebook_filename):
         ("COSIMA_CookBook_Tutorial.ipynb"),
         ("Make_Your_Own_Database.ipynb"),
         ("Making_Maps_with_Cartopy.ipynb"),
-        #("Model_Agnostic_Analysis_converted.ipynb"), # Does not run
+        ("Model_Agnostic_Analysis.ipynb"), 
+        ("Spatial_selection.ipynb"),
         ("Submitting_analysis_jobs_to_gadi.ipynb"),
         ("Template_For_Notebooks.ipynb"),
-        # ("Using_Explorer_tools.ipynb"), # Does not run
+        ("Using_Explorer_tools.ipynb"), 
     ])
 def test_Tutorials(notebook_filename):
     run_notebook("Tutorials/" + notebook_filename)
@@ -68,7 +69,6 @@ def test_Tutorials(notebook_filename):
         #("SeaIceSeasonality_DFA.ipynb"), # Does not run
         ("Spatial_selection.ipynb"),
         ("Surface_Water_Mass_Transformation.ipynb"),
-        #("TemperatureSalinityDiagrams.ipynb"), # Does not run
         ("TemperatureSalinityDiagrams_mom5_mom6.ipynb"),
         ("Transport_Through_Straits.ipynb"),
         ("True_Zonal_Mean.ipynb"),
