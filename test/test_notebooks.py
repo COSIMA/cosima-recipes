@@ -59,14 +59,15 @@ def test_Tutorials(notebook_filename):
         ("Cross-slope_section.ipynb"),
         #("Decomposing_kinetic_energy_into_mean_and_transient.ipynb"), # Takes a long time (not sure if it runs till the end)
         ("Equatorial_thermal_and_zonal_velocity_structure.ipynb"),
-        # ("IcePlottingExample.ipynb"), # Does not run
         ("Meridional_heat_transport.ipynb"),
         ("Model_Resolution_Comparison.ipynb"),
         ("Particle_tracking_with_Parcels.ipynb"),
         ("Querying_Scalar_Quantities_and_Annually_Averaged_Timeseries.ipynb"),
         ("Regridding.ipynb"),
         ("RelativeVorticity.ipynb"),
-        # ("SeaIceSeasonality_DFA.ipynb"), # Does not run
+        ("SeaIce_Plot_Example.ipynb"),
+        #("SeaIceSeasonality_DFA.ipynb"), # Does not run
+        ("Spatial_selection.ipynb"),
         ("Surface_Water_Mass_Transformation.ipynb"),
         ("TemperatureSalinityDiagrams_mom5_mom6.ipynb"),
         ("Transport_Through_Straits.ipynb"),
