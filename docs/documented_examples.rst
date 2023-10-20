@@ -5,5 +5,6 @@ Documented Examples
    :caption: Documented Examples
    :name: documented-example-gallery
    :glob:
+   :hidden:
 
    DocumentedExamples/*

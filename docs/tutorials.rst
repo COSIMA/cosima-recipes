@@ -5,5 +5,6 @@ Tutorials
    :caption: Tutorials
    :name: tutorial-gallery
    :glob:
+   :hidden:
 
    Tutorials/*
