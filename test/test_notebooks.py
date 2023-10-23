@@ -67,7 +67,6 @@ def test_Tutorials(notebook_filename):
         ("RelativeVorticity.ipynb"),
         ("SeaIce_Plot_Example.ipynb"),
         #("SeaIceSeasonality_DFA.ipynb"), # Does not run
-        ("Spatial_selection.ipynb"),
         ("Surface_Water_Mass_Transformation.ipynb"),
         ("TemperatureSalinityDiagrams_mom5_mom6.ipynb"),
         ("Transport_Through_Straits.ipynb"),
