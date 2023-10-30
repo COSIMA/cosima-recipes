@@ -6,6 +6,7 @@ PBS_SCRIPT = """
 #PBS -l storage=gdata/ik11+gdata/cj50+gdata/hh5+gdata/jk72+gdata/ua8
 #PBS -l walltime=8:00:00
 #PBS -l mem=192GB
+#PBS -l jobfs=10GB
 #PBS -l ncpus=24
 #PBS -q normalbw
 #PBS -l wd
