@@ -39,6 +39,7 @@ def run_notebook(notebook_filename):
         ("Spatial_selection.ipynb"),
         ("Submitting_analysis_jobs_to_gadi.ipynb"),
         ("Template_For_Notebooks.ipynb"),
+        ("Using_Intake_Catalog.ipynb"),
         ("Using_Explorer_tools.ipynb"), 
     ])
 def test_Tutorials(notebook_filename):
