@@ -16,9 +16,7 @@ Welcome to COSIMA Recipes's documentation!
    contributing
 
 
-Indices and tables
-==================
+Search
+======
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
