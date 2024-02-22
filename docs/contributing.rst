@@ -81,7 +81,7 @@ to help you achieve this.
    as this will make it harder for other users to find code that matches their
    needs. For example, ``Computing pairwise distances between grid cells`` may be
    a better title than ``Computing distance between grid cells in the Southern
-   Ocean and ice edge``because the latter gives users the impression that
+   Ocean and ice edge`` because the latter gives users the impression that
    the recipe is only relevant if they are looking at sea ice.
 
 2. Include a short introduction summarising what your script is expected to
