@@ -1,0 +1,287 @@
+! modified from OM4_025.JRA and ESMG's Arctic5
+
+! === module MOM ===
+USE_REGRIDDING = True
+! diffuse interface heights with KHTH
+THICKNESSDIFFUSE = False
+! do thickness diffusion before dynamics
+THICKNESSDIFFUSE_FIRST = True
+! baroclinic timestep
+DT = 900.0
+!DT = 360.0
+
+! thermodynamic and tracer advection timestep
+!DT_THERM = 3600.0
+DT_THERM = 1800.0
+!DT_THERM = 900.0
+! thermo timesteps can be longer than coupling timestep
+THERMO_SPANS_COUPLING = True
+! form frazil ice (accumulated heat deficit is returned
+! in the surface state)
+FRAZIL = True
+
+! limit salinity to positive values
+BOUND_SALINITY = True
+! heat capacity of seawater
+C_P = 3992.0
+
+! check for excessive SSH, SST and SSS
+CHECK_BAD_SURFACE_VALS = True
+
+! don't write geometry/vertical grid files
+WRITE_GEOM = 1
+
+! for debug: save initial conditions
+SAVE_INITIAL_CONDS = True
+RESTART_CHECKSUMS_REQUIRED = False
+
+! === module MOM_domains ===
+NIGLOBAL = 80
+NJGLOBAL = 129
+
+LAYOUT = 10,10
+IO_LAYOUT = 1,1
+
+MASKTABLE = "mask_table.18.10x10"
+
+! === module MOM_verticalGrid ===
+NK = 75
+
+! === module MOM_fixed_initialization ===
+INPUTDIR = "INPUT"
+
+DEPRESS_INITIAL_SURFACE = True
+SURFACE_HEIGHT_IC_FILE = "forcing/init_eta.nc"
+SURFACE_HEIGHT_IC_VAR = "eta_t"
+
+VELOCITY_CONFIG = "file"
+VELOCITY_FILE = "forcing/init_vel_cgrid.nc"
+
+! === module MOM_grid_init ===
+GRID_CONFIG = "mosaic"
+GRID_FILE = "hgrid.nc"
+TOPO_CONFIG = "file"
+TOPO_FILE = "topog.nc"
+
+REENTRANT_X = False
+
+MINIMUM_DEPTH = 9.5
+MAXIMUM_DEPTH = 6000.0
+
+! === module MOM_open_boundary ===
+OBC_NUMBER_OF_SEGMENTS = 4
+OBC_FREESLIP_VORTICITY = True
+OBC_FREESLIP_STRAIN = True
+#OBC_COMPUTED_VORTICITY = True
+OBC_ZERO_BIHARMONIC = True
+!RAMP_OBCS = True
+BRUSHCUTTER_MODE = True ! read data on supergrid
+
+! segment 1: southern boundary
+OBC_SEGMENT_001 = "J=0,I=0:N,FLATHER,ORLANSKI,NUDGED"
+OBC_SEGMENT_001_VELOCITY_NUDGING_TIMESCALES = .3, 360.0 ! inflow and outflow timescales
+OBC_SEGMENT_001_DATA = "U=file:forcing/forcing_obc_segment_001.nc(u),V=file:forcing/forcing_obc_segment_001.nc(v),SSH=file:forcing/forcing_obc_segment_001.nc(eta_t),TEMP=file:forcing/forcing_obc_segment_001.nc(temp),SALT=file:forcing/forcing_obc_segment_001.nc(salt)"
+
+! segment 2: northern boundary
+OBC_SEGMENT_002 = "J=N,I=N:0,FLATHER,ORLANSKI,NUDGED"
+OBC_SEGMENT_002_VELOCITY_NUDGING_TIMESCALES = .3, 360.0 ! inflow and outflow timescales
+OBC_SEGMENT_002_DATA = "U=file:forcing/forcing_obc_segment_002.nc(u),V=file:forcing/forcing_obc_segment_002.nc(v),SSH=file:forcing/forcing_obc_segment_002.nc(eta_t),TEMP=file:forcing/forcing_obc_segment_002.nc(temp),SALT=file:forcing/forcing_obc_segment_002.nc(salt)"
+
+! segment 3: western boundary
+OBC_SEGMENT_003 = "I=0,J=N:0,FLATHER,ORLANSKI,NUDGED"
+OBC_SEGMENT_003_VELOCITY_NUDGING_TIMESCALES = .3, 360.0 ! inflow and outflow timescales
+OBC_SEGMENT_003_DATA = "U=file:forcing/forcing_obc_segment_003.nc(u),V=file:forcing/forcing_obc_segment_003.nc(v),SSH=file:forcing/forcing_obc_segment_003.nc(eta_t),TEMP=file:forcing/forcing_obc_segment_003.nc(temp),SALT=file:forcing/forcing_obc_segment_003.nc(salt)"
+
+! segment 4: eastern boundary
+OBC_SEGMENT_004 = "I=N,J=0:N,FLATHER,ORLANSKI,NUDGED"
+OBC_SEGMENT_004_VELOCITY_NUDGING_TIMESCALES = .3, 360.0 ! inflow and outflow timescales
+OBC_SEGMENT_004_DATA = "U=file:forcing/forcing_obc_segment_004.nc(u),V=file:forcing/forcing_obc_segment_004.nc(v),SSH=file:forcing/forcing_obc_segment_004.nc(eta_t),TEMP=file:forcing/forcing_obc_segment_004.nc(temp),SALT=file:forcing/forcing_obc_segment_004.nc(salt)"
+
+OBC_TRACER_RESERVOIR_LENGTH_SCALE_OUT = 30000
+OBC_TRACER_RESERVOIR_LENGTH_SCALE_IN = 3000
+
+! sponges
+SPONGE = False
+
+! === module MOM_coord_initialization ===
+! don't define layers in ALE mode
+COORD_CONFIG = "ALE"
+
+REGRIDDING_COORDINATE_MODE = "ZSTAR"
+! use high-order scheme at boundary cells for remapping,
+! instead of just piecewise-constant
+BOUNDARY_EXTRAPOLATION = True
+
+! read target densities from file, set minimum interface depth
+! from profile: minimum dz=2, 4000m total thickness, profile is dz^4.5
+ALE_COORDINATE_CONFIG = "FILE:vcoord.nc,interfaces=st_edges_ocean"
+
+REMAPPING_SCHEME = "PPM_H4"
+
+! === module MOM_state_initialization ===
+! initialise states from the nested Z-space file
+INIT_LAYERS_FROM_Z_FILE = True
+! if we've pre-interpolated the initial conditions,
+! we only have to perform remapping
+TEMP_SALT_INIT_VERTICAL_REMAP_ONLY = True
+
+! === module MOM_initialize_layers_from_Z ===
+! read "temp" and "salt" from a z-space file
+TEMP_SALT_Z_INIT_FILE = "forcing/init_cond.nc"
+Z_INIT_FILE_PTEMP_VAR = "temp"
+! remap straight to the model coordinate
+Z_INIT_ALE_REMAPPING = True
+
+! === module MOM_set_visc ===
+CHANNEL_DRAG = True
+! turbulent Prandtl number for shear instability
+PRANDTL_TURB = 1.25
+HBBL = 10.0
+DRAG_BG_VEL = 0.1
+BBL_USE_EOS = True
+BBL_THICK_MIN = 0.1
+KV = 1.0E-04
+KV_BBL_MIN = 0.0
+KV_TBL_MIN = 0.0
+
+! === module MOM_continuity_PPM ===
+ETA_TOLERANCE = 1.0E-06
+ETA_TOLERANCE_AUX = 0.001
+
+! === module MOM_CoriolisAdv ===
+CORIOLIS_SCHEME = "SADOURNY75_ENSTRO"
+BOUND_CORIOLIS = True
+
+! === module MOM_PressureForce_AFV ===
+MASS_WEIGHT_IN_PRESSURE_GRADIENT = True
+
+! === module MOM_hor_visc ===
+LAPLACIAN = True
+AH_VEL_SCALE = 0.01
+SMAGORINSKY_AH = True
+SMAG_BI_CONST = 0.06
+
+! === module MOM_vert_friction ===
+U_TRUNC_FILE = "U_velocity_truncations"
+V_TRUNC_FILE = "V_velocity_truncations"
+HMIX_FIXED = 0.5
+! maximum velocity before truncation
+MAXVEL = 6.0
+
+! === module MOM_barotropic ===
+BOUND_BT_CORRECTION = True
+BT_PROJECT_VELOCITY = True
+DYNAMIC_SURFACE_PRESSURE = True
+BEBT = 0.2
+DTBT = -0.9
+
+! === module MOM_thickness_diffuse ===
+! maximum value of local diffusive CFL ratio
+! permitted for thickness diffusivity
+KHTH_MAX_CFL = 0.1
+
+! === module MOM_mixed_layer_restrat ===
+MIXEDLAYER_RESTRAT = True
+! proportional coefficient to ratio of deformation radius
+! to the dominant lengthscale of submesoscale mixed layer
+! instabilities, times the minimum of the ratio of
+! mesoscale EKE to large-scale geostrophic KE, or 1 + the
+! square of the grid spacing over the deformation radius
+FOX_KEMPER_ML_RESTRAT_COEF = 1.0
+! frontal-length scale used to calculate
+! upscaling of buoyancy gradients
+MLE_FRONT_LENGTH = 500.0
+MLE_USE_PBL_MLD = True
+! 720 days
+MLE_MLD_DECAY_TIME = 2.592E+06
+
+! === module MOM_diabatic_driver ===
+ENERGETICS_SFC_PBL = True
+EPBL_IS_ADDITIVE = False
+
+! === module MOM_set_diffusivity ===
+! add BBL mixing diffusivity, instead of taking maximum
+BBL_MIXING_AS_MAX = False
+! non-coord dependent BBL diffusivity
+USE_LOTW_BBL_DIFFUSIVITY = True
+! use estimate of Kd/TKE for arbitrary vertical coordinate
+SIMPLE_TKE_TO_KD = True
+! latitude-dependent scaling for near-surface background
+! diffusivity
+HENYEY_IGW_BACKGROUND = True
+!N2_FLOOR_IOMEGA2 = 0.0
+KD = 1.5E-05
+KD_MIN = 2.0E-06
+KD_MAX = 0.1
+INT_TIDE_DISSIPATION = False
+!INT_TIDE_PROFILE = "POLZIN_09"
+!INT_TIDE_DECAY_SCALE = 300.3003003003003
+! topographic wavenumber, 2pi/10km
+!KAPPA_ITIDES = 6.28319E-04
+!KAPPA_H2_FACTOR = 0.84
+! maximum internal tide energy source available
+! to mix above the BBL
+!TKE_ITIDE_MAX = 0.1
+
+! === MOM_kappa_shear ===
+USE_JACKSON_PARAM = True
+!MAX_RINO_INT = 25
+
+! === module MOM_energetic_PBL ===
+EPBL_MSTAR_SCHEME = "OM4"
+MSTAR = 0.0
+MIX_LEN_EXPONENT = 1.0
+MSTAR_CAP = 10.0
+MSTAR_CONV_ADJ = 0.667
+MSTAR2_COEF1 = 0.29
+MSTAR2_COEF2 = 0.152
+NSTAR = 0.06
+TKE_DECAY = 0.01
+ML_OMEGA_FRAC = 0.001
+USE_MLD_ITERATION = True
+EPBL_TRANSITION_SCALE = 0.01
+USE_LA_LI2016 = True
+EPBL_LANGMUIR_SCHEME = "ADDITIVE"
+LT_ENHANCE_COEF = 0.044
+LT_ENHANCE_EXP = -1.5
+LT_MOD_LAC1 = 0.0
+LT_MOD_LAC4 = 0.0
+LT_MOD_LAC5 = 0.22
+!EPBL_USTAR_MIN = 1.45842E-18
+
+! === module MOM_trace_advect ===
+TRACER_ADVECTION_SCHEME = "PPM:H3"
+
+! === module MOM_tracer_hor_diff ===
+! ensure diffusive equivalent of CFL limit isn't
+! violated
+CHECK_DIFFUSIVE_CFL = True
+
+! === module ocean_model_init ===
+! time between saves of energies and other global
+! integrals
+TIMEUNIT = 86400
+ENERGYSAVEDAYS = 1.0
+
+! === module MOM_surface_forcing ===
+! maximum surface pressure that can be exerted
+! by atmosphere and floating sea-ice
+MAX_P_SURF = 0.0
+CD_TIDES = 0.0018
+GUST_CONST = 0.0
+USE_RIGID_SEA_ICE = True
+SEA_ICE_RIGID_MASS = 100.0
+
+! === module MOM_sum_output ===
+MAXTRUNC = 100000
+
+REPORT_UNUSED_PARAMS = True
+!FATAL_UNUSED_PARAMS = True
+
+NUM_DIAG_COORDS = 1
+DIAG_COORDS = "z Z ZSTAR"
+DIAG_COORD_DEF_Z = "FILE:vcoord.nc,interfaces=st_edges_ocean"
+! drho (arg 5) is a bit magic and has a big impact on
+! the tail of the coord...
+
+BAD_VAL_SST_MIN = -3.0

@@ -1,0 +1,66 @@
+CGRID_ICE_DYNAMICS = True
+DT_ICE_DYNAMICS = 180.0
+! fixed bulk salinity of sea ice
+ICE_BULK_SALINITY = 0.0
+! salinity of sea ice as fraction of salinity
+! of sea water from which it formed
+ICE_RELATIVE_SALINITY = 0.1
+! cosine of solar zenith angle for first radiation step
+CONSTANT_COSZEN_IC = 0.0
+! don't call iceberg module
+DO_ICEBERGS = False
+! time between writes of global ice diags and conservation
+ICE_STATS_INTERVAL = 0.25
+
+NIGLOBAL = 80
+NJGLOBAL = 129
+LAYOUT = 10,10
+MASKTABLE = "mask_table.18.10x10"
+
+GRID_CONFIG = "mosaic"
+GRID_FILE = "hgrid.nc"
+INPUTDIR = "INPUT"
+
+TOPO_FILE = "topog.nc"
+
+MAXIMUM_DEPTH = 6000.0
+
+WRITE_GEOM = 0
+
+! rotation rate of earth
+OMEGA = 7.292E-05
+
+! tuning params for radiative properties
+ICE_DELTA_EDD_R_ICE = 1.0
+ICE_DELTA_EDD_R_SNOW = 1.0
+ICE_DELTA_EDD_R_POND = 1.0
+
+CP_ICE = 2100.0
+CP_SEAWATER = 3992.0
+CP_BRINE = 3992.0
+
+! subcycling timestep for rheology
+DT_RHEOLOGY = 50.0
+
+U_TRUNC_FILE = "SIS_U_truncations"
+V_TRUNC_FILE = "SIS_V_truncations"
+
+SIS_THICKNESS_ADVECTION_SCHEME = "PCM"
+SIS_CONTINUITY_SCHEME = "PCM"
+
+! use previous calculations of ice-top surface
+! skin temp for tsurf
+EULERIAN_TSURF = True
+! redistribute after advection
+RECATEGORIZE_ICE = True
+
+SIS_TRACER_ADVECTION_SCHEME = "PPM:H3"
+
+MAXTRUNC = 200
+DOCUMENT_FILE = "SIS_parameter_doc"
+
+REPORT_UNUSED_PARAMS = True
+FATAL_UNUSED_PARAMS = True
+
+! from overrides:
+ADD_DIURNAL_SW = False

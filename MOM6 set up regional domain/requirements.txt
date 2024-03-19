@@ -1,0 +1,7 @@
+dask[distributed]
+zarr
+netCDF4
+xarray
+pandas
+pangeo-xesmf>=0.6.3
+pykdtree
