@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-COSIMA Recipes's documentation
+COSIMA Recipes documentation
 ==============================
 
-Welcome to COSIMA Recipes's documentation!
+Welcome to the COSIMA Recipes documentation!
 
 To get started have a look at the tutorials_ and then browse through the
 available `documented examples`_ to find something the better suits
