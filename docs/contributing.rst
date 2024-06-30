@@ -165,7 +165,7 @@ A much better version, free from all the cons mentioned above, is:
                     dataarray (xarray.dataarray): An xarray dataarray
 
             Returns:
-                    (xarray.dataarray): The (numerical) zonal mean of `dataarray
+                    xarray.dataarray: The (numerical) zonal mean of `dataarray`
         '''
 
         return dataarray.cf.mean('longitude')
