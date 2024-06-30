@@ -147,6 +147,7 @@ Some tips for reviewing
 
 
 .. code-block:: python
+
     def znl_mean(ar):
         return ar.mean('xt_ocean')
 
