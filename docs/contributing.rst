@@ -140,10 +140,10 @@ of the notebook itself.
 Some tips for reviewing
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-* Does the PR has a consise description at its first comment of the changes it proposes? If not, request for it.
+* Does the PR have a concise description of the proposed changes? If not, request it.
 * Have a look at the proposed changes. Do they make sense?
 * Is the proposed code clean and clear?
-* Is the proposed changes documented or commented? Methods should come with docstrings. But also documentation in the form of Markdown surrounding code is very appreciated. We prefer documentation and code with variables and method names that are verbose and read like english. For example
+* Are the proposed changes documented or commented? Methods should come with docstrings. But also documentation in the form of Markdown surrounding code is very appreciated. We prefer documentation and code with variables and method names that are verbose and read like English. As an example, we prefer the second of these two snippets:
 
 
 .. code-block:: python
