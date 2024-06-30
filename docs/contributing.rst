@@ -123,7 +123,7 @@ Reviewing existing Pull Requests
 --------------------------------
 
 Another very useful way to contribute to COSIMA Recipes is to review `existing
-Pull Requests`. Even if you don't have a new workflow to propose to the world,
+Pull Requests`_. Even if you don't have a new workflow to propose to the world,
 you might be an expert in some part of the process and your feedback is valuable!
 Take a look at the `existing Pull Requests`_ to see if anything takes your fancy.
 There are two ways to interact with these, depending on what sort of feedback
