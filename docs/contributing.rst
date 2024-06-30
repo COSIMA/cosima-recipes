@@ -137,7 +137,8 @@ Instead, the *review-notebook-app* bot will leave a comment with a **ReviewNB**
 button on every Pull Request: this lets you leave your feedback on a representation
 of the notebook itself.
 
-Few points
+Some tips for reviewing
+^^^^^^^^^^^^^^^^^^^^^^^
 
 * Does the PR has a consise description at its first comment of the changes it proposes? If not, request for it.
 * Have a look at the proposed changes. Do they make sense?
