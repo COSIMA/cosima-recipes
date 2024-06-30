@@ -152,6 +152,7 @@ Some tips for reviewing
         return ar.mean('xt_ocean')
 
 .. code-block:: python
+
     def zonal_mean(dataarray):
         '''
         Returns the (numerical) zonal mean of `dataarray`, i.e., its mean along latitude circles.
