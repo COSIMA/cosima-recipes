@@ -122,8 +122,8 @@ new branch onto your fork, you'll be able to `create a pull request`_.
 Reviewing existing Pull Requests
 --------------------------------
 
-Another very useful way to contribute to COSIMA Recipes is to review existing
-Pull Requests. Even if you don't have a new workflow to propose to the world,
+Another very useful way to contribute to COSIMA Recipes is to review `existing
+Pull Requests`. Even if you don't have a new workflow to propose to the world,
 you might be an expert in some part of the process and your feedback is valuable!
 Take a look at the `existing Pull Requests`_ to see if anything takes your fancy.
 There are two ways to interact with these, depending on what sort of feedback
@@ -136,5 +136,38 @@ metadata and structure, it's not very pleasant to review them through a file dif
 Instead, the *review-notebook-app* bot will leave a comment with a **ReviewNB**
 button on every Pull Request: this lets you leave your feedback on a representation
 of the notebook itself.
+
+Few points
+
+* Does the PR has a consise description at its first comment of the changes it proposes? If not, request for it.
+* Have a look at the proposed changes. Do they make sense?
+* Is the proposed code clean and clear?
+* Is the proposed changes documented or commented? Methods should come with docstrings. But also documentation in the form of Markdown surrounding code is very appreciated. We prefer documentation and code with variables and method names that are verbose and read like english. For example
+
+
+.. code-block:: python
+    def znl_mean(ar):
+        return ar.mean('xt_ocean')
+
+.. code-block:: python
+    def zonal_mean(dataarray):
+        '''
+        Returns the (numerical) zonal mean of `dataarray`, i.e., its mean along latitude circles.
+
+            Parameters:
+                    dataarray (xarray.dataarray): An xarray dataarray
+
+            Returns:
+                    binary_sum (xarray.dataarray): The (numerical) zonal mean of `dataarray
+        '''
+
+        return dataarray.cf.mean('longitude')
+     
+
+* Ensure that the notebook runs! To do that:
+
+  - Clone the repository or the fork that the PR was made from.
+  - Checkout the appropriate branch.
+  - Ensure that the notebook runs when a **new** kernel is launched. Ensure that all cells run in sequential orders and also that all cell outputs are evaluated.
 
 .. _existing Pull Requests: https://github.com/COSIMA/cosima-recipes/pulls
