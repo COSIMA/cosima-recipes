@@ -166,9 +166,8 @@ Some tips for reviewing
      
 
 * Ensure that the notebook runs! To do that:
-
-  - Clone the repository or the fork that the PR was made from.
-  - Checkout the appropriate branch.
-  - Ensure that the notebook runs when a **new** kernel is launched. Ensure that all cells run in sequential orders and also that all cell outputs are evaluated.
+  - Clone the repository or the fork that the PR was made from;
+  - Checkout the appropriate branch;
+  - Ensure that the notebook runs when a **new** kernel is launched. Ensure that all cells run in sequential order, and that all cell outputs are evaluated.
 
 .. _existing Pull Requests: https://github.com/COSIMA/cosima-recipes/pulls
