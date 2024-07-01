@@ -153,22 +153,29 @@ Some tips for reviewing
 
 
 .. code-block:: python
+
     def znl_mean(ar):
         return ar.mean('xt_ocean')
+
 has a few issues. First, the names aren't easily understood. The method does not have any documentation, nor is it self-explanatory. Furthermore, the method assumes that ``xt_ocean`` is a coordinate of the data array; hard coding dimension names is fragile to future changes.
 
 A much better version, free from all the cons mentioned above, is:
 
 .. code-block:: python
+
     def zonal_mean(dataarray):
         '''
         Returns the (numerical) zonal mean of `dataarray`, i.e., its mean along latitude circles.
+
             Parameters:
                     dataarray (xarray.dataarray): An xarray dataarray
+
             Returns:
                     xarray.dataarray: The (numerical) zonal mean of `dataarray`
         '''
         return dataarray.cf.mean('longitude')
+
+
 * Ensure that the notebook runs! To do that:
 
   - Clone the repository or the fork that the PR was made from;
