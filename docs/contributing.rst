@@ -176,3 +176,45 @@ A much better version, free from all the cons mentioned above, is:
   - Ensure that the notebook runs when a **new** kernel is launched. Ensure that all cells run in sequential order, and that all cell outputs are evaluated.
 
 .. _existing Pull Requests: https://github.com/COSIMA/cosima-recipes/pulls
+
+
+To clone a pull request locally
++++++++++++++++++++++++++++++++
+
+If you want to test pull requests locally (i.e., to compile or run the code),
+you will need to download the pull request branch. You can do this either by cloning the branch from the pull request.
+
+In this context "locally" means somewhere you can run the code - this is probably on Gadi, but may also be on a local machine.
+
+If you are using ssh keys for command line authentication:
+
+::
+
+    git clone -b «THEIR_DEVELOPMENT_BRANCHNAME» git@github.com:«THEIR_GITHUB_USERNAME»/cosima-recipes.git
+
+where «THEIR_GITHUB_USERNAME» is replaced by the username of the person proposing the pull request,
+and «THEIR_DEVELOPMENT_BRANCHNAME» is the branch from their pull request.
+
+Alternatively, you can add the repository of the user proposing the pull request as a remote to
+your existing local repository. Navigate to your local repository and type
+
+::
+
+    git remote add «THEIR_GITHUB_USERNAME» git@github.com:«THEIR_GITHUB_USERNAME»/cosima-recipes.git
+
+where «THEIR_GITHUB_USERNAME» is replaced by the user name of the person who has made the
+pull request. Then download their pull request changes
+
+::
+
+    git fetch «THEIR_GITHUB_USERNAME»
+
+and switch to the desired branch
+
+::
+
+    git checkout --track «THEIR_GITHUB_USERNAME»/«THEIR_DEVELOPMENT_BRANCHNAME»
+
+You now have a local copy of the code from the pull request and can run tests locally.
+If you have write access to the main repository you can push fixes or changes directly
+to the pull request.
