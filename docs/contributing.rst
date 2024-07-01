@@ -125,14 +125,20 @@ Reviewing existing Pull Requests
 Another very useful way to contribute to COSIMA Recipes is to review `existing
 Pull Requests`_. Even if you don't have a new workflow to propose to the world,
 you might be an expert in some part of the process and your feedback is valuable!
+
+**Everyone can review and comment on pull requests.**
+
 Take a look at the `existing Pull Requests`_ to see if anything takes your fancy.
 There are two ways to interact with these, depending on what sort of feedback
 you'd like to provide.
 
-Since the Pull Requests are the usual GitHub type, you can submit your review using
-the standard GitHub interface. This amounts to leaving a comment on the changes
-introduced by the commits. However, because notebooks contain a lot of extra
-metadata and structure, it's not very pleasant to review them through a file diff!
+The simplest way to examine a pull request is to `use GitHub <https://github.com/COSIMA/cosima-recipes/pulls>`_. You can look at changes made to files
+(GitHub will show you a standard linux ``diff`` for each file changed), read though commit messages, and/or peruse any comments
+the community has made regarding this pull request.
+
+Awkwardly, notebooks contain a lot of extra
+metadata and structure, so it's not very pleasant to review them through a file diff!
+
 Instead, the *review-notebook-app* bot will leave a comment with a **ReviewNB**
 button on every Pull Request: this lets you leave your feedback on a representation
 of the notebook itself.
