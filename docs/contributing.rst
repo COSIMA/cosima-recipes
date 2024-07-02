@@ -125,14 +125,20 @@ Reviewing existing Pull Requests
 Another very useful way to contribute to COSIMA Recipes is to review `existing
 Pull Requests`_. Even if you don't have a new workflow to propose to the world,
 you might be an expert in some part of the process and your feedback is valuable!
+
+**Everyone can review and comment on pull requests.**
+
 Take a look at the `existing Pull Requests`_ to see if anything takes your fancy.
 There are two ways to interact with these, depending on what sort of feedback
 you'd like to provide.
 
-Since the Pull Requests are the usual GitHub type, you can submit your review using
-the standard GitHub interface. This amounts to leaving a comment on the changes
-introduced by the commits. However, because notebooks contain a lot of extra
-metadata and structure, it's not very pleasant to review them through a file diff!
+The simplest way to examine a pull request is to `use GitHub <https://github.com/COSIMA/cosima-recipes/pulls>`_. You can look at changes made to files
+(GitHub will show you a standard linux ``diff`` for each file changed), read though commit messages, and/or peruse any comments
+the community has made regarding this pull request.
+
+Awkwardly, notebooks contain a lot of extra
+metadata and structure, so it's not very pleasant to review them through a file diff!
+
 Instead, the *review-notebook-app* bot will leave a comment with a **ReviewNB**
 button on every Pull Request: this lets you leave your feedback on a representation
 of the notebook itself.
@@ -151,7 +157,7 @@ Some tips for reviewing
     def znl_mean(ar):
         return ar.mean('xt_ocean')
 
-has a few issues. First, the names don't read English. The method does not have any documentation nor is self-explanatory. Further, the method assumes that ``xt_ocean`` is a coordinate of the data array.
+has a few issues. First, the names aren't easily understood. The method does not have any documentation, nor is it self-explanatory. Furthermore, the method assumes that ``xt_ocean`` is a coordinate of the data array; hard coding dimension names is fragile to future changes.
 
 A much better version, free from all the cons mentioned above, is:
 
@@ -167,9 +173,8 @@ A much better version, free from all the cons mentioned above, is:
             Returns:
                     xarray.dataarray: The (numerical) zonal mean of `dataarray`
         '''
-
         return dataarray.cf.mean('longitude')
-     
+
 
 * Ensure that the notebook runs! To do that:
 
@@ -178,3 +183,45 @@ A much better version, free from all the cons mentioned above, is:
   - Ensure that the notebook runs when a **new** kernel is launched. Ensure that all cells run in sequential order, and that all cell outputs are evaluated.
 
 .. _existing Pull Requests: https://github.com/COSIMA/cosima-recipes/pulls
+
+
+To clone a pull request locally
++++++++++++++++++++++++++++++++
+
+If you want to test pull requests locally (i.e., to compile or run the code),
+you will need to download the pull request branch. You can do this either by cloning the branch from the pull request.
+
+In this context "locally" means somewhere you can run the code - this is probably on Gadi, but may also be on a local machine.
+
+If you are using ssh keys for command line authentication:
+
+::
+
+    git clone -b «THEIR_DEVELOPMENT_BRANCHNAME» git@github.com:«THEIR_GITHUB_USERNAME»/cosima-recipes.git
+
+where «THEIR_GITHUB_USERNAME» is replaced by the username of the person proposing the pull request,
+and «THEIR_DEVELOPMENT_BRANCHNAME» is the branch from their pull request.
+
+Alternatively, you can add the repository of the user proposing the pull request as a remote to
+your existing local repository. Navigate to your local repository and type
+
+::
+
+    git remote add «THEIR_GITHUB_USERNAME» git@github.com:«THEIR_GITHUB_USERNAME»/cosima-recipes.git
+
+where «THEIR_GITHUB_USERNAME» is replaced by the user name of the person who has made the
+pull request. Then download their pull request changes
+
+::
+
+    git fetch «THEIR_GITHUB_USERNAME»
+
+and switch to the desired branch
+
+::
+
+    git checkout --track «THEIR_GITHUB_USERNAME»/«THEIR_DEVELOPMENT_BRANCHNAME»
+
+You now have a local copy of the code from the pull request and can run tests locally.
+If you have write access to the main repository you can push fixes or changes directly
+to the pull request.
