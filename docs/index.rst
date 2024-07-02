@@ -3,8 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to COSIMA Recipes's documentation!
-==========================================
+COSIMA Recipes documentation
+==============================
+
+Welcome to the COSIMA Recipes documentation!
+
+To get started have a look at the tutorials_ and then browse through the
+available `documented examples`_ to find something the better suits
+your needs!
+
+
+.. _tutorials: tutorials.html
+.. _documented examples: documented_examples.html
 
 .. toctree::
    :maxdepth: 1
@@ -16,9 +26,7 @@ Welcome to COSIMA Recipes's documentation!
    contributing
 
 
-Indices and tables
-==================
+Search
+======
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`

@@ -69,15 +69,41 @@ notebook as a base.
 Tips for making a good recipe
 ----------------------------
 
-As researchers, we often develop code as part of our research and most of the time the main aim of code development is to find answers to questions that have not yet been explored. Reproducibility may not always be considered as part of the code development process or be a priorty. If this is something that resonates with you, or if you would like to learn more about making your code shareable and reproducible, we are including some tips and good practices to help you achieve this. 
+As researchers, we often develop code as part of our research and most of
+the time the main aim of code development is to find answers to questions
+that have not yet been explored. Reproducibility may not always be considered
+as part of the code development process or be a priorty. If this is something
+that resonates with you, or if you would like to learn more about making your
+code shareable and reproducible, we are including some tips and good practices
+to help you achieve this. 
 
-1. Give the recipe a descriptive but generic title. Avoid being too specific as this will make it harder for other users to find code that matches their needs. For example, ``Computing pairwise distances between grid cells`` may be a better title than ``Computing distance between grid cells in the Southern Ocean and ice edge`` because the latter gives users the impression that the recipe is only relevant if they are looking at sea ice.
-2. Include a short introduction summarising what your script is expected to do. You can include some information of the inputs needed to run your script, the expected outputs, and the methods you are using to get there. As with the title, we also recommend that you keep your description as generic as possible.
-3. Give your variables and functions a descriptive name, so it is easy for users to read and follow your code. For example, ``mean_monthly_temperature_australia`` is better than ``temp``.
-4. Organising your recipe in smaller sections makes it easier for users to identify the part of your code that is relevant to them. 
-5. Make sure you document your recipe well. Do not be afraid to provide a small description of what each section of your code does and why you are doing it. This tells the users the purpose of running a particular section of your recipe.
+1. Give the recipe a descriptive but generic title. Avoid being too specific
+   as this will make it harder for other users to find code that matches their
+   needs. For example, ``Computing pairwise distances between grid cells`` may be
+   a better title than ``Computing distance between grid cells in the Southern
+   Ocean and ice edge`` because the latter gives users the impression that
+   the recipe is only relevant if they are looking at sea ice.
 
-Remember, these are only guidelines and not requirements for you to submit a recipe. If in doubt, send us a pull request and we will happily provide feedback.
+2. Include a short introduction summarising what your script is expected to
+   do. You can include some information of the inputs needed to run your script,
+   the expected outputs, and the methods you are using to get there. As with
+   the title, we also recommend that you keep your description as generic as
+   possible.
+
+3. Give your variables and functions a descriptive name, so it is easy for
+   users to read and follow your code. For example, ``mean_monthly_temperature_australia``
+   is better than ``temp``.
+
+4. Organising your recipe in smaller sections makes it easier for users to
+   identify the part of your code that is relevant to them. 
+
+5. Make sure you document your recipe well. Do not be afraid to provide a
+   small description of what each section of your code does and why you are
+   doing it. This tells the users the purpose of running a particular section
+   of your recipe.
+
+Remember, these are only guidelines and not requirements for you to submit a recipe.
+If in doubt, send us a pull request and we will happily provide feedback.
 
 
 Submitting a Pull Request
@@ -96,8 +122,8 @@ new branch onto your fork, you'll be able to `create a pull request`_.
 Reviewing existing Pull Requests
 --------------------------------
 
-Another very useful way to contribute to COSIMA Recipes is to review existing
-Pull Requests. Even if you don't have a new workflow to propose to the world,
+Another very useful way to contribute to COSIMA Recipes is to review `existing
+Pull Requests`_. Even if you don't have a new workflow to propose to the world,
 you might be an expert in some part of the process and your feedback is valuable!
 Take a look at the `existing Pull Requests`_ to see if anything takes your fancy.
 There are two ways to interact with these, depending on what sort of feedback
@@ -110,5 +136,45 @@ metadata and structure, it's not very pleasant to review them through a file dif
 Instead, the *review-notebook-app* bot will leave a comment with a **ReviewNB**
 button on every Pull Request: this lets you leave your feedback on a representation
 of the notebook itself.
+
+Some tips for reviewing
+^^^^^^^^^^^^^^^^^^^^^^^
+
+* Does the PR have a concise description of the proposed changes? If not, request it.
+* Have a look at the proposed changes. Do they make sense?
+* Is the proposed code clean and clear?
+* Are the proposed changes documented or commented? Methods should come with docstrings. But also documentation in the form of Markdown surrounding code is very appreciated. Code should be as generalisable as possible. We prefer documentation and code with variables and method names that are verbose and read like English. For example, the code below:
+
+
+.. code-block:: python
+
+    def znl_mean(ar):
+        return ar.mean('xt_ocean')
+
+has a few issues. First, the names don't read English. The method does not have any documentation nor is self-explanatory. Further, the method assumes that ``xt_ocean`` is a coordinate of the data array.
+
+A much better version, free from all the cons mentioned above, is:
+
+.. code-block:: python
+
+    def zonal_mean(dataarray):
+        '''
+        Returns the (numerical) zonal mean of `dataarray`, i.e., its mean along latitude circles.
+
+            Parameters:
+                    dataarray (xarray.dataarray): An xarray dataarray
+
+            Returns:
+                    xarray.dataarray: The (numerical) zonal mean of `dataarray`
+        '''
+
+        return dataarray.cf.mean('longitude')
+     
+
+* Ensure that the notebook runs! To do that:
+
+  - Clone the repository or the fork that the PR was made from;
+  - Checkout the appropriate branch;
+  - Ensure that the notebook runs when a **new** kernel is launched. Ensure that all cells run in sequential order, and that all cell outputs are evaluated.
 
 .. _existing Pull Requests: https://github.com/COSIMA/cosima-recipes/pulls
