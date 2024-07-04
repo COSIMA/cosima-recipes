@@ -1,7 +1,7 @@
 Contributing to COSIMA Recipes
 ==============================
 
-There are three main types of recipes, and we welcome contributions to any and
+There are two main types of recipes, and we welcome contributions to any and
 all of these:
 
 Tutorials
@@ -9,19 +9,11 @@ Tutorials
    to be an introduction to the `COSIMA Cookbook`_ and how to work with it,
    but not for it to document any scientific analysis.
 
-Documented Examples
+Examples
    For demonstrating scientific uses of the Cookbook, one of your options
-   is to create a *documented example*. As the name suggests, these should be
-   a high-quality, well-documented workflow. Ideally, these showcase
-   best-practice uses of the Cookbook and other libraries such as `xarray`_.
-
-Contributed Examples
-   Of course, it can be a bit more effort to fully document your workflow,
-   or you might not know the best practices. Instead of letting these poor
-   notebooks languish, we welcome these as *contributed examples*! The noble
-   goal would be for all of these to eventually be promoted to *documented
-   examples*, but it is still better for them to be widely available so people
-   don't have to constantly rediscover the same diagnostics.
+   is to create an *example*. These should be high-quality, well-documented workflow
+   examples. Ideally, these showcase best-practice uses of the Cookbook and other
+   libraries such as `xarray`_.
 
 .. _COSIMA Cookbook: https://github.com/COSIMA/cosima-cookbook
 .. _xarray: https://xarray.dev/
