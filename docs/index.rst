@@ -9,19 +9,18 @@ COSIMA Recipes documentation
 Welcome to the COSIMA Recipes documentation!
 
 To get started have a look at the tutorials_ and then browse through the
-available `documented examples`_ to find something the better suits
-your needs!
+available examples_ to find something the better suits your needs!
 
 
 .. _tutorials: tutorials.html
-.. _documented examples: documented_examples.html
+.. _documented examples: examples.html
 
 .. toctree::
    :maxdepth: 1
    :caption: Contents:
 
    tutorials
-   documented_examples
+   examples
    guidelines
    contributing
 
