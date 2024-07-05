@@ -31,6 +31,3 @@ Don't miss out the <a href="https://nbviewer.jupyter.org/github/COSIMA/cosima-re
 
 ### ACCESS-OM2-GMD-Paper-Figs
 Νotebooks to reproduce (as far as possible) the figures from the [ACCESS-OM2 model announcement paper (*GMD*, 2020)](https://doi.org/10.5194/gmd-13-401-2020). These notebooks are mostly uncommented, but they should be functional. They are intended to demonstrate methods to undertake the calculations used in the paper.
-
-### Contributed Examples
-Α number of examples which are valuable, but not commented sufficiently to make it into DocumentedExamples. An aspirational goal is to eliminate this class of example.

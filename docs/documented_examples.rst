@@ -1,10 +1,10 @@
-Documented Examples
-===================
+Examples
+========
 
 .. nbgallery::
-   :caption: Documented Examples
-   :name: documented-example-gallery
+   :caption: Examples
+   :name: example-gallery
    :glob:
    :hidden:
 
-   DocumentedExamples/*
+   Examples/*
