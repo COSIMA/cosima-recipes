@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'COSIMA Recipes'
-copyright = '2023, COSIMA'
+copyright = '2024, COSIMA'
 author = 'COSIMA'
 
 
