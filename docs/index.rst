@@ -13,7 +13,7 @@ available examples_ to find something the better suits your needs!
 
 
 .. _tutorials: tutorials.html
-.. _documented examples: examples.html
+.. _examples: examples.html
 
 .. toctree::
    :maxdepth: 1
