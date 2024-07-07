@@ -111,7 +111,7 @@ Submitting a Pull Request
 
 Make sure you have staged and committed the changes to your notebook to your
 local clone of COSIMA Recipes. You'll need to then synchronise these changes
-to GitHub to be able to propose them in a Pull Request. If you haven't already,
+to GitHub to be able to propose them in a pull request. If you haven't already,
 `create a fork`_ of the COSIMA Recipes repository. Once you have pushed your
 new branch onto your fork, you'll be able to `create a pull request`_.
 
@@ -123,12 +123,12 @@ Reviewing existing Pull Requests
 --------------------------------
 
 Another very useful way to contribute to COSIMA Recipes is to review `existing
-Pull Requests`_. Even if you don't have a new workflow to propose to the world,
+pull requests`_. Even if you don't have a new workflow to propose to the world,
 you might be an expert in some part of the process and your feedback is valuable!
 
 **Everyone can review and comment on pull requests.**
 
-Take a look at the `existing Pull Requests`_ to see if anything takes your fancy.
+Take a look at the `existing pull requests`_ to see if anything takes your fancy.
 There are two ways to interact with these, depending on what sort of feedback
 you'd like to provide.
 
@@ -140,13 +140,13 @@ Awkwardly, notebooks contain a lot of extra
 metadata and structure, so it's not very pleasant to review them through a file diff!
 
 Instead, the *review-notebook-app* bot will leave a comment with a **ReviewNB**
-button on every Pull Request: this lets you leave your feedback on a representation
+button on every pull request: this lets you leave your feedback on a representation
 of the notebook itself.
 
 Some tips for reviewing
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-* Does the PR have a concise description of the proposed changes? If not, request it.
+* Does the pull request have a concise description of the proposed changes? If not, request it.
 * Have a look at the proposed changes. Do they make sense?
 * Is the proposed code clean and clear?
 * Are the proposed changes documented or commented? Methods should come with docstrings. But also documentation in the form of Markdown surrounding code is very appreciated. Code should be as generalisable as possible. We prefer documentation and code with variables and method names that are verbose and read like English. For example, the code below:
@@ -178,20 +178,21 @@ A much better version, free from all the cons mentioned above, is:
 
 * Ensure that the notebook runs! To do that:
 
-  - Clone the repository or the fork that the PR was made from;
+  - Clone the repository or the fork that the pull request was made from;
   - Checkout the appropriate branch;
   - Ensure that the notebook runs when a **new** kernel is launched. Ensure that all cells run in sequential order, and that all cell outputs are evaluated.
 
 .. _existing Pull Requests: https://github.com/COSIMA/cosima-recipes/pulls
 
+Do you need more help with the steps above? Read below:
 
 To clone a pull request locally
 +++++++++++++++++++++++++++++++
 
 If you want to test pull requests locally (i.e., to compile or run the code),
-you will need to download the pull request branch. You can do this either by cloning the branch from the pull request.
+you need to download the pull request branch. You can do this either by cloning the branch from the pull request.
 
-In this context "locally" means somewhere you can run the code - this is probably on Gadi, but may also be on a local machine.
+In this context "locally" means somewhere you can run the code -- this is probably on Gadi, but may also be on a local machine.
 
 If you are using ssh keys for command line authentication:
 
