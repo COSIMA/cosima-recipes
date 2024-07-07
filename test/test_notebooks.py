@@ -76,5 +76,5 @@ def test_Tutorials(notebook_filename):
         ("Zonally_Averaged_Global_Meridional_Overturning_Circulation.ipynb"),
         ("NearestNeighbourDistance.ipynb"),
     ])
-def test_DocumentedExamples(notebook_filename):
-    run_notebook("DocumentedExamples/" + notebook_filename)
+def test_Examples(notebook_filename):
+    run_notebook("Examples/" + notebook_filename)
