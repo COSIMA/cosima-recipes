@@ -6,9 +6,9 @@
 </a>
 
 # cosima-recipes
-Example recipes using the [`cosima-cookbook`](https://github.com/COSIMA/cosima-cookbook) infrastructure.
+Example recipes for analysing ocean-sea ice model output.
 
-To **Get Started** with the `cosima-cookbook`, clone this repository locally, probably best in your local space on one of the NCI HPC machines so you can have access to model output. The repository includes a bunch of examples with which you can begin to construct your own analysis code.
+To **Get Started** clone this repository locally, probably best in your local space on one of the NCI HPC machines so you can have access to model output. The repository includes a bunch of examples with which you can begin to construct your own analysis code.
 
 ### Contributing
 
@@ -22,12 +22,10 @@ Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explainin
 
 ### [Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials.html)
 
-The notebook `ACCESS-NRI_Intake_Catalog.ipynb` outlines the basic philosophy of the Intake catalog. This is the best place to start if you are not familiar with the Intake catalog. Also included here are some other tutorials, either related to the cookbook (e.g., `Make_Your_Own_Database.ipynb`) or more general (`Making_Maps_with_Cartopy.ipynb`).
-
-Don't miss out the <a href="https://nbviewer.jupyter.org/github/COSIMA/cosima-recipes/blob/master/Tutorials/Using_Explorer_tools.ipynb" target="_blank">tutorial</a> about using `cosima-cookbook`'s `explore` submodule to find out about available experiments and variables in a database. (The `explorer` tutorial is better viewed either via nbviewer or by running the jupyter notebook yourself.)
+The notebook `ACCESS-NRI_Intake_Catalog.ipynb` outlines the basic philosophy of the Intake catalog. This is the best place to start if you are not familiar with the Intake catalog. Also included here are some other tutorials, either related to the _deprecated_ `cosima-cookbook` (e.g., `Make_Your_Own_Database.ipynb`) or more general ones (e.g., `Making_Maps_with_Cartopy.ipynb`).
 
 ### [Examples](https://cosima-recipes.readthedocs.io/en/latest/examples.html)
-Νotebooks for simple and not-so-simple diagnostics which are well-documented and explained. If you can find an example that suits your purpose, this is the best place to start.
+Νotebooks for simple and not-so-simple diagnostics which are well-documented and explained. If you can find an example that suits your purpose then it's a good idea to use this as a starting point to develop the analysis you'd like to do.
 
 ### ACCESS-OM2-GMD-Paper-Figs
 Νotebooks to reproduce (as far as possible) the figures from the [ACCESS-OM2 model announcement paper (*GMD*, 2020)](https://doi.org/10.5194/gmd-13-401-2020). These notebooks are mostly uncommented, but they should be functional. They are intended to demonstrate methods to undertake the calculations used in the paper.
