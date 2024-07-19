@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'COSIMA Recipes'
-copyright = '2023, COSIMA'
+copyright = '2024, COSIMA'
 author = 'COSIMA'
 
 
@@ -44,7 +44,7 @@ html_static_path = ['_static']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
     '_build', 'Thumbs.db', '.DS_Store',
-    'DocumentedExamples/README.rst', 'Tutorials/README.rst',
+    'Examples/README.rst', 'Tutorials/README.rst',
     'Tutorials/Template_For_Notebooks.ipynb'
 ]
 
