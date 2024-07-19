@@ -39,6 +39,7 @@ def run_notebook(notebook_filename):
         ("Spatial_selection.ipynb"),
         ("Submitting_analysis_jobs_to_gadi.ipynb"),
         ("Template_For_Notebooks.ipynb"),
+        ("Using_Intake_Catalog.ipynb"),
         ("Using_Explorer_tools.ipynb"), 
     ])
 def test_Tutorials(notebook_filename):
@@ -65,6 +66,7 @@ def test_Tutorials(notebook_filename):
         ("Querying_Scalar_Quantities_and_Annually_Averaged_Timeseries.ipynb"),
         ("Regridding.ipynb"),
         ("RelativeVorticity.ipynb"),
+        ("SeaIce_Obs_Model_Compare.ipynb"),
         ("SeaIce_Plot_Example.ipynb"),
         #("SeaIceSeasonality_DFA.ipynb"), # Does not run
         ("Surface_Water_Mass_Transformation.ipynb"),
@@ -74,5 +76,5 @@ def test_Tutorials(notebook_filename):
         ("Zonally_Averaged_Global_Meridional_Overturning_Circulation.ipynb"),
         ("NearestNeighbourDistance.ipynb"),
     ])
-def test_DocumentedExamples(notebook_filename):
-    run_notebook("DocumentedExamples/" + notebook_filename)
+def test_Examples(notebook_filename):
+    run_notebook("Examples/" + notebook_filename)
