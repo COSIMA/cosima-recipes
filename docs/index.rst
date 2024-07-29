@@ -3,24 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-COSIMA Recipes documentation
-==============================
+COSIMA Cookbook
+===============
 
-Welcome to the COSIMA Recipes documentation!
+Welcome to the COSIMA Cookbook! 
+
+This repository consists a Cookbook of Recipes 👩🏽‍🍳👨🏻‍🍳.
+We explain: a "recipe" here is an example of a model output (or observational dataset) analysis that we can perform.
+Each "recipe" consists of a self-contained, and self-documented Jupyter notebook.
+All the recipes combined form a cookbook 📒!
 
 To get started have a look at the tutorials_ and then browse through the
-available examples_ to find something the better suits your needs!
+available recipes_ to find something the better suits your needs!
 
 
 .. _tutorials: tutorials.html
-.. _examples: examples.html
+.. _recipes: recipes.html
 
 .. toctree::
    :maxdepth: 1
    :caption: Contents:
 
    tutorials
-   examples
+   recipes
    guidelines
    contributing
 

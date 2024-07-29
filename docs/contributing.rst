@@ -1,17 +1,18 @@
-Contributing to COSIMA Recipes
-==============================
+Contributing to COSIMA Cookbook
+===============================
 
-There are two main types of recipes, and we welcome contributions to any and
-all of these:
+There are two main types of recipes that the cookbook includes and we welcome contributions
+to any of them:
 
 Tutorials
    *Tutorials* are the most comprehensive kind of recipe. We intend for these
-   to be an introduction to the `COSIMA Cookbook`_ and how to work with it,
-   but not for it to document any scientific analysis.
+   to be an introduction to the tools we use, e.g., the Intake Catalog, and how to
+   work with it, or to cartopy package. The tutorials should not focus on documenting
+   any scientific analysis.
 
-Examples
+Recipes
    For demonstrating scientific uses of the Cookbook, one of your options
-   is to create an *example*. These should be high-quality, well-documented workflow
+   is to create a *recipe*. These should be high-quality, well-documented workflow
    examples. Ideally, these showcase best-practice uses of the Cookbook and other
    libraries such as `xarray`_.
 
@@ -22,7 +23,7 @@ Examples
 Getting started with git
 ------------------------
 
-Development of the COSIMA Recipes is coordinated through `GitHub`_, so you'll
+Development of the COSIMA Cookbook is coordinated through `GitHub`_, so you'll
 need to know how to work with the distributed version control software git to
 be able to contribute back. A good set of resources for getting started with
 git and GitHub is available on the `ACCESS-NRI Training`_ portal.
@@ -36,12 +37,12 @@ Working on your recipe
 
 In most cases, you'll want to be working on your recipes directly on HPC
 infrastructure, such as `NCI`_. In this case, you should be familiar with
-`running COSIMA Recipes at NCI`_, and particularly with running `on the ARE`_.
-These guides will take you through cloning the COSIMA Recipes repository and
-working with notebooks to perform your analysis. Make use of git by *branching*
-and *committing* (as described on the `GitHub git cheat sheet`_, for example).
-You can interact with git through a terminal on your ARE session, or through a
-direct connection to Gadi.
+`running a Cookbook recipe at NCI`_, and particularly with running `on the ARE`_.
+These guides will take you through cloning the Cookbook repository (which is 
+called `cosima-recipes`) and working with notebooks to perform your analysis.
+Make use of git by *branching* and *committing* (as described on the
+`GitHub git cheat sheet`_, for example). You can interact with git through a
+terminal on your ARE session, or through a direct connection to Gadi.
 
 When you have developed your notebook to the point where you'd like to
 contribute it to the main COSIMA Recipes repository, continue to the next
@@ -52,7 +53,7 @@ people might not have to duplicate the full process if they can use your
 notebook as a base.
 
 .. _NCI: https://nci.org.au/
-.. _running COSIMA Recipes at NCI: https://github.com/COSIMA/cosima-cookbook/wiki/Beginners-Guide-to-the-COSIMA-Cookbook#running-cosima-recipes-at-nci
+.. _running a Cookbook recipe at NCI: https://github.com/COSIMA/cosima-cookbook/wiki/Beginners-Guide-to-the-COSIMA-Cookbook#running-cosima-recipes-at-nci
 .. _on the ARE: https://github.com/COSIMA/cosima-cookbook/wiki/How-to-use-COSIMA-Cookbook-on-the-ARE-@-NCI
 .. _GitHub git cheat sheet: https://training.github.com/downloads/github-git-cheat-sheet/
 .. _ACCESS-Hive Forum: https://forum.access-hive.org.au/
@@ -64,7 +65,7 @@ Tips for making a good recipe
 As researchers, we often develop code as part of our research and most of
 the time the main aim of code development is to find answers to questions
 that have not yet been explored. Reproducibility may not always be considered
-as part of the code development process or be a priorty. If this is something
+as part of the code development process or be a priority. If this is something
 that resonates with you, or if you would like to learn more about making your
 code shareable and reproducible, we are including some tips and good practices
 to help you achieve this. 
