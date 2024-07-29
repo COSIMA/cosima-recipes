@@ -8,6 +8,7 @@
 # cosima-recipes
 
 This repository consists a Cookbook of Recipes 👩🏽‍🍳👨🏻‍🍳.
+
 We explain: a "recipe" here is an example of a model output (or observational dataset) analysis that we can perform.
 Each "recipe" consists of a self-contained, and self-documented Jupyter notebook.
 All the recipes combined form a cookbook 📒!
