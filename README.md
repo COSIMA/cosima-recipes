@@ -6,7 +6,11 @@
 </a>
 
 # cosima-recipes
-This is a collection of example recipes and tutorials on analysing Ocean and SeaIce model output produced by [COSIMA: Consortium for Ocean-Sea Ice Modelling in Australia](http://cosima.org.au/) and its members. Most examples use output from the [ACCESS-OM2 model](https://doi.org/10.5194/gmd-13-401-2020), while some also use results from MOM6 configurations and remote sensing observations. To access the data used in these recipes you need an account and project with the Australian based [National Computational Infrastructure (NCI)](https://nci.org.au/)
+A collection of example recipes and tutorials on analysing ocean and sea ice model output produced by the [Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA)](http://cosima.org.au/).
+
+Most examples use output from the [ACCESS-OM2 model](https://doi.org/10.5194/gmd-13-401-2020), while some also use results from configurations of the [Modular Ocean Model 6 (MOM6)](https://github.com/mom-ocean/MOM6) and remote sensing observations.
+
+To access the data used in these recipes you need an account with the Australian-based [National Computational Infrastructure (NCI)](https://nci.org.au/).
 
 To **get started** with `cosima-recipes`, clone this repository in your local space on one of the NCI HPC machines so you can have access to model output. You should then be able to run these recipes through an [Australian Research Environment (ARE)](https://are.nci.org.au/) JupyterLab session running python. You need to join projects _hh5, xp65, ik11, cj50_ and _ol01_ to run the recipes and acccess the data analysed.
 
