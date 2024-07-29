@@ -13,17 +13,18 @@ Tutorials
 Recipes
    For demonstrating scientific uses of the Cookbook, one of your options
    is to create a *recipe*. These should be high-quality, well-documented workflow
-   examples. Ideally, these showcase best-practice uses of the Cookbook and other
-   libraries such as `xarray`_.
+   examples. Ideally, these showcase best-practice uses of the libraries such as `xarray`_,
+   `cf-xarray`_, `pint`, etc.
 
-.. _COSIMA Cookbook: https://github.com/COSIMA/cosima-cookbook
 .. _xarray: https://xarray.dev/
+.. _cf-xarray: https://cf-xarray.readthedocs.io/en/latest/
+.. _pint: https://pint.readthedocs.io/en/stable/
 
 
 Getting started with git
 ------------------------
 
-Development of the COSIMA Cookbook is coordinated through `GitHub`_, so you'll
+Development of the Cookbook of Recipes is done in through `GitHub`_, so you'll
 need to know how to work with the distributed version control software git to
 be able to contribute back. A good set of resources for getting started with
 git and GitHub is available on the `ACCESS-NRI Training`_ portal.
@@ -38,11 +39,12 @@ Working on your recipe
 In most cases, you'll want to be working on your recipes directly on HPC
 infrastructure, such as `NCI`_. In this case, you should be familiar with
 `running a Cookbook recipe at NCI`_, and particularly with running `on the ARE`_.
-These guides will take you through cloning the Cookbook repository (which is 
-called `cosima-recipes`) and working with notebooks to perform your analysis.
-Make use of git by *branching* and *committing* (as described on the
-`GitHub git cheat sheet`_, for example). You can interact with git through a
-terminal on your ARE session, or through a direct connection to Gadi.
+These guides will take you through cloning the Cookbook repository (which is,
+a bit confusingly, called `cosima-recipes`_) and working with notebooks to
+perform your analysis. Make use of git by *branching* and *committing*
+(as described on the `GitHub git cheat sheet`_, for example).
+You can interact with git through a terminal on your ARE session, or through
+a direct connection to Gadi.
 
 When you have developed your notebook to the point where you'd like to
 contribute it to the main COSIMA Recipes repository, continue to the next
@@ -53,6 +55,7 @@ people might not have to duplicate the full process if they can use your
 notebook as a base.
 
 .. _NCI: https://nci.org.au/
+.. _cosima-recipes: https://github.com/COSIMA/cosima-recipes
 .. _running a Cookbook recipe at NCI: https://github.com/COSIMA/cosima-cookbook/wiki/Beginners-Guide-to-the-COSIMA-Cookbook#running-cosima-recipes-at-nci
 .. _on the ARE: https://github.com/COSIMA/cosima-cookbook/wiki/How-to-use-COSIMA-Cookbook-on-the-ARE-@-NCI
 .. _GitHub git cheat sheet: https://training.github.com/downloads/github-git-cheat-sheet/
@@ -77,7 +80,7 @@ to help you achieve this.
    Ocean and ice edge`` because the latter gives users the impression that
    the recipe is only relevant if they are looking at sea ice.
 
-2. Include a short introduction summarising what your script is expected to
+2. Include a short introduction summarising what your recipe is expected to
    do. You can include some information of the inputs needed to run your script,
    the expected outputs, and the methods you are using to get there. As with
    the title, we also recommend that you keep your description as generic as
@@ -85,7 +88,8 @@ to help you achieve this.
 
 3. Give your variables and functions a descriptive name, so it is easy for
    users to read and follow your code. For example, ``mean_monthly_temperature_australia``
-   is better than ``temp``.
+   is better than ``temp``. Of course, if you overdo it with being verbose
+   it could be cumbersome, e.g., ``mean_monthly_temperature_over_east_australia_for_the_year_that_bushfires_were_a_big_issue``.
 
 4. Organising your recipe in smaller sections makes it easier for users to
    identify the part of your code that is relevant to them. 
@@ -103,9 +107,9 @@ Submitting a Pull Request
 -------------------------
 
 Make sure you have staged and committed the changes to your notebook to your
-local clone of COSIMA Recipes. You'll need to then synchronise these changes
+local clone of the repository. You'll need to then synchronise these changes
 to GitHub to be able to propose them in a pull request. If you haven't already,
-`create a fork`_ of the COSIMA Recipes repository. Once you have pushed your
+`create a fork`_ of the repository. Once you have pushed your
 new branch onto your fork, you'll be able to `create a pull request`_.
 
 .. _create a fork: https://docs.github.com/en/get-started/quickstart/fork-a-repo
@@ -115,7 +119,7 @@ new branch onto your fork, you'll be able to `create a pull request`_.
 Reviewing existing Pull Requests
 --------------------------------
 
-Another very useful way to contribute to COSIMA Recipes is to review `existing
+Another very useful way to contribute to the Cookbook of Recipes is to review `existing
 pull requests`_. Even if you don't have a new workflow to propose to the world,
 you might be an expert in some part of the process and your feedback is valuable!
 
