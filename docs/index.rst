@@ -8,10 +8,10 @@ COSIMA Cookbook
 
 Welcome to the COSIMA Cookbook! 
 
-This repository is a Cookbook of Recipes 👩🏽‍🍳👨🏻‍🍳.
+This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
 
-We explain: a "recipe" here is an example of a model output (or observational dataset) analysis that we can perform.
-Each "recipe" consists of a self-contained, and self-documented Jupyter notebook.
+We explain: a "recipe" here is an example an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
+Each "recipe" comes in a self-contained and well-documented Jupyter notebook.
 All the recipes combined form a cookbook 📒!
 
 Happy cooking! 😉 🥙 🍱 🍲

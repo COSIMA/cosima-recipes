@@ -7,10 +7,10 @@
 
 # cosima-recipes
 
-This repository consists a Cookbook of Recipes 👩🏽‍🍳👨🏻‍🍳.
+This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
 
-We explain: a "recipe" here is an example of a model output (or observational dataset) analysis that we can perform.
-Each "recipe" consists of a self-contained, and self-documented Jupyter notebook.
+We explain: a "recipe" here is an example an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
+Each "recipe" comes in a self-contained and well-documented Jupyter notebook.
 All the recipes combined form a cookbook 📒!
 
 To **Get Started**, clone this repository locally, probably best in your local space on one of the NCI HPC machines so you can have access to model output. The repository includes a bunch of recipes (=examples) with which you can begin to construct your own analysis code.
