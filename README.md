@@ -17,12 +17,11 @@ To **Get Started**, clone this repository locally, probably best in your local s
 
 ### Contributing
 
-If you made a recipe that you want to share you are more than welcome to!
-
-Do you have a recipe for analysing something that is not already included in this cookbook?
-Please consider **contributing your recipe back to the repository**.
-We'd be delighted to expand our cookbook with more recipes.
-We will also guide you and help you through with submitting your contribution.
+Have you made a recipe for analysing something that is not already included in this cookbook?
+You are more than welcome to share it and include it in the cookbook!
+Consider **contributing your recipe back to the repository**.
+We are always delighted to expand our cookbook with more recipes.
+If the process of contributing to the repository sounds a bit intimidating to you, rest assured that we will guide you and help you with submitting your contribution.
 
 To make a contribution follow the steps laid out in the [beginner's guide on how to contribute](
 https://cosima-recipes.readthedocs.io/en/latest/contributing.html). If they sound intimidating then don't worry!
