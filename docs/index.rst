@@ -8,13 +8,16 @@ COSIMA Cookbook
 
 Welcome to the COSIMA Cookbook! 
 
-This repository consists a Cookbook of Recipes 👩🏽‍🍳👨🏻‍🍳.
+This repository is a Cookbook of Recipes 👩🏽‍🍳👨🏻‍🍳.
+
 We explain: a "recipe" here is an example of a model output (or observational dataset) analysis that we can perform.
 Each "recipe" consists of a self-contained, and self-documented Jupyter notebook.
 All the recipes combined form a cookbook 📒!
 
+Happy cooking! 😉 🥙 🍱 🍲
+
 To get started have a look at the tutorials_ and then browse through the
-available recipes_ to find something the better suits your needs!
+available recipes_ to find something the better suits your 'taste' (i.e., your needs)!
 
 
 .. _tutorials: tutorials.html
