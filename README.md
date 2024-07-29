@@ -12,9 +12,9 @@ Most examples use output from the [ACCESS-OM2 model](https://doi.org/10.5194/gmd
 
 To access the data used in these recipes you need an account with the Australian-based [National Computational Infrastructure (NCI)](https://nci.org.au/).
 
-To **get started** with `cosima-recipes`, clone this repository in your local space on one of the NCI HPC machines so you can have access to model output. You should then be able to run these recipes through an [Australian Research Environment (ARE)](https://are.nci.org.au/) JupyterLab session running python. You need to join projects _hh5, xp65, ik11, cj50_ and _ol01_ to run the recipes and acccess the data analysed.
+To **get started** with `cosima-recipes`, clone this repository in your local space on one of the NCI HPC machines so you can have access to model output. You should then be able to run these recipes through an [Australian Research Environment (ARE)](https://are.nci.org.au/) JupyterLab session running python. You need to join projects _hh5_, _xp65_, _ik11_, _cj50_ and _ol01_ to run the recipes and acccess the data analysed.
 
-When starting ARE, include the projects in the _Storage_ line: _gdata/xp65+gdata/ik11+gdata/cj50+gdata/hh5+gdata/oi10_ as well as your own project. In _Module directories_, set _/g/data/hh5/public/modules_ and in _Modules_ set _conda/analysis3_.
+When starting ARE, include the projects in the _Storage_ line: `gdata/xp65+gdata/ik11+gdata/cj50+gdata/hh5+gdata/oi10` as well as your own project. In _Module directories_, set `/g/data/hh5/public/modules` and in _Modules_ set `conda/analysis3`. Use a _Compute Size_ of `large` or greater.
 
 If you have never used the NCI see these [first steps instructions](https://access-hive.org.au/getting_started/first_steps/) and [getting started with ARE](https://access-hive.org.au/getting_started/are/).
 
@@ -28,7 +28,7 @@ Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explainin
 
 ## Contents
 
-We are in the process of transition these recipes from using [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure to an _intake catalogue_, so you will find recipes may use either method to access model data. If you are halfway through a project using the cosima-cookbook and looking for resources, this [tag](https://github.com/COSIMA/cosima-recipes/tree/cosima_cookbook) marks the repository before most recipes were transitioned.
+We are in the process of transitioning these recipes from using [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure to an _intake catalogue_, so you will find recipes may use either method to access model data. If you are halfway through a project using the cosima-cookbook and looking for resources, this [tag](https://github.com/COSIMA/cosima-recipes/tree/cosima_cookbook) marks the repository before most recipes were transitioned.
 
 ### [Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials.html)
 
