@@ -14,7 +14,7 @@ Recipes
    For demonstrating scientific uses of the Cookbook, one of your options
    is to create a *recipe*. These should be high-quality, well-documented workflow
    examples. Ideally, these showcase best-practice uses of the libraries such as `xarray`_,
-   `cf-xarray`_, `pint`, etc.
+   `cf-xarray`_, `pint`_, etc.
 
 .. _xarray: https://xarray.dev/
 .. _cf-xarray: https://cf-xarray.readthedocs.io/en/latest/
