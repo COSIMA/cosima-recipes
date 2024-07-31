@@ -1,13 +1,13 @@
-Contributing to COSIMA Cookbook
-===============================
+Contributing to the Cookbook
+============================
 
-There are two main types of recipes that the cookbook includes and we welcome contributions
+There are two main types of recipes that the Cookbook includes and we welcome contributions
 to any of them:
 
 Tutorials
    *Tutorials* are the most comprehensive kind of recipe. We intend for these
    to be an introduction to the tools we use, e.g., the Intake Catalog, and how to
-   work with it, or to cartopy package. The tutorials should not focus on documenting
+   work with it, or the cartopy package. The tutorials should steer away from documenting
    any scientific analysis.
 
 Recipes
