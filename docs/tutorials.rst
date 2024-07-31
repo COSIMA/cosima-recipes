@@ -2,8 +2,8 @@ Tutorials
 =========
 
 .. nbgallery::
-   :caption: Tutorials
    :name: tutorial-gallery
+   :caption: 
    :glob:
    :hidden:
 
