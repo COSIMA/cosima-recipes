@@ -63,7 +63,7 @@ notebook as a base.
 
 
 Tips for making a good recipe
-----------------------------
+-----------------------------
 
 As researchers, we often develop code as part of our research and most of
 the time the main aim of code development is to find answers to questions
