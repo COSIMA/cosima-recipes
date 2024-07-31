@@ -5,9 +5,10 @@
     <img alt="latest docs" src="https://img.shields.io/badge/docs-latest-blue.svg">
 </a>
 
-# cosima-recipes
+# COSIMA Cookbook
 
-This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳. A collection of recipes and tutorials for analysing ocean and sea ice model output produced by the [Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA)](http://cosima.org.au/).
+This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
+A collection of recipes and tutorials for analysing ocean and sea ice model output produced by the [Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA)](http://cosima.org.au/).
 
 We explain: a "recipe" here is an example an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
 Each "recipe" comes in a self-contained and well-documented Jupyter notebook.
