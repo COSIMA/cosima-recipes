@@ -2,7 +2,7 @@ Recipes
 =======
 
 .. nbgallery::
-   :caption: Recipes
+   :caption:  
    :name: recipe-gallery
    :glob:
    :hidden:
