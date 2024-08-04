@@ -48,4 +48,3 @@ If including external images (i.e. not plots generated in the code) in
 notebooks, place them in the ``images/`` directory next to the
 notebook. Use the syntax ``![image caption](images/image.png)`` to
 include the image in the notebook.
-
