@@ -38,7 +38,9 @@ Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explainin
 
 ## Contents
 
-We are in the process of transitioning these recipes from using [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure to an _intake catalogue_, so you will find recipes may use either method to access model data. If you are halfway through a project using the cosima-cookbook and looking for resources, this [tag](https://github.com/COSIMA/cosima-recipes/tree/cosima_cookbook) marks the repository before most recipes were transitioned.
+We are in the process of transitioning these recipes from using [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure to load model output to an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html). That said, you will find recipes that use either method to access model data.
+
+We strongly urge you to transition to _intake catalogue_ and (pretty please 🥺) help us with converting all the recipes to using that!
 
 ### [Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials.html)
 
