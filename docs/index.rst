@@ -31,6 +31,7 @@ available recipes_ to find something the better suits your 'taste' (i.e., your n
    recipes
    guidelines
    contributing
+   GitHub Repository <https://github.com/cosima/cosima-recipes>
 
 
 Search
