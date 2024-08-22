@@ -62,6 +62,7 @@ exclude_patterns = [
 
 nbsphinx_execute = "never"
 nbsphinx_thumbnails = {
+    "Tutorials/ACCESS-NRI_Intake_Catalog": "_static/thumbnails/intake.png",
     "Tutorials/Make_Your_Own_Database": "_static/thumbnails/database.png",
     "Tutorials/Submitting_analysis_jobs_to_gadi": "_static/thumbnails/gadi.png",
     "Tutorials/Using_Explorer_tools": "_static/thumbnails/explore.png",
