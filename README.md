@@ -22,7 +22,7 @@ To **get started**, clone this repository in your local space on one of the NCI 
 
 If you plan to use an ARE session, then remember to include the projects in the _Storage_ line: `gdata/xp65+gdata/ik11+gdata/cj50+gdata/hh5+gdata/ol01` as well as any of your own project you need access to. In _Module directories_, set `/g/data/hh5/public/modules` and in _Modules_ set `conda/analysis3`. Use a _Compute Size_ of `large` or greater.
 
-If you have never used the NCI see these [first steps instructions](https://access-hive.org.au/getting_started/first_steps/) and [getting started with ARE](https://access-hive.org.au/getting_started/are/).
+If you have never used the NCI see these [first steps instructions](https://access-hive.org.au/getting_started/) and [getting started with ARE](https://access-hive.org.au/getting_started/are/).
 
 ### Contributing
 
