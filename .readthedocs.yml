@@ -12,7 +12,7 @@ build:
     python: "3"
   jobs:
     post_checkout:
-      - cp -r DocumentedExamples/ docs/
+      - cp -r Recipes/ docs/
       - cp -r Tutorials/ docs/
 
 python:
