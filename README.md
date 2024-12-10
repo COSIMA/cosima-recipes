@@ -5,6 +5,10 @@
     <img alt="latest docs" src="https://img.shields.io/badge/docs-latest-blue.svg">
 </a>
 
+<a href="https://doi.org/10.5281/zenodo.14353853">
+    <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14353853.svg" alt="DOI">
+</a>
+
 # COSIMA Cookbook
 
 This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
@@ -64,4 +68,51 @@ We request that users of ACCESS-OM2 model [code](https://github.com/access-nri/a
 2. including an acknowledgement such as the following:
 
    *The authors thank the vibrant community of the Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA; [http://www.cosima.org.au](http://www.cosima.org.au)) for making the ACCESS-OM2 suite of models available at [https://github.com/COSIMA/access-om2](https://github.com/access-nri/access-om2).*
+
 3. let us know of any publications which use these models or data so we can add them to [our list](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ).
+
+
+## Citation
+
+If you use a recipe from the Cookbook for your research or teaching, or have based your analysis on one of the recipes, we would be grateful if you could cite:
+
+```bibtex@misc{cosima-cookbook,
+  author    = {Constantinou, Navid C. and
+               Hogg, Andy McC. and
+               Gibson, Angus and
+               Beucher, Romain and
+               Heerdegen, Aidan and
+               Steketee, Anton and
+               Holmes, Ryan M. and
+               Kiss, Andrew E. and
+               Morrison, Adele and
+               Fierro Arcos, Denisse and
+               Munroe, James and
+               Oliveira, Micael and
+               Yung, Claire and
+               Neme, Julia and
+               Ong, Ellie Q. Y. and
+               Doddridge, Edward and
+               Huneke, Wilma and
+               Schmidt, Christina and
+               Dias, Fabio Boeira and
+               Dawson, Hannah and
+               Jeffree, Jemma and
+               Bhagtani, Dhruv and
+               Vilela da Silva, Felipe and
+               Meijer, Jan Jaap and
+               Martínez Moreno, Josué and
+               White, Marc and
+               Auger, Matthis and
+               Moorman, Ruth and
+               Aguiar, Wilton and
+               Zika, Jan},
+  title     = {{COSIMA Cookbook: v0.1.0}},
+  month     = dec,
+  year      = 2024,
+  publisher = {Zenodo},
+  version   = {v0.1.0},
+  doi       = {10.5281/zenodo.14353853},
+  url       = {https://doi.org/10.5281/zenodo.14353853}
+}
+```
