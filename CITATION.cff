@@ -1,0 +1,127 @@
+cff-version: 1.2.0
+message: "If you use a recipe or based your analysis on a recipe, please cite it as below."
+- affiliation: The University of Melbourne
+  family-names: Constantinou
+  given-names: Navid C.
+  orcid: 0000-0002-8149-4094
+- affiliation: Australian National University
+  family-names: Hogg
+  given-names: Andy McC.
+  orcid: 0000-0001-5898-7635
+- affiliation: Australian National University
+  family-names: Gibson
+  given-names: Angus
+  orcid: 0000-0001-7577-3604
+- affiliation: Australian Earth-System Simulator
+  family-names: Beucher
+  given-names: Romain
+  orcid: 0000-0003-3891-5444
+- affiliation: ANU College of Science
+  family-names: Heerdegen
+  given-names: Aidan
+  orcid: 0000-0002-4481-4896
+- affiliation: ACCESS-NRI
+  family-names: Steketee
+  given-names: Anton
+  orcid: 0009-0002-9081-4106
+- affiliation: Bureau of Meteorology
+  family-names: Holmes
+  given-names: Ryan M.
+  orcid: 0000-0002-6799-9109
+- affiliation: Australian National University
+  family-names: Kiss
+  given-names: Andrew E.
+  orcid: 0000-0001-8960-9557
+- affiliation: Australian National University
+  family-names: Morrison
+  given-names: Adele
+  orcid: 0009-0003-5143-5020
+- family-names: Fierro Arcos
+  given-names: Denisse
+  orcid: 0000-0002-5039-6272
+- affiliation: 2i2c
+  family-names: Munroe
+  given-names: James
+  orcid: 0000-0001-9098-6309
+- affiliation: Australian National University
+  family-names: Oliveira
+  given-names: Micael
+- family-names: Yung
+  given-names: Claire
+  orcid: 0000-0002-0052-7668
+- affiliation: UNSW Sydney
+  family-names: Neme
+  given-names: Julia
+  orcid: 0000-0002-3573-996X
+- affiliation: UNSW Sydney
+  family-names: Ong
+  given-names: Ellie Q. Y.
+  orcid: 0000-0002-0392-7915
+- affiliation: University of Tasmania
+  family-names: Doddridge
+  given-names: Edward
+  orcid: 0000-0002-6097-5729
+- affiliation: Australian National University
+  family-names: Huneke
+  given-names: Wilma
+  orcid: 0000-0001-8624-365X
+- affiliation: UNSW Sydney
+  family-names: Schmidt
+  given-names: Christina
+- affiliation: University of New South Wales
+  family-names: Dias
+  given-names: Fabio Boeira
+- affiliation: University of Tasmania
+  family-names: Dawson
+  given-names: Hannah
+  orcid: 0000-0001-9113-1329
+- family-names: Jeffree
+  given-names: Jemma
+  orcid: 0000-0001-7190-7329
+- affiliation: Australian National University
+  family-names: Bhagtani
+  given-names: Dhruv
+  orcid: 0000-0002-1222-375X
+- affiliation: University of Tasmania
+  family-names: Vilela da Silva
+  given-names: Felipe
+- affiliation: Institute for Marine and Antarctic Studies
+  family-names: Meijer
+  given-names: Jan Jaap
+- affiliation: "Laboratoire d'Oc\xE9anographie Physique et Spatiale"
+  family-names: "Mart\xEDnez Moreno"
+  given-names: "Josu\xE9"
+  orcid: 0000-0002-8348-1588
+- affiliation: Australian Earth-System Simulator
+  family-names: White
+  given-names: Marc
+- affiliation: University of Tasmania
+  family-names: Auger
+  given-names: Matthis
+  orcid: 0000-0001-6228-5732
+- affiliation: California Institute of Technology
+  family-names: Moorman
+  given-names: Ruth
+  orcid: 0000-0001-5054-1559
+- affiliation: Australian National University
+  family-names: Aguiar
+  given-names: Wilton
+  orcid: 0000-0003-2453-9791
+- affiliation: UNSW Sydney
+  family-names: Zika
+  given-names: Jan
+  orcid: 0000-0003-3462-3559
+- affiliation: University of Tasmania
+  family-names: Spence
+  given-names: Paul
+  orcid: 0000-0001-5156-2204
+date-released: '2024-12-10'
+doi: 10.5281/zenodo.14353852
+identifiers:
+- type: swh
+  value: swh:1:dir:c02be9ddc6803a18b3e0b688204cd73794370d1e;origin=https://doi.org/10.5281/zenodo.14353852;visit=swh:1:snp:75a055d75450d51bf3b949843163703d586f79c2;anchor=swh:1:rel:aa9a1fa756d2152fd455ddfff38a3184108890f1;path=/
+license:
+- apache-2.0
+title: 'COSIMA Cookbook v0.1.0: A cookbook of recipes for analysing ocean and sea
+  ice model output'
+version: v0.1.0
