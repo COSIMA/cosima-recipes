@@ -3,904 +3,218 @@
    "license":"Apache-2.0",
    "creators":[
       {
-         "affiliations":[
-            {
-               "id":"edmo:4320",
-               "identifiers":[
-                  {
-                     "identifier":"edmo:4320",
-                     "scheme":"edmo"
-                  }
-               ],
-               "name":"The University of Melbourne"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Constantinou",
-            "given_name":"Navid C.",
-            "identifiers":[
-               {
-                  "identifier":"0000-0002-8149-4094",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Constantinou, Navid C.",
-            "type":"personal"
-         }
+         "affiliation":"University of Melbourne",
+         "name":"Navid C. Constantinou",
+         "orcid":"0000-0002-8149-4094",
+         "type":"ProjectLeader"
       },
       {
-         "affiliations":[
-            {
-               "name":"Australian National University"
-            },
-            {
-               "id":"03qhv9c02",
-               "identifiers":[
-                  {
-                     "identifier":"03qhv9c02",
-                     "scheme":"ror"
-                  }
-               ],
-               "name":"Australian Earth-System Simulator"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Hogg",
-            "given_name":"Andy McC.",
-            "identifiers":[
-               {
-                  "identifier":"0000-0001-5898-7635",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Hogg, Andy McC.",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Andy McC. Hogg",
+         "orcid":"0000-0001-5898-7635",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "name":"Australian National University"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Gibson",
-            "given_name":"Angus",
-            "identifiers":[
-               {
-                  "identifier":"0000-0001-7577-3604",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Gibson, Angus",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Angus Gibson",
+         "orcid":"0000-0001-7577-3604",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"019wvm592",
-               "identifiers":[
-                  {
-                     "identifier":"019wvm592",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1001.0",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0001 2180 7477",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"Australian National University"
-            },
-            {
-               "id":"03qhv9c02",
-               "identifiers":[
-                  {
-                     "identifier":"03qhv9c02",
-                     "scheme":"ror"
-                  }
-               ],
-               "name":"Australian Earth-System Simulator"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Beucher",
-            "given_name":"Romain",
-            "identifiers":[
-               {
-                  "identifier":"0000-0003-3891-5444",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Beucher, Romain",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Anton Steketee",
+         "orcid":"0009-0002-9081-4106",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"019wvm592",
-               "identifiers":[
-                  {
-                     "identifier":"019wvm592",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1001.0",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0001 2180 7477",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"Australian National University"
-            },
-            {
-               "id":"03qhv9c02",
-               "identifiers":[
-                  {
-                     "identifier":"03qhv9c02",
-                     "scheme":"ror"
-                  }
-               ],
-               "name":"Australian Earth-System Simulator"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Heerdegen",
-            "given_name":"Aidan",
-            "identifiers":[
-               {
-                  "identifier":"0000-0002-4481-4896",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Heerdegen, Aidan",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Romain Beucher",
+         "orcid":"0000-0003-3891-5444",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"019wvm592",
-               "identifiers":[
-                  {
-                     "identifier":"019wvm592",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1001.0",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0001 2180 7477",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"Australian National University"
-            },
-            {
-               "name":"Australian Earth-System Simulator"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Steketee",
-            "given_name":"Anton",
-            "identifiers":[
-               {
-                  "identifier":"0009-0002-9081-4106",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Steketee, Anton",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Max Proft",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "name":"Bureau of Meteorology"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Holmes",
-            "given_name":"Ryan M.",
-            "identifiers":[
-               {
-                  "identifier":"0000-0002-6799-9109",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Holmes, Ryan M.",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Aidan Heerdegen",
+         "orcid":"0000-0002-4481-4896",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "name":"Australian National University"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Kiss",
-            "given_name":"Andrew E.",
-            "identifiers":[
-               {
-                  "identifier":"0000-0001-8960-9557",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Kiss, Andrew E.",
-            "type":"personal"
-         }
+         "affiliation":"University of Tasmania",
+         "name":"Julia Neme",
+         "orcid":"0000-0002-3573-996X",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"019wvm592",
-               "identifiers":[
-                  {
-                     "identifier":"019wvm592",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1001.0",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0001 2180 7477",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"Australian National University"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Morrison",
-            "given_name":"Adele",
-            "identifiers":[
-               {
-                  "identifier":"0009-0003-5143-5020",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Morrison, Adele",
-            "type":"personal"
-         }
+         "affiliation":"Bureau of Meteorology",
+         "name":"Ryan M. Holmes",
+         "orcid":"0000-0002-6799-9109",
+         "type":"ProjectMember"
       },
       {
-         "person_or_org":{
-            "family_name":"Fierro Arcos",
-            "given_name":"Denisse",
-            "identifiers":[
-               {
-                  "identifier":"0000-0002-5039-6272",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Fierro Arcos, Denisse",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Adele Morrison",
+         "orcid":"0009-0003-5143-5020",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "name":"2i2c"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Munroe",
-            "given_name":"James",
-            "identifiers":[
-               {
-                  "identifier":"0000-0001-9098-6309",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Munroe, James",
-            "type":"personal"
-         }
+         "affiliation":"University of Tasmania",
+         "name":"Denisse Fierro-Arcos",
+         "orcid":"0000-0002-5039-6272",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"019wvm592",
-               "identifiers":[
-                  {
-                     "identifier":"019wvm592",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1001.0",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0001 2180 7477",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"Australian National University"
-            },
-            {
-               "id":"03qhv9c02",
-               "identifiers":[
-                  {
-                     "identifier":"03qhv9c02",
-                     "scheme":"ror"
-                  }
-               ],
-               "name":"Australian Earth-System Simulator"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Oliveira",
-            "given_name":"Micael",
-            "name":"Oliveira, Micael",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Andrew E. Kiss",
+         "orcid":"0000-0001-8960-9557",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"019wvm592",
-               "identifiers":[
-                  {
-                     "identifier":"019wvm592",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1001.0",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0001 2180 7477",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"Australian National University"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Yung",
-            "given_name":"Claire",
-            "identifiers":[
-               {
-                  "identifier":"0000-0002-0052-7668",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Yung, Claire",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Micael Oliveira",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"03r8z3t63",
-               "identifiers":[
-                  {
-                     "identifier":"03r8z3t63",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1005.4",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0004 4902 0432",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"UNSW Sydney"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Neme",
-            "given_name":"Julia",
-            "identifiers":[
-               {
-                  "identifier":"0000-0002-3573-996X",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Neme, Julia",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Claire Yung",
+         "orcid":"0000-0002-0052-7668",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"03r8z3t63",
-               "identifiers":[
-                  {
-                     "identifier":"03r8z3t63",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1005.4",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0004 4902 0432",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"UNSW Sydney"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Ong",
-            "given_name":"Ellie Q. Y.",
-            "identifiers":[
-               {
-                  "identifier":"0000-0002-0392-7915",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Ong, Ellie Q. Y.",
-            "type":"personal"
-         }
+         "affiliation":"University of Tasmania",
+         "name":"Edward Doddridge",
+         "orcid":"0000-0002-6097-5729",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "name":"University of Tasmania"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Doddridge",
-            "given_name":"Edward",
-            "identifiers":[
-               {
-                  "identifier":"0000-0002-6097-5729",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Doddridge, Edward",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Wilma Huneke",
+         "orcid":"0000-0001-8624-365X",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"019wvm592",
-               "identifiers":[
-                  {
-                     "identifier":"019wvm592",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1001.0",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0001 2180 7477",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"Australian National University"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Huneke",
-            "given_name":"Wilma",
-            "identifiers":[
-               {
-                  "identifier":"0000-0001-8624-365X",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Huneke, Wilma",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Dhruv Bhagtani",
+         "orcid":"0000-0002-1222-375X",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"03r8z3t63",
-               "identifiers":[
-                  {
-                     "identifier":"03r8z3t63",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1005.4",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0004 4902 0432",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"UNSW Sydney"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Schmidt",
-            "given_name":"Christina",
-            "identifiers":[
-               {
-                  "identifier":"0000-0002-7672-5054",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Schmidt, Christina",
-            "type":"personal"
-         }
+         "affiliation":"University of New South Wales",
+         "name":"Ellie Q. Y. Ong",
+         "orcid":"0000-0002-0392-7915",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"03r8z3t63",
-               "identifiers":[
-                  {
-                     "identifier":"03r8z3t63",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1005.4",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0004 4902 0432",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"UNSW Sydney"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Dias",
-            "given_name":"Fabio Boeira",
-            "identifiers":[
-               {
-                  "identifier":"0000-0002-2965-2120",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Dias, Fabio Boeira",
-            "type":"personal"
-         }
+         "affiliation":"2i2c",
+         "name":"James Munroe",
+         "orcid":"0000-0001-9098-6309",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"01nfmeh72",
-               "identifiers":[
-                  {
-                     "identifier":"01nfmeh72",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1009.8",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0004 1936 826X",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"University of Tasmania"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Dawson",
-            "given_name":"Hannah",
-            "identifiers":[
-               {
-                  "identifier":"0000-0001-9113-1329",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Dawson, Hannah",
-            "type":"personal"
-         }
+         "affiliation":"University of New South Wales",
+         "name":"Christina Schmidt",
+         "orcid":"0000-0002-7672-5054",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"019wvm592",
-               "identifiers":[
-                  {
-                     "identifier":"019wvm592",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1001.0",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0001 2180 7477",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"Australian National University"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Jeffree",
-            "given_name":"Jemma",
-            "identifiers":[
-               {
-                  "identifier":"0000-0001-7190-7329",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Jeffree, Jemma",
-            "type":"personal"
-         }
+         "affiliation":"University of Tasmania",
+         "name":"Hannah Dawson",
+         "orcid":"0000-0001-9113-1329",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "name":"Australian National University"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Bhagtani",
-            "given_name":"Dhruv",
-            "identifiers":[
-               {
-                  "identifier":"0000-0002-1222-375X",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Bhagtani, Dhruv",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Dougal T. Squire",
+         "orcid":"0000-0003-3271-6874",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "name":"University of Tasmania"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Vilela da Silva",
-            "given_name":"Felipe",
-            "identifiers":[
-               {
-                  "identifier":"0000-0003-1967-880X",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Vilela da Silva, Felipe",
-            "type":"personal"
-         }
+         "affiliation":"University of New South Wales",
+         "name":"Fabio Boeira Dias",
+         "orcid":"0000-0002-2965-2120",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"01nfmeh72",
-               "identifiers":[
-                  {
-                     "identifier":"01nfmeh72",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1009.8",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0004 1936 826X",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"University of Tasmania"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Meijer",
-            "given_name":"Jan Jaap",
-            "identifiers":[
-               {
-                  "identifier":"0000-0001-8667-488X",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Meijer, Jan Jaap",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Jemma Jeffree",
+         "orcid":"0000-0001-7190-7329",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "name":"Laboratoire d'Oc\u00e9anographie Physique et Spatiale"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Mart\u00ednez Moreno",
-            "given_name":"Josu\u00e9",
-            "identifiers":[
-               {
-                  "identifier":"0000-0002-8348-1588",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Mart\u00ednez Moreno, Josu\u00e9",
-            "type":"personal"
-         }
+         "affiliation":"California Institute of Technology",
+         "name":"Ruth Moorman",
+         "orcid":"0000-0001-5054-1559",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"03qhv9c02",
-               "identifiers":[
-                  {
-                     "identifier":"03qhv9c02",
-                     "scheme":"ror"
-                  }
-               ],
-               "name":"Australian Earth-System Simulator"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"White",
-            "given_name":"Marc",
-            "name":"White, Marc",
-            "type":"personal"
-         }
+         "affiliation":"Laboratoire d'Océanographie Physique et Spatiale",
+         "name":"Josué Martínez Moreno",
+         "orcid":"0000-0002-8348-1588",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"01nfmeh72",
-               "identifiers":[
-                  {
-                     "identifier":"01nfmeh72",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1009.8",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0004 1936 826X",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"University of Tasmania"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Auger",
-            "given_name":"Matthis",
-            "identifiers":[
-               {
-                  "identifier":"0000-0001-6228-5732",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Auger, Matthis",
-            "type":"personal"
-         }
+         "affiliation":"University of New South Wales",
+         "name":"Jan Zika",
+         "orcid":"0000-0003-3462-3559",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"05dxps055",
-               "identifiers":[
-                  {
-                     "identifier":"05dxps055",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.20861.3d",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0001 0706 8890",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"California Institute of Technology"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Moorman",
-            "given_name":"Ruth",
-            "identifiers":[
-               {
-                  "identifier":"0000-0001-5054-1559",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Moorman, Ruth",
-            "type":"personal"
-         }
+         "affiliation":"University of Tasmania",
+         "name":"Jan Jaap Meijer",
+         "orcid":"0000-0001-8667-488X",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"019wvm592",
-               "identifiers":[
-                  {
-                     "identifier":"019wvm592",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1001.0",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0001 2180 7477",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"Australian National University"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Aguiar",
-            "given_name":"Wilton",
-            "identifiers":[
-               {
-                  "identifier":"0000-0003-2453-9791",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Aguiar, Wilton",
-            "type":"personal"
-         }
+         "affiliation":"University of Tasmania",
+         "name":"Matthis Auger",
+         "orcid":"0000-0001-6228-5732",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "id":"03r8z3t63",
-               "identifiers":[
-                  {
-                     "identifier":"03r8z3t63",
-                     "scheme":"ror"
-                  },
-                  {
-                     "identifier":"grid.1005.4",
-                     "scheme":"grid"
-                  },
-                  {
-                     "identifier":"0000 0004 4902 0432",
-                     "scheme":"isni"
-                  }
-               ],
-               "name":"UNSW Sydney"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Zika",
-            "given_name":"Jan",
-            "identifiers":[
-               {
-                  "identifier":"0000-0003-3462-3559",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Zika, Jan",
-            "type":"personal"
-         }
+         "affiliation":"Australian National University",
+         "name":"Wilton Aguiar",
+         "orcid":"0000-0003-2453-9791",
+         "type":"ProjectMember"
       },
       {
-         "affiliations":[
-            {
-               "name":"University of Tasmania"
-            }
-         ],
-         "person_or_org":{
-            "family_name":"Spence",
-            "given_name":"Paul",
-            "identifiers":[
-               {
-                  "identifier":"0000-0001-5156-2204",
-                  "scheme":"orcid"
-               }
-            ],
-            "name":"Spence, Paul",
-            "type":"personal"
-         }
+         "affiliation":"Commonwealth Scientific and Industrial Research Organisation",
+         "name":"Thomas Moore",
+         "orcid":"0000-0003-3930-1946",
+         "type":"ProjectMember"
+      },
+      {
+         "affiliation":"University of Tasmania",
+         "name":"Felipe Vilela da Silva",
+         "orcid":"0000-0003-1967-880X",
+         "type":"ProjectMember"
+      },
+      {
+         "affiliation":"Australian National University",
+         "name":"Luwei Yang",
+         "orcid":"0000-0001-8570-7424",
+         "type":"ProjectMember"
+      },
+      {
+         "affiliation":"Australian National University",
+         "name":"Marc White",
+         "type":"ProjectMember"
+      },
+      {
+         "affiliation":"University of Tasmania",
+         "name":"Paul Spence",
+         "orcid":"0000-0001-5156-2204",
+         "type":"ProjectMember"
       }
+   ],
+   "keywords": [
+     "Ocean Modeling",
+     "Data Analysis",
+     "Diagnostics",
+     "Python"
    ],
    "upload_type":"software"
 }
