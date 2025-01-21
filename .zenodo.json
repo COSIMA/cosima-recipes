@@ -1,0 +1,43 @@
+{
+   "title":"Atmosphere-Cookbook: A cookbook of recipes for analysing atmospheric model output",
+   "license":"Apache-2.0",
+   "creators":[
+      {
+         "affiliation":"University of Melbourne",
+         "name":"Navid C. Constantinou",
+         "orcid":"0000-0002-8149-4094",
+         "type":"ProjectLeader"
+      },
+      {
+         "affiliation":"Australian National University",
+         "name":"Heidi Nettelbeck",
+         "orcid":"0009-0006-9374-2952",
+         "type":"ProjectMember"
+      },
+      {
+         "affiliation":"Australian National University",
+         "name":"Angus Gibson",
+         "orcid":"0000-0001-7577-3604",
+         "type":"ProjectMember"
+      },
+      {
+         "affiliation":"University of Melbourne",
+         "name":"Andrew Brown",
+         "orcid":"0000-0001-7354-295X",
+         "type":"ProjectMember"
+      },
+      {
+         "affiliation":"UNSW Sydney",
+         "name":"Samuel Green",
+         "orcid":"0000-0003-1129-4676",
+         "type":"ProjectMember"
+      },      
+      {
+         "affiliation":"University of Melbourne",
+         "name":"Christopher Chambers",
+         "orcid":"0000-0001-8847-6123",
+         "type":"ProjectMember"
+      }
+   ],
+   "upload_type":"software"
+}
