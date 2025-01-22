@@ -34,6 +34,15 @@ available recipes_ to find something the better suits your 'taste' (i.e., your n
    GitHub Repository <https://github.com/cosima/cosima-recipes>
 
 
+Citation
+========
+
+If you use a recipe from the Cookbook for your research or teaching, or have based your analysis on one of the recipes, we would be grateful if you could cite:
+
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.14353852.svg
+  :target: https://doi.org/10.5281/zenodo.14353852
+
+
 Search
 ======
 
