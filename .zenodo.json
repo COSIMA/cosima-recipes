@@ -202,6 +202,7 @@
       {
          "affiliation":"Australian National University",
          "name":"Marc White",
+         "orcid": "0000-0003-3882-418X",
          "type":"ProjectMember"
       },
       {
@@ -214,6 +215,12 @@
          "affiliation":"University of Tasmania",
          "name":"Paul Spence",
          "orcid":"0000-0001-5156-2204",
+         "type":"ProjectMember"
+      },
+      {
+         "affiliation": "Australian National University, Australian Earth-System Simulator",
+         "name": "Turner, Charles",
+         "orcid": "0000-0002-3262-4972",
          "type":"ProjectMember"
       }
    ],
