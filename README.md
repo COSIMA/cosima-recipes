@@ -40,6 +40,8 @@ To make a contribution follow the steps laid out in the [beginner's guide on how
 https://cosima-recipes.readthedocs.io/en/latest/contributing.html). If they sound intimidating then don't worry!
 Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explaining briefly what the contribution you want to make is and we'll help out with the process!
 
+To acknowledge contributions, contributors to the COSIMA Cookbook are added to the **citable DOI** entry associated with the repository. Hence, users who put together a pull request for a new contribution (starting with an issue -- as above), should ensure that the pull request also modifies the .zenodo.json file to include their affiliation details.
+
 ## Contents
 
 We are in the process of transitioning these recipes from using [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure to load model output to an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html). That said, you will find recipes that use either method to access model data.
