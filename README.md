@@ -5,6 +5,10 @@
     <img alt="latest docs" src="https://img.shields.io/badge/docs-latest-blue.svg">
 </a>
 
+<a href="https://doi.org/10.5281/zenodo.14353852">
+    <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14353852.svg" alt="DOI">
+</a>
+
 # COSIMA Cookbook
 
 This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
@@ -64,4 +68,13 @@ We request that users of ACCESS-OM2 model [code](https://github.com/access-nri/a
 2. including an acknowledgement such as the following:
 
    *The authors thank the vibrant community of the Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA; [http://www.cosima.org.au](http://www.cosima.org.au)) for making the ACCESS-OM2 suite of models available at [https://github.com/COSIMA/access-om2](https://github.com/access-nri/access-om2).*
+
 3. let us know of any publications which use these models or data so we can add them to [our list](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ).
+
+
+## Citation
+
+If you use a recipe from the Cookbook for your research or teaching, or have based your analysis on one of the recipes, we would be grateful if you could cite:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14353852.svg)](https://doi.org/10.5281/zenodo.14353852)
+
