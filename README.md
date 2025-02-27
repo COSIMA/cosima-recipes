@@ -45,10 +45,6 @@ Hence, users who put together a pull request for a new contribution, should ensu
 
 ## Contents
 
-We are in the process of transitioning these recipes from using [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure to load model output to an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html). That said, you will find recipes that use either method to access model data.
-
-We strongly urge you to transition to _intake catalogue_ and (pretty please 🥺) help us with converting all the recipes to using that!
-
 ### [Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials.html)
 
 The notebook [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html) outlines the basic philosophy of the Intake catalog and how to transition from using the cosima-cookbook to the Intake catalogue. This is the best place to start if you are not familiar with the Intake catalog. 
@@ -63,6 +59,11 @@ If you can find a recipe that suits your purposes, then this is the best place t
 ### ACCESS-OM2-GMD-Paper-Figs
 Jupyter notebooks to reproduce (as far as possible) the figures from the [ACCESS-OM2 model announcement paper (*GMD*, 2020)](https://doi.org/10.5194/gmd-13-401-2020). These notebooks are mostly uncommented, but they should be functional. They are intended to demonstrate methods to undertake the calculations used in the paper.
 
+## Loading model output: use _intake_; avoid **deprecated** `cosima_cookbook`
+
+We are in the process of transitioning recipes from using the **deprecated** [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure to load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html). That said, you will find recipes that use either method to access model data.
+
+We strongly urge you to transition to _intake catalogue_ and (pretty please 🥺) help us with converting all the recipes to using that!
 
 ## Conditions of use for ACCESS-OM2 output
 
