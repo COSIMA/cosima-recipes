@@ -40,7 +40,7 @@ To make a contribution follow the steps laid out in the [beginner's guide on how
 https://cosima-recipes.readthedocs.io/en/latest/contributing.html). If they sound intimidating then don't worry!
 Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explaining briefly what the contribution you want to make is and we'll help out with the process!
 
-Contributors to the COSIMA Cookbook are added to the **citable DOI** entry associated with the repository. Hence, users who put together a pull request for a new contribution, should ensure that the pull request also modifies the `.zenodo.json` file to include their affiliation details.
+Contributors to the COSIMA Cookbook are added to the [**citable DOI**](https://github.com/COSIMA/cosima-recipes?tab=readme-ov-file#citation) entry associated with the repository. Hence, users who put together a pull request for a new contribution, should ensure that the pull request also modifies the `.zenodo.json` file to include their affiliation details.
 
 ## Contents
 
