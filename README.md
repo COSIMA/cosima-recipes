@@ -40,11 +40,10 @@ To make a contribution follow the steps laid out in the [beginner's guide on how
 https://cosima-recipes.readthedocs.io/en/latest/contributing.html). If they sound intimidating then don't worry!
 Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explaining briefly what the contribution you want to make is and we'll help out with the process!
 
+Contributors to the COSIMA Cookbook are added to the [**citable DOI**](https://github.com/COSIMA/cosima-recipes?tab=readme-ov-file#citation) entry associated with the repository.
+Hence, users who put together a pull request for a new contribution, should ensure that the pull request also modifies the `.zenodo.json` file to include their affiliation details.
+
 ## Contents
-
-We are in the process of transitioning these recipes from using [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure to load model output to an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html). That said, you will find recipes that use either method to access model data.
-
-We strongly urge you to transition to _intake catalogue_ and (pretty please 🥺) help us with converting all the recipes to using that!
 
 ### [Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials.html)
 
@@ -60,6 +59,11 @@ If you can find a recipe that suits your purposes, then this is the best place t
 ### ACCESS-OM2-GMD-Paper-Figs
 Jupyter notebooks to reproduce (as far as possible) the figures from the [ACCESS-OM2 model announcement paper (*GMD*, 2020)](https://doi.org/10.5194/gmd-13-401-2020). These notebooks are mostly uncommented, but they should be functional. They are intended to demonstrate methods to undertake the calculations used in the paper.
 
+## Loading model output: use _intake_; avoid **deprecated** `cosima_cookbook`
+
+We are in the process of transitioning recipes from using the **deprecated** [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure to load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html). That said, you will find recipes that use either method to access model data.
+
+We strongly urge you to transition to _intake catalogue_ and (pretty please 🥺) help us with converting all the recipes to using that!
 
 ## Conditions of use for ACCESS-OM2 output
 
