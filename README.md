@@ -14,7 +14,7 @@
 This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
 A collection of recipes and tutorials for analysing ocean and sea ice model output produced by the [Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA)](http://cosima.org.au/).
 
-We explain: a "recipe" here is an example an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
+We explain: a "recipe" here is an example of an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
 Each "recipe" comes in a self-contained and well-documented Jupyter notebook.
 All the recipes combined form a cookbook 📒!
 

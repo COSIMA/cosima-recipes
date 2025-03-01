@@ -10,7 +10,7 @@ Welcome to the COSIMA Cookbook!
 
 This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
 
-We explain: a "recipe" here is an example an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
+We explain: a "recipe" here is an example of an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
 Each "recipe" comes in a self-contained and well-documented Jupyter notebook.
 All the recipes combined form a cookbook 📒!
 
