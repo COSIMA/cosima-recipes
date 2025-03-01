@@ -18,7 +18,6 @@ Happy cooking! 😉 🥙 🍱 🍲
 
 To get started have a look at the tutorials_ and then browse through the
 available recipes_ to find something the better suits your 'taste' (i.e., your needs)!
-
 The  `COSIMA Cookbook tutorial`_ is perhaps the best place to start.
 
 .. _tutorials: tutorials.html
