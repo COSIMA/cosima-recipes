@@ -14,7 +14,7 @@
 This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
 A collection of recipes and tutorials for analysing ocean and sea ice model output produced by the [Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA)](http://cosima.org.au/).
 
-We explain: a "recipe" here is an example an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
+We explain: a "recipe" here is an example of an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
 Each "recipe" comes in a self-contained and well-documented Jupyter notebook.
 All the recipes combined form a cookbook 📒!
 
@@ -40,16 +40,16 @@ To make a contribution follow the steps laid out in the [beginner's guide on how
 https://cosima-recipes.readthedocs.io/en/latest/contributing.html). If they sound intimidating then don't worry!
 Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explaining briefly what the contribution you want to make is and we'll help out with the process!
 
+Contributors to the COSIMA Cookbook are added to the [**citable DOI**](https://github.com/COSIMA/cosima-recipes?tab=readme-ov-file#citation) entry associated with the repository.
+Hence, users who put together a pull request for a new contribution, should ensure that the pull request also modifies the `.zenodo.json` file to include their affiliation details.
+
 ## Contents
-
-We are in the process of transitioning these recipes from using [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure to load model output to an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html). That said, you will find recipes that use either method to access model data.
-
-We strongly urge you to transition to _intake catalogue_ and (pretty please 🥺) help us with converting all the recipes to using that!
 
 ### [Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials.html)
 
-The notebook [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html) outlines the basic philosophy of the Intake catalog and how to transition from using the cosima-cookbook to the Intake catalogue. This is the best place to start if you are not familiar with the Intake catalog. 
-Also included here are some other tutorials, related to techniques (e.g., [Making_Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/Making_Maps_with_Cartopy.html)) or tools (e.g., [Model Agnostic Analysis](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/Model_Agnostic_Analysis.html)). Last, note that you can still find here some other tutorials related to the deprecated Python package `cosima_cookbook`, which was the old tool we used to load model output with. **Note**: not to be confused with the Cookbook of Recipes you are looking at!
+The starting point should be the [COSIMA_CookBook_Tutorial](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/COSIMA_CookBook_Tutorial.html) that showcases how we can use Intake catalog to interrogate about available output and load them. The [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html) tutorial outlines the basic philosophy of the Intake catalog and how to transition from using the deprecated `cosima_cookbook`-way of loading variables. (If this 👉 `cosima_cookbook.getvar` means nothing to you then don't worry, it's already deprecated and you are better off not learning what that is in the first place!)
+
+Also included here are some other tutorials, related to techniques (e.g., [Making_Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/Making_Maps_with_Cartopy.html)) or tools (e.g., [Model Agnostic Analysis](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/Model_Agnostic_Analysis.html)).
 
 
 ### [Recipes](https://cosima-recipes.readthedocs.io/en/latest/recipes.html)
@@ -60,6 +60,11 @@ If you can find a recipe that suits your purposes, then this is the best place t
 ### ACCESS-OM2-GMD-Paper-Figs
 Jupyter notebooks to reproduce (as far as possible) the figures from the [ACCESS-OM2 model announcement paper (*GMD*, 2020)](https://doi.org/10.5194/gmd-13-401-2020). These notebooks are mostly uncommented, but they should be functional. They are intended to demonstrate methods to undertake the calculations used in the paper.
 
+## Loading model output: use _intake_; avoid **deprecated** `cosima_cookbook`
+
+We are in the process of transitioning recipes from using the **deprecated** [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure to load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html). That said, you will find recipes that use either method to access model data.
+
+We strongly urge you to transition to _intake catalogue_ and (pretty please 🥺) help us with converting all the recipes to using that!
 
 ## Conditions of use for ACCESS-OM2 output
 
