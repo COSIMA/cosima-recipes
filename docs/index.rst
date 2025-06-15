@@ -30,6 +30,7 @@ The  `COSIMA Cookbook tutorial`_ is perhaps the best place to start.
 
    tutorials
    recipes
+   recipes/regional
    guidelines
    contributing
    GitHub Repository <https://github.com/cosima/cosima-recipes>
