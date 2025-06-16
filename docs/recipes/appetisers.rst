@@ -1,5 +1,5 @@
-General
-=======
+Appetisers (easy)
+=================
 
 .. nbgallery::
    :caption: Recipes
@@ -7,4 +7,4 @@ General
    :glob:
    :hidden:
 
-   ../Recipes/*
+   ../Recipes/appetisers-easy/*

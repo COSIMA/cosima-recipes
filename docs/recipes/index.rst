@@ -5,5 +5,6 @@ Recipes
    :maxdepth: 1
    :caption: Recipes:
 
-   general
-   regional
+   appetisers
+   mains
+   local-dishes
