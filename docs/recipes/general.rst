@@ -1,10 +1,10 @@
-Recipes
+General
 =======
 
 .. nbgallery::
    :caption: Recipes
-   :name: recipe-gallery
+   :name: recipe-gallery-general
    :glob:
    :hidden:
 
-   Recipes/*
+   ../Recipes/*
