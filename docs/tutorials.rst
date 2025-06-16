@@ -1,8 +1,7 @@
-Tutorials
-=========
+Cooking lessons 101 (Tutorials)
+===============================
 
 .. nbgallery::
-   :caption: Tutorials
    :name: tutorial-gallery
    :glob:
    :hidden:

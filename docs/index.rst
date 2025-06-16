@@ -17,12 +17,13 @@ All the recipes combined form a cookbook 📒!
 
 Happy cooking! 😉 🥙 🍱 🍲
 
-To get started have a look at the tutorials_ and then browse through the
+To get started you should first take the `Cooking Lessons 101`_ (that is, look at our Tutorials).
+After you've gone through them and feel comfortable, browse through the
 available recipes_ to find something the better suits your 'taste' (i.e., your needs)!
 The  `COSIMA Cookbook tutorial`_ is perhaps the best place to start.
 
-.. _tutorials: tutorials.html
-.. _recipes: recipes.html
+.. _Cooking Lessons 101: tutorials
+.. _recipes: recipes
 .. _COSIMA Cookbook tutorial: https://cosima-recipes.readthedocs.io/en/latest/Tutorials/COSIMA_CookBook_Tutorial.html
 
 .. toctree::
