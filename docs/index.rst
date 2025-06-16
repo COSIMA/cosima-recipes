@@ -22,9 +22,9 @@ After you've gone through them and feel comfortable, browse through the
 available recipes_ to find something the better suits your 'taste' (i.e., your needs)!
 The  `COSIMA Cookbook tutorial`_ is perhaps the best place to start.
 
-.. _Cooking Lessons 101: tutorials
+.. _Cooking Lessons 101: tutorials.html
 .. _recipes: recipes
-.. _COSIMA Cookbook tutorial: tutorials/COSIMA_CookBook_Tutorial
+.. _COSIMA Cookbook tutorial: tutorials/COSIMA_CookBook_Tutorial.html
 
 .. toctree::
    :maxdepth: 2
