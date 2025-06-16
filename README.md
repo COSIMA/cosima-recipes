@@ -12,11 +12,11 @@
 # COSIMA Cookbook
 
 This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
-A collection of recipes and tutorials for analysing ocean and sea ice model output produced by the [Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA)](http://cosima.org.au/).
+A collection of cooking lessons and recipes for analysing ocean and sea ice model output produced by the [Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA)](http://cosima.org.au/).
 
-We explain: a "recipe" here is an example of an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
-Each "recipe" comes in a self-contained and well-documented Jupyter notebook.
-All the recipes combined form a cookbook 📒!
+We explain: a "cooking lesson" here is a tutorial that teaches you something generic (e.g. about plotting or loading data); a "recipe" is an example of an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
+Both "cooking lessons" and "recipes" come in self-contained and well-documented Jupyter notebooks.
+All the lessons and the recipes combined form a cookbook 📒!
 
 Most recipes use output from the [ACCESS-OM2 model](https://doi.org/10.5194/gmd-13-401-2020), while some also use results from configurations of the [Modular Ocean Model 6 (MOM6)](https://github.com/mom-ocean/MOM6) and remote sensing observations.
 
