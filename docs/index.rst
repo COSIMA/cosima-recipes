@@ -17,9 +17,10 @@ All the recipes combined form a cookbook 📒!
 
 Happy cooking! 😉 🥙 🍱 🍲
 
-To get started you should first take the `Cooking Lessons 101`_ (that is, look at our Tutorials).
+To get started you should first take the `Cooking Lessons 101`_ (i.e., our Tutorials).
 After you've gone through them and feel comfortable, browse through the
-available recipes_ to find something the better suits your 'taste' (i.e., your needs)!
+available recipes_ (i.e., examples) to find something the better suits your 'taste' (i.e., your needs)!
+
 The  `COSIMA Cookbook tutorial`_ is perhaps the best place to start.
 
 .. _Cooking Lessons 101: tutorials.html
