@@ -24,7 +24,7 @@ The  `COSIMA Cookbook tutorial`_ is perhaps the best place to start.
 
 .. _Cooking Lessons 101: tutorials
 .. _recipes: recipes
-.. _COSIMA Cookbook tutorial: https://cosima-recipes.readthedocs.io/en/latest/Tutorials/COSIMA_CookBook_Tutorial.html
+.. _COSIMA Cookbook tutorial: tutorials/COSIMA_CookBook_Tutorial
 
 .. toctree::
    :maxdepth: 2
