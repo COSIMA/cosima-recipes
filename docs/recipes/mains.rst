@@ -2,7 +2,7 @@ Main dishes (advanced)
 ======================
 
 .. nbgallery::
-   :name: recipe-gallery-general
+   :name: recipe-gallery-mains
    :glob:
    :hidden:
 

@@ -2,7 +2,7 @@ Appetisers (easy)
 =================
 
 .. nbgallery::
-   :name: recipe-gallery-general
+   :name: recipe-gallery-appetisers
    :glob:
    :hidden:
 
