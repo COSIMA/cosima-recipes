@@ -1,14 +1,9 @@
 Recipes
 =======
 
-The recipes are split into Appetisers_ (i.e., easier/simpler recipes -- a good place
-to start after you've been through the tutorials_), Mains_ (i.e. elaborate/advanced recipes)
-and `Local Dishes`_ (i.e. recipes for regional configurations).
-
-.. _tutorials: ../tutorials
-.. _Appetisers: appetisers
-.. _Mains: mains
-.. _Local Dishes: local-dishes
+The recipes are split into :doc:`appetisers` (i.e., easier/simpler recipes -- a good place
+to start after you've been through the :doc:`../tutorials`), :doc:`mains` (i.e. elaborate/advanced recipes)
+and :doc:`local-dishes` (i.e. recipes for regional configurations).
 
 .. toctree::
    :maxdepth: 1
