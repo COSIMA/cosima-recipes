@@ -1,4 +1,4 @@
-‼️⚠️ **Warning** ⛔️🚨
+‼️ ⚠️ **Warning** ⛔️ 🚨
 
 Seems that you are about to view a recipe using Github's native Jupyter notebook viewer...
 

@@ -2,7 +2,7 @@ Cooking Lessons 101 (Tutorials)
 ===============================
 
 .. nbgallery::
-   :name: tutorial-gallery
+   :name: cooking-lessons-101-gallery
    :glob:
    :hidden:
 
