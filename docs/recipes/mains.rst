@@ -6,4 +6,4 @@ Main dishes (advanced)
    :glob:
    :hidden:
 
-   ../Recipes/Mains-Advanced/*
+   ../Recipes/Mains-Advanced-v2/*
