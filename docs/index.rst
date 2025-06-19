@@ -27,7 +27,7 @@ The  :doc:`COSIMA Cookbook tutorial <Tutorials/COSIMA_CookBook_Tutorial>` is per
    :maxdepth: 2
    :caption: Contents:
 
-   tutorials
+   cooking-lessons-101
    recipes/index
    guidelines
    contributing

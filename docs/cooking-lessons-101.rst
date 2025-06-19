@@ -1,4 +1,4 @@
-Cooking lessons 101 (Tutorials)
+Cooking Lessons 101 (Tutorials)
 ===============================
 
 .. nbgallery::
@@ -6,4 +6,4 @@ Cooking lessons 101 (Tutorials)
    :glob:
    :hidden:
 
-   Tutorials/*
+   Cooking-Lessons-101-Tutorials/*
