@@ -44,7 +44,9 @@ html_static_path = ['_static']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
     '_build', 'Thumbs.db', '.DS_Store',
-    'Recipes/README.rst', 'Cooking-Lessons-101-Tutorials/README.rst',
+    'Recipes/README.rst', 'Recipes/Appetisers-Easy/README.rst',
+    'Recipes/Mains-Advanced/README.rst', 'Recipes/Local-Dishes-regional/README.rst',
+    'Cooking-Lessons-101-Tutorials/README.rst',
     'Cooking-Lessons-101-Tutorials/Template_For_Notebooks.ipynb'
 ]
 
