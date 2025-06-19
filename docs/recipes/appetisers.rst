@@ -6,4 +6,4 @@ Appetisers (easy)
    :glob:
    :hidden:
 
-   ../Recipes/Appetisers-Easy-v2/*
+   ../Recipes/Appetisers-Easy/*
