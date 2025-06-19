@@ -21,7 +21,7 @@ To get started you should first take the :doc:`Cooking Lessons 101 <cooking-less
 After you've gone through them and feel comfortable, browse through the
 available :doc:`recipes/index` (i.e., examples) to find something the better suits your 'taste' (i.e., your needs)!
 
-The  :doc:`COSIMA Cookbook tutorial <cooking-lessons-101/COSIMA_CookBook_Tutorial>` is perhaps the best place to start.
+The  :doc:`COSIMA Cookbook tutorial <Cooking-Lessons-101-Tutorials/COSIMA_CookBook_Tutorial>` is perhaps the best place to start.
 
 .. toctree::
    :maxdepth: 2

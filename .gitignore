@@ -5,7 +5,7 @@ local_cc_test.db-journal
 dask-worker-space/
 
 docs/_build/
-docs/DocumentedExamples/
-docs/Tutorials/
+docs/Recipes/
+docs/Cooking-Lessons-101-Tutorials/
 
 **/SWMT_temp/
