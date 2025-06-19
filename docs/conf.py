@@ -43,8 +43,11 @@ html_static_path = ['_static']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
-    '_build', 'Thumbs.db', '.DS_Store',
-    'Recipes/README.rst', 'Cooking-Lessons-101-Tutorials/README.rst',
+    '_build',
+    'Thumbs.db',
+    '.DS_Store',
+    'Recipes/README.rst',
+    'Cooking-Lessons-101-Tutorials/README.rst',
     'Cooking-Lessons-101-Tutorials/Template_For_Notebooks.ipynb'
 ]
 
