@@ -6,4 +6,4 @@ Local dishes (Regional configurations)
    :glob:
    :hidden:
 
-   ../Recipes/local-dishes-regional/*
+   ../Recipes/Local-Dishes-regional/*
