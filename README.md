@@ -45,11 +45,11 @@ Hence, users who put together a pull request for a new contribution, should ensu
 
 ## Contents
 
-### [Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials.html)
+### [Cooking Lessons 101 (Tutorials)](https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons-101.html)
 
-The starting point should be the [COSIMA_CookBook_Tutorial](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/COSIMA_CookBook_Tutorial.html) that showcases how we can use Intake catalog to interrogate about available output and load them. The [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html) tutorial outlines the basic philosophy of the Intake catalog and how to transition from using the deprecated `cosima_cookbook`-way of loading variables. (If this 👉 `cosima_cookbook.getvar` means nothing to you then don't worry, it's already deprecated and you are better off not learning what that is in the first place!)
+The starting point should be the [COSIMA_CookBook_Tutorial](https://cosima-recipes.readthedocs.io/en/latest/Cooking-Lessons-101-Tutorials/COSIMA_CookBook_Tutorial.html) that showcases how we can use Intake catalog to interrogate about available output and load them. The [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/Cooking-Lessons-101-Tutorials/ACCESS-NRI_Intake_Catalog.html) tutorial outlines the basic philosophy of the Intake catalog and how to transition from using the deprecated `cosima_cookbook`-way of loading variables. (If this 👉 `cosima_cookbook.getvar` means nothing to you then don't worry, it's already deprecated and you are better off not learning what that is in the first place!)
 
-Also included here are some other tutorials, related to techniques (e.g., [Making_Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/Making_Maps_with_Cartopy.html)) or tools (e.g., [Model Agnostic Analysis](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/Model_Agnostic_Analysis.html)).
+Also included here are some other tutorials, related to techniques (e.g., [Making_Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/Cooking-Lessons-101-Tutorials/Making_Maps_with_Cartopy.html)) or tools (e.g., [Model Agnostic Analysis](https://cosima-recipes.readthedocs.io/en/latest/Cooking-Lessons-101-Tutorials/Model_Agnostic_Analysis.html)).
 
 
 ### [Recipes](https://cosima-recipes.readthedocs.io/en/latest/recipes.html)
@@ -82,4 +82,3 @@ We request that users of ACCESS-OM2 model [code](https://github.com/access-nri/a
 If you use a recipe from the Cookbook for your research or teaching, or have based your analysis on one of the recipes, we would be grateful if you could cite:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14353852.svg)](https://doi.org/10.5281/zenodo.14353852)
-
