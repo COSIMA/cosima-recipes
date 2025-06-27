@@ -13,7 +13,7 @@ build:
   jobs:
     post_checkout:
       - cp -r Recipes/ docs/
-      - cp -r Tutorials/ docs/
+      - cp -r Cooking-Lessons-101-Tutorials/ docs/
 
 python:
   install:
