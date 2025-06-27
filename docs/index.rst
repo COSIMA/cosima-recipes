@@ -3,6 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+
 COSIMA Cookbook
 ===============
 
@@ -16,20 +17,18 @@ All the recipes combined form a cookbook 📒!
 
 Happy cooking! 😉 🥙 🍱 🍲
 
-To get started have a look at the tutorials_ and then browse through the
-available recipes_ to find something the better suits your 'taste' (i.e., your needs)!
-The  `COSIMA Cookbook tutorial`_ is perhaps the best place to start.
+To get started you should first take the :doc:`Cooking Lessons 101 <cooking-lessons-101>` (i.e., our Tutorials).
+After you've gone through them and feel comfortable, browse through the
+available :doc:`recipes/index` (i.e., examples) to find something the better suits your 'taste' (i.e., your needs)!
 
-.. _tutorials: tutorials.html
-.. _recipes: recipes.html
-.. _COSIMA Cookbook tutorial: https://cosima-recipes.readthedocs.io/en/latest/Tutorials/COSIMA_CookBook_Tutorial.html
+The  :doc:`COSIMA Cookbook tutorial <Cooking-Lessons-101-Tutorials/COSIMA_CookBook_Tutorial>` is perhaps the best place to start.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
 
-   tutorials
-   recipes
+   cooking-lessons-101
+   recipes/index
    guidelines
    contributing
    GitHub Repository <https://github.com/cosima/cosima-recipes>
