@@ -33,15 +33,15 @@ basedir = '/g/data3/hh5/tmp/cosima/'
 # Also MOM and CICE have different time_units: https://github.com/OceansAus/access-om2/issues/117#issuecomment-446465761
 # so the time_units specified here may need to be overridden when dealing with CICE data - e.g. see ice_validation.ipynb
 exptdict = OrderedDict([
-    ('1deg',   {'model':'access-om2', 'expt':'1deg_jra55v13_iaf_spinup1_B1',  
-                'desc': 'ACCESS-OM2','n_files':-12,
-                'time_units':'days since 1718-01-01','offset':'2880M'}),#-87658}),
-    ('025deg', {'model':'access-om2-025', 'expt':'025deg_jra55v13_iaf_gmredi6',
-                    'desc': 'ACCESS-OM2-025','n_files':-34,
-                    'time_units':'days since 1718-01-01','offset':'2880M'}),#-87658}),
-    ('01deg',  {'model':'access-om2-01',  'expt':'01deg_jra55v13_iaf',
+    ('1deg',   {'model':'access-om2', 'expt':'1deg_jra55_iaf_omip2_cycle4',  
+                'desc': 'ACCESS-OM2','n_files': None,
+                'time_units': None,'offset': None}),
+    ('025deg', {'model':'access-om2-025', 'expt':'025deg_jra55_iaf_omip2_cycle4',
+                    'desc': 'ACCESS-OM2-025', 'n_files': None,
+                    'time_units': None, 'offset': None}),
+    ('01deg',  {'model':'access-om2-01',  'expt':'01deg_jra55v140_iaf_cycle4',
                 'desc': 'ACCESS-OM2-01','n_files':None,
-                    'time_units':'days since 0001-01-01','offset':None})
+                    'time_units':None, 'offset': None})
 ])
 
 # Now add expdirs programmatically where they don't already exist.
