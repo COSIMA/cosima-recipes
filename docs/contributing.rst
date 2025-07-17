@@ -146,7 +146,8 @@ Some tips for reviewing
 * Does the pull request have a concise description of the proposed changes? If not, request it.
 * Have a look at the proposed changes. Do they make sense?
 * Is the proposed code clean and clear?
-* Are the proposed changes documented or commented? Methods should come with docstrings. But also documentation in the form of Markdown surrounding code is very appreciated. Code should be as generalisable as possible. We prefer documentation and code with variables and method names that are verbose and read like English. For example, the code below:
+* Are the proposed changes documented or commented? Methods should come with docstrings. But also documentation in the form of Markdown surrounding code is very appreciated. 
+  Code should be as generalisable as possible. We prefer documentation and code with variables and method names that are verbose and read like English. For example, the code below:
 
 
 .. code-block:: python
@@ -154,7 +155,8 @@ Some tips for reviewing
     def znl_mean(ar):
         return ar.mean('xt_ocean')
 
-has a few issues. First, the names aren't easily understood. The method does not have any documentation, nor is it self-explanatory. Furthermore, the method assumes that ``xt_ocean`` is a coordinate of the data array; hard coding dimension names is fragile to future changes.
+has a few issues. First, the names aren't easily understood. The method does not have any documentation, nor is it self-explanatory. Furthermore, the method assumes that ``xt_ocean`` 
+is a coordinate of the data array; hard coding dimension names is fragile to future changes.
 
 A much better version, free from all the cons mentioned above, is:
 
