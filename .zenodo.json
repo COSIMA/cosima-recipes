@@ -228,6 +228,18 @@
          "name": "Turner, Charles",
          "orcid": "0000-0002-3262-4972",
          "type":"ProjectMember"
+      },
+      {
+         "affiliation": "University of Tasmania",
+         "name": "Rosevear, Madelaine G.",
+         "orcid": "0000-0003-4254-843X",
+         "type":"ProjectMember"
+      },
+      {
+         "affiliation": "Australian National University, Australian Earth-System Simulator",
+         "name": "Bull, Christopher",
+         "orcid": "0000-0001-8362-3446",
+         "type":"ProjectMember"
       }
    ],
    "keywords": [
