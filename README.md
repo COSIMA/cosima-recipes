@@ -56,10 +56,6 @@ Also included here are some other tutorials, related to techniques (e.g., [Makin
 The main part of this cookbook: All the recipes! These are Jupyter notebooks for either simple or not-so-simple diagnostics and analyses. All notebooks are aimed to be self-contained and  well-documented and explained.
 If you can find a recipe that suits your purposes, then this is the best place to start.
 
-
-### ACCESS-OM2-GMD-Paper-Figs
-Jupyter notebooks to reproduce (as far as possible) the figures from the [ACCESS-OM2 model announcement paper (*GMD*, 2020)](https://doi.org/10.5194/gmd-13-401-2020). These notebooks are mostly uncommented, but they should be functional. They are intended to demonstrate methods to undertake the calculations used in the paper.
-
 ## Loading model output: use _intake_
 
 Recipes have been transitioned to load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html). The **deprecated** [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure
