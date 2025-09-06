@@ -47,7 +47,7 @@ Hence, users who put together a pull request for a new contribution, should ensu
 
  * #### [Cooking Lessons 101 (Tutorials)](https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons-101.html)
 
-   The starting point should be the [COSIMA_CookBook_Tutorial](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/COSIMA_CookBook_Tutorial.html) that showcases how we can use Intake catalog to interrogate about available output and load them. The [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/ACCESS-NRI_Intake_Catalog.html) tutorial outlines the basic philosophy of the Intake catalog and how to transition from using the deprecated `cosima_cookbook`-way of loading variables. (If this 👉 `cosima_cookbook.getvar` means nothing to you then don't worry, it's already deprecated and you are better off not learning what that is in the first place!)
+   The starting point should be the [COSIMA_CookBook_Tutorial](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/COSIMA_CookBook_Tutorial.html) that showcases how we can use Intake catalog to interrogate about available output and load them. The [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/ACCESS-NRI_Intake_Catalog.html) tutorial outlines the basic philosophy of the Intake catalog to load model output variables.
 
    Also included here are some other tutorials, related to techniques (e.g., [Making_Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/Making_Maps_with_Cartopy.html)) or tools (e.g., [Model Agnostic Analysis](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/02-Advanced/Model_Agnostic_Analysis.html)).
 
@@ -73,8 +73,8 @@ If you can find a recipe that suits your purposes, then this is the best place t
 
 ## Loading model output: use _intake_
 
-Recipes have been transitioned to load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html). The **deprecated** [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure
-is no longer in use, and is not available on `xp65` environments.
+Recipes load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html).
+The intake package is available on the conda-analysis python environments on `xp65`.
 
 ## Conditions of use for ACCESS-OM2 output
 
