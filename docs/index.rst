@@ -26,7 +26,7 @@ to start after you've been through the :doc:`cooking-lessons-101`), :doc:`mains`
 (i.e. more elaborate/advanced recipes) and :doc:`local-dishes` (i.e. recipes for regional
 configurations).
 
-The  :doc:`COSIMA Cookbook tutorial <Cooking-Lessons-101-Tutorials/COSIMA_CookBook_Tutorial>` is perhaps the best place to start.
+The  :doc:`COSIMA Cookbook tutorial <01-Cooking-Lessons-101/COSIMA_CookBook_Tutorial>` is perhaps the best place to start.
 
 .. toctree::
    :maxdepth: 2
