@@ -6,4 +6,4 @@ Cooking Lessons 101 (Tutorials)
    :glob:
    :hidden:
 
-   Cooking-Lessons-101-Tutorials/*
+   01-Cooking-Lessons-101/*
