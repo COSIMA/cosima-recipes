@@ -32,7 +32,7 @@ The  :doc:`COSIMA Cookbook tutorial <01-Cooking-Lessons-101/COSIMA_CookBook_Tuto
    :maxdepth: 2
    :caption: Contents:
 
-   cooking-lessons-101
+   cooking-lessons-101/index
    appetisers
    mains
    local-dishes
