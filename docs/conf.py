@@ -44,10 +44,11 @@ html_static_path = ['_static']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
     '_build', 'Thumbs.db', '.DS_Store',
-    'Recipes/README.rst', 'Recipes/Appetisers-Easy/README.rst',
-    'Recipes/Mains-Advanced/README.rst', 'Recipes/Local-Dishes-regional/README.rst',
-    'Cooking-Lessons-101-Tutorials/README.rst',
-    'Cooking-Lessons-101-Tutorials/Template_For_Notebooks.ipynb'
+    '01-Cooking-Lessons-101/README.rst',
+    'Recipes/README.rst',
+    '02-Appetisers/README.rst',
+    '03-Mains/README.rst',
+    '04-Local-Dishes/README.rst',
 ]
 
 
@@ -68,9 +69,9 @@ html_theme_options = {
 
 nbsphinx_execute = "never"
 nbsphinx_thumbnails = {
-    "Cooking-Lessons-101-Tutorials/ACCESS-NRI_Intake_Catalog": "_static/thumbnails/intake.png",
-    "Cooking-Lessons-101-Tutorials/Make_Your_Own_Database": "_static/thumbnails/database.png",
-    "Cooking-Lessons-101-Tutorials/Submitting_analysis_jobs_to_gadi": "_static/thumbnails/gadi.png",
-    "Cooking-Lessons-101-Tutorials/Using_Explorer_tools": "_static/thumbnails/explore.png",
-    "Cooking-Lessons-101-Tutorials/COSIMA_CookBook_Tutorial": "_static/thumbnails/cookbook.png",
+    "01-Cooking-Lessons-101/ACCESS-NRI_Intake_Catalog": "_static/thumbnails/intake.png",
+    "01-Cooking-Lessons-101/Make_Your_Own_Database": "_static/thumbnails/database.png",
+    "01-Cooking-Lessons-101/Submitting_analysis_jobs_to_gadi": "_static/thumbnails/gadi.png",
+    "01-Cooking-Lessons-101/Using_Explorer_tools": "_static/thumbnails/explore.png",
+    "01-Cooking-Lessons-101/COSIMA_CookBook_Tutorial": "_static/thumbnails/cookbook.png",
 }

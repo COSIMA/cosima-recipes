@@ -19,7 +19,12 @@ Happy cooking! 😉 🥙 🍱 🍲
 
 To get started you should first take the :doc:`Cooking Lessons 101 <cooking-lessons-101>` (i.e., our Tutorials).
 After you've gone through them and feel comfortable, browse through the
-available :doc:`recipes/index` (i.e., examples) to find something the better suits your 'taste' (i.e., your needs)!
+available Recipes (i.e., examples) to find something the better suits your 'taste' (i.e., your needs)!
+
+The recipes are split into :doc:`appetisers` (i.e., easier/simpler recipes -- a good place
+to start after you've been through the :doc:`cooking-lessons-101`), :doc:`mains`
+(i.e. more elaborate/advanced recipes) and :doc:`local-dishes` (i.e. recipes for regional
+configurations).
 
 The  :doc:`COSIMA Cookbook tutorial <Cooking-Lessons-101-Tutorials/COSIMA_CookBook_Tutorial>` is perhaps the best place to start.
 
@@ -28,7 +33,9 @@ The  :doc:`COSIMA Cookbook tutorial <Cooking-Lessons-101-Tutorials/COSIMA_CookBo
    :caption: Contents:
 
    cooking-lessons-101
-   recipes/index
+   appetizers
+   mains
+   local-dishes
    guidelines
    contributing
    GitHub Repository <https://github.com/cosima/cosima-recipes>
