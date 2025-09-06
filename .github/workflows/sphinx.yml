@@ -29,6 +29,8 @@ jobs:
           sudo apt-get install -y pandoc
       - name: Ensure sphinx builds (warnings allowed)
         run: |
-          cp -r Recipes/ docs/
-          cp -r Cooking-Lessons-101-Tutorials/ docs/
+          cp -r 01-Cooking-Lessons-101/ docs/
+          cp -r 02-Appetisers/ docs/
+          cp -r 03-Mains/ docs/
+          cp -r 04-Local-Dishes/ docs/
           make -C docs html O=-n
