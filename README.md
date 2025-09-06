@@ -55,7 +55,7 @@ Hence, users who put together a pull request for a new contribution, should ensu
 
 The main part of this cookbook: All the recipes!
 
-These are Jupyter notebooks for either simple or not-so-simple diagnostics and analyses. All notebooks are aimed to be self-contained and  well-documented and explained.
+These are Jupyter notebooks for either simple or not-so-simple diagnostics and analyses. All recipes are aimed to be self-contained and  well-documented and explained.
 If you can find a recipe that suits your purposes, then this is the best place to start.
 
 * #### [Appetisers (easy)](https://cosima-recipes.readthedocs.io/en/latest/appetisers.html)
