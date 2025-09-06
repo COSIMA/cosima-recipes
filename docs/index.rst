@@ -33,7 +33,7 @@ The  :doc:`COSIMA Cookbook tutorial <Cooking-Lessons-101-Tutorials/COSIMA_CookBo
    :caption: Contents:
 
    cooking-lessons-101
-   appetizers
+   appetisers
    mains
    local-dishes
    guidelines
