@@ -1,9 +1,9 @@
-Basic Cooking Lessons
-=====================
+Basics
+======
 
 .. nbgallery::
-   :name: recipe-gallery-basic-lessons
+   :name: recipe-gallery-basics
    :glob:
    :hidden:
 
-   ../01-Cooking-Lessons-101/01-Basic/*
+   ../01-Cooking-Lessons-101/01-Basics/*

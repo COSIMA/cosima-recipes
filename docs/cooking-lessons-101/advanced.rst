@@ -1,5 +1,5 @@
-Advanced Cooking Lessons
-========================
+Advanced
+========
 
 .. nbgallery::
    :name: recipe-gallery-advanced-lessons
