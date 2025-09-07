@@ -26,7 +26,7 @@ to start after you've been through the :doc:`cooking-lessons-101/index`), :doc:`
 (i.e. more elaborate/advanced recipes) and :doc:`local-dishes` (i.e. recipes for regional
 configurations).
 
-The  :doc:`COSIMA Cookbook tutorial <01-Cooking-Lessons-101/01-Basics/COSIMA_CookBook_Tutorial>` is perhaps the best place to start.
+The  :doc:`COSIMA Cookbook tutorial <01-Cooking-Lessons-101/01-Basics/COSIMA_CookBook_Introduction>` is perhaps the best place to start.
 
 .. toctree::
    :maxdepth: 2
@@ -43,7 +43,7 @@ The  :doc:`COSIMA Cookbook tutorial <01-Cooking-Lessons-101/01-Basics/COSIMA_Coo
    Local Dishes <local-dishes>
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Resources
 
    Contributing <contributing>
