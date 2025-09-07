@@ -29,7 +29,7 @@ configurations).
 The  :doc:`COSIMA Cookbook tutorial <01-Cooking-Lessons-101/01-Basics/COSIMA_CookBook_Introduction>` is perhaps the best place to start.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Lessons
 
    Cooking Lessons 101 <cooking-lessons-101/index>
