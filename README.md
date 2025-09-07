@@ -28,38 +28,35 @@ If you plan to use an ARE session, then remember to include the projects in the 
 
 If you have never used the NCI see these [first steps instructions](https://access-hive.org.au/getting_started/) and [getting started with ARE](https://access-hive.org.au/getting_started/are/).
 
-### Contributing
-
-Have you made a recipe for analysing something that is not already included in this cookbook?
-You are more than welcome to share it and include it in the cookbook!
-Consider **contributing your recipe back to the repository**.
-We are always delighted to expand our cookbook with more recipes.
-If the process of contributing to the repository sounds a bit intimidating to you, rest assured that we will guide you and help you with submitting your contribution.
-
-To make a contribution follow the steps laid out in the [beginner's guide on how to contribute](
-https://cosima-recipes.readthedocs.io/en/latest/contributing.html). If they sound intimidating then don't worry!
-Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explaining briefly what the contribution you want to make is and we'll help out with the process!
-
-Contributors to the COSIMA Cookbook are added to the [**citable DOI**](https://github.com/COSIMA/cosima-recipes?tab=readme-ov-file#citation) entry associated with the repository.
-Hence, users who put together a pull request for a new contribution, should ensure that the pull request also modifies the `.zenodo.json` file to include their affiliation details.
-
 ## Contents
 
-### [Cooking Lessons 101 (Tutorials)](https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons-101.html)
+ * #### [Cooking Lessons 101 (Tutorials)](https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons-101.html)
 
-The starting point should be the [COSIMA_CookBook_Tutorial](https://cosima-recipes.readthedocs.io/en/latest/Cooking-Lessons-101-Tutorials/COSIMA_CookBook_Tutorial.html) that showcases how we can use Intake catalog to interrogate about available output and load them. The [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/Cooking-Lessons-101-Tutorials/ACCESS-NRI_Intake_Catalog.html) tutorial outlines the basic philosophy of the Intake catalog and how to transition from using the deprecated `cosima_cookbook`-way of loading variables. (If this 👉 `cosima_cookbook.getvar` means nothing to you then don't worry, it's already deprecated and you are better off not learning what that is in the first place!)
+   The starting point should be the [COSIMA_CookBook_Introduction](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/COSIMA_CookBook_Introduction.html) that showcases how we can use Intake catalog to interrogate about available output and load them.
 
-Also included here are some other tutorials, related to techniques (e.g., [Making_Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/Cooking-Lessons-101-Tutorials/Making_Maps_with_Cartopy.html)) or tools (e.g., [Model Agnostic Analysis](https://cosima-recipes.readthedocs.io/en/latest/Cooking-Lessons-101-Tutorials/Model_Agnostic_Analysis.html)).
+   Recipes load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/02-ACCESS-NRI_Intake_Catalog.html). The intake package is available on the conda-analysis python environments on `xp65`. The [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/ACCESS-NRI_Intake_Catalog.html) tutorial outlines the basic philosophy of the Intake catalog to load model output variables.
 
+   Also included here are some other tutorials, related to techniques (e.g., [Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/Making_Maps_with_Cartopy.html)) or tools (e.g., [Model Agnostic Analysis](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/02-Advanced/Model_Agnostic_Analysis.html)).
 
-### [Recipes](https://cosima-recipes.readthedocs.io/en/latest/recipes.html)
-The main part of this cookbook: All the recipes! These are Jupyter notebooks for either simple or not-so-simple diagnostics and analyses. All notebooks are aimed to be self-contained and  well-documented and explained.
+### Recipes
+
+The main part of this cookbook: All the recipes!
+
+These are Jupyter notebooks for either simple or not-so-simple diagnostics and analyses. All recipes are aimed to be self-contained and  well-documented and explained.
 If you can find a recipe that suits your purposes, then this is the best place to start.
 
-## Loading model output: use _intake_
+* #### [Appetisers (easy)](https://cosima-recipes.readthedocs.io/en/latest/appetisers.html)
 
-Recipes have been transitioned to load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/Tutorials/ACCESS-NRI_Intake_Catalog.html). The **deprecated** [cosima-cookbook](https://github.com/COSIMA/cosima-cookbook) infrastructure
-is no longer in use, and is not available on `xp65` environments.
+   Easier/simpler recipes; a good place to start after you’ve been through the [Cooking Lessons 101 (Tutorials)](https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons-101.html)
+
+* #### [Mains (advanced)](https://cosima-recipes.readthedocs.io/en/latest/mains.html)
+
+   More elaborate/advanced recipes.
+
+* #### [Local Dishes (regional Configurations)](https://cosima-recipes.readthedocs.io/en/latest/local-dishes.html)
+
+   Recipes for regional configurations.
+
 
 ## Conditions of use for ACCESS-OM2 output
 
@@ -71,6 +68,20 @@ We request that users of ACCESS-OM2 model [code](https://github.com/access-nri/a
 
 3. let us know of any publications which use these models or data so we can add them to [our list](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ).
 
+## Contributing
+
+Have you made a recipe for analysing something that is not already included in this cookbook?
+You are more than welcome to share it and include it in the cookbook!
+Consider **contributing your recipe back to the repository**.
+We are always delighted to expand the cookbook with more recipes.
+If the process of contributing to the repository sounds a bit intimidating to you, rest assured that we will guide you and help you with submitting your contribution.
+
+To make a contribution follow the steps laid out in the [beginner's guide on how to contribute](
+https://cosima-recipes.readthedocs.io/en/latest/contributing.html). If they sound intimidating then don't worry!
+Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explaining briefly what the contribution you want to make is and we'll help out with the process!
+
+Contributors to the COSIMA Cookbook are added to the [**citable DOI**](https://github.com/COSIMA/cosima-recipes?tab=readme-ov-file#citation) entry associated with the repository.
+Hence, users who put together a pull request for a new contribution, should ensure that the pull request also modifies the `.zenodo.json` file to include their affiliation details.
 
 ## Citation
 
