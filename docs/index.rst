@@ -37,7 +37,7 @@ The  :doc:`COSIMA Cookbook tutorial <01-Cooking-Lessons-101/01-Basics/COSIMA_Coo
    mains
    local-dishes
    guidelines
-   contributing
+   Contributing <contributing>
    GitHub Repository <https://github.com/cosima/cosima-recipes>
 
 
