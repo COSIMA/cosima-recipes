@@ -33,10 +33,10 @@ The  :doc:`COSIMA Cookbook tutorial <01-Cooking-Lessons-101/01-Basics/COSIMA_Coo
    :caption: Contents:
 
    cooking-lessons-101/index
-   appetisers
-   mains
-   local-dishes
-   guidelines
+   Appetisers <appetisers>
+   Mains <mains>
+   Local Dishes <local-dishes>
+   Recipe Guidelines <guidelines>
    Contributing <contributing>
    GitHub Repository <https://github.com/cosima/cosima-recipes>
 
