@@ -30,12 +30,22 @@ The  :doc:`COSIMA Cookbook tutorial <01-Cooking-Lessons-101/01-Basics/COSIMA_Coo
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Lessons
 
    Cooking Lessons 101 <cooking-lessons-101/index>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Recipes
+
    Appetisers <appetisers>
    Mains <mains>
    Local Dishes <local-dishes>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Resources
+
    Contributing <contributing>
    guidelines
    GitHub Repository <https://github.com/cosima/cosima-recipes>
