@@ -76,4 +76,5 @@ nbsphinx_thumbnails = {
     "01-Cooking-Lessons-101/02-Advanced/Make_Your_Own_Database": "_static/thumbnails/database.png",
     "01-Cooking-Lessons-101/02-Advanced/Submitting_analysis_jobs_to_gadi": "_static/thumbnails/gadi.png",
     "01-Cooking-Lessons-101/02-Advanced/Using_Explorer_tools": "_static/thumbnails/explore.png",
+    "01-Cooking-Lessons-101/02-Advanced/intake_to_dask_efficiently_chunking": "_static/thumbnails/dask.png",
 }
