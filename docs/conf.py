@@ -71,8 +71,8 @@ html_theme_options = {
 
 nbsphinx_execute = "never"
 nbsphinx_thumbnails = {
-    "01-Cooking-Lessons-101/01-Basics/ACCESS-NRI_Intake_Catalog": "_static/thumbnails/intake.png",
-    "01-Cooking-Lessons-101/01-Basics/COSIMA_CookBook_Tutorial": "_static/thumbnails/cookbook.png",
+    "01-Cooking-Lessons-101/01-Basics/01-COSIMA_CookBook_Introduction": "_static/thumbnails/cookbook.png",
+    "01-Cooking-Lessons-101/01-Basics/02-ACCESS-NRI_Intake_Catalog": "_static/thumbnails/intake.png",
     "01-Cooking-Lessons-101/02-Advanced/Make_Your_Own_Database": "_static/thumbnails/database.png",
     "01-Cooking-Lessons-101/02-Advanced/Submitting_analysis_jobs_to_gadi": "_static/thumbnails/gadi.png",
     "01-Cooking-Lessons-101/02-Advanced/Using_Explorer_tools": "_static/thumbnails/explore.png",
