@@ -17,20 +17,37 @@ All the recipes combined form a cookbook 📒!
 
 Happy cooking! 😉 🥙 🍱 🍲
 
-To get started you should first take the :doc:`Cooking Lessons 101 <cooking-lessons-101>` (i.e., our Tutorials).
+To get started you should first take the :doc:`Cooking Lessons 101 <cooking-lessons-101/index>` (i.e., our Tutorials).
 After you've gone through them and feel comfortable, browse through the
-available :doc:`recipes/index` (i.e., examples) to find something the better suits your 'taste' (i.e., your needs)!
+available Recipes (i.e., examples) to find something the better suits your 'taste' (i.e., your needs)!
 
-The  :doc:`COSIMA Cookbook tutorial <Cooking-Lessons-101-Tutorials/COSIMA_CookBook_Tutorial>` is perhaps the best place to start.
+The recipes are split into :doc:`appetisers` (i.e., easier/simpler recipes -- a good place
+to start after you've been through the :doc:`cooking-lessons-101/index`), :doc:`mains`
+(i.e. more elaborate/advanced recipes) and :doc:`local-dishes` (i.e. recipes for regional
+configurations).
+
+The  :doc:`COSIMA Cookbook tutorial <01-Cooking-Lessons-101/01-Basics/COSIMA_CookBook_Introduction>` is perhaps the best place to start.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Lessons
 
-   cooking-lessons-101
-   recipes/index
+   Cooking Lessons 101 <cooking-lessons-101/index>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Recipes
+
+   Appetisers <appetisers>
+   Mains <mains>
+   Local Dishes <local-dishes>
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Resources
+
+   Contributing <contributing>
    guidelines
-   contributing
    GitHub Repository <https://github.com/cosima/cosima-recipes>
 
 
