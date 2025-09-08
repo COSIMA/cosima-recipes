@@ -8,27 +8,29 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '<=3.9'
-    - name: Cache pip
-      uses: actions/cache@v2
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
-          ${{ runner.os }}-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r docs/requirements.txt
-        sudo apt-get update -y
-        sudo apt-get install -y pandoc
-    - name: Ensure sphinx builds (warnings allowed)
-      run: |
-        cp -r Recipes/ docs/
-        cp -r Tutorials/ docs/
-        make -C docs html O=-n
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "<=3.9"
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+            ${{ runner.os }}-
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r docs/requirements.txt
+          sudo apt-get update -y
+          sudo apt-get install -y pandoc
+      - name: Ensure sphinx builds (warnings allowed)
+        run: |
+          cp -r 01-Cooking-Lessons-101/ docs/
+          cp -r 02-Appetisers/ docs/
+          cp -r 03-Mains/ docs/
+          cp -r 04-Local-Dishes/ docs/
+          make -C docs html O=-n
