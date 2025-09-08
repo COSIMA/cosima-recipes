@@ -6,4 +6,4 @@ Main dishes (advanced)
    :glob:
    :hidden:
 
-   03-Mains/*
+   03-Advanced/*

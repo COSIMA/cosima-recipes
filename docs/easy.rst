@@ -6,4 +6,4 @@ Appetisers (easy)
    :glob:
    :hidden:
 
-   02-Appetisers/*
+   02-Easy/*

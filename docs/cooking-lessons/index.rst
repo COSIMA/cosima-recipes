@@ -1,4 +1,4 @@
-Cooking Lessons 101 (Tutorials)
+Cooking Lessons (Tutorials)
 ===============================
 
 The Cooking Lessons (Tutorials) are split into :doc:`basics` (which everybody should
