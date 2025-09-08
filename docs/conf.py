@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'COSIMA Cookbook'
-copyright = '2024, COSIMA'
+copyright = '2025, COSIMA'
 author = 'COSIMA'
 
 
@@ -44,8 +44,13 @@ html_static_path = ['_static']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
     '_build', 'Thumbs.db', '.DS_Store',
-    'Recipes/README.rst', 'Tutorials/README.rst',
-    'Tutorials/Template_For_Notebooks.ipynb'
+    '01-Cooking-Lessons-101/README.rst',
+    '01-Cooking-Lessons-101/01-Basics/README.rst',
+    '01-Cooking-Lessons-101/02-Advanced/README.rst',
+    'Recipes/README.rst',
+    '02-Appetisers/README.rst',
+    '03-Mains/README.rst',
+    '04-Local-Dishes/README.rst',
 ]
 
 
@@ -55,6 +60,10 @@ exclude_patterns = [
 # a list of builtin themes.
 #
 # html_theme = 'default'
+html_theme_options = {
+    "sidebar_collapse": False,
+    "sidebar_includehidden": False,
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -62,9 +71,10 @@ exclude_patterns = [
 
 nbsphinx_execute = "never"
 nbsphinx_thumbnails = {
-    "Tutorials/ACCESS-NRI_Intake_Catalog": "_static/thumbnails/intake.png",
-    "Tutorials/Make_Your_Own_Database": "_static/thumbnails/database.png",
-    "Tutorials/Submitting_analysis_jobs_to_gadi": "_static/thumbnails/gadi.png",
-    "Tutorials/Using_Explorer_tools": "_static/thumbnails/explore.png",
-    "Tutorials/COSIMA_CookBook_Tutorial": "_static/thumbnails/cookbook.png",
+    "01-Cooking-Lessons-101/01-Basics/01-COSIMA_CookBook_Introduction": "_static/thumbnails/cookbook.png",
+    "01-Cooking-Lessons-101/01-Basics/02-ACCESS-NRI_Intake_Catalog": "_static/thumbnails/intake.png",
+    "01-Cooking-Lessons-101/02-Advanced/Make_Your_Own_Database": "_static/thumbnails/database.png",
+    "01-Cooking-Lessons-101/02-Advanced/Submitting_analysis_jobs_to_gadi": "_static/thumbnails/gadi.png",
+    "01-Cooking-Lessons-101/02-Advanced/Using_Explorer_tools": "_static/thumbnails/explore.png",
+    "01-Cooking-Lessons-101/02-Advanced/intake_to_dask_efficiently_chunking": "_static/thumbnails/dask.png",
 }

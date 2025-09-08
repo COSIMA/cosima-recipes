@@ -71,7 +71,7 @@ that have not yet been explored. Reproducibility may not always be considered
 as part of the code development process or be a priority. If this is something
 that resonates with you, or if you would like to learn more about making your
 code shareable and reproducible, we are including some tips and good practices
-to help you achieve this. 
+to help you achieve this.
 
 1. Give the recipe a descriptive but generic title. Avoid being too specific
    as this will make it harder for other users to find code that matches their
@@ -92,7 +92,7 @@ to help you achieve this.
    it could be cumbersome, e.g., ``mean_monthly_temperature_over_east_australia_for_the_year_that_bushfires_were_a_big_issue``.
 
 4. Organising your recipe in smaller sections makes it easier for users to
-   identify the part of your code that is relevant to them. 
+   identify the part of your code that is relevant to them.
 
 5. Make sure you document your recipe well. Do not be afraid to provide a
    small description of what each section of your code does and why you are
@@ -146,7 +146,8 @@ Some tips for reviewing
 * Does the pull request have a concise description of the proposed changes? If not, request it.
 * Have a look at the proposed changes. Do they make sense?
 * Is the proposed code clean and clear?
-* Are the proposed changes documented or commented? Methods should come with docstrings. But also documentation in the form of Markdown surrounding code is very appreciated. Code should be as generalisable as possible. We prefer documentation and code with variables and method names that are verbose and read like English. For example, the code below:
+* Are the proposed changes documented or commented? Methods should come with docstrings. But also documentation in the form of Markdown surrounding code is very appreciated.
+  Code should be as generalisable as possible. We prefer documentation and code with variables and method names that are verbose and read like English. For example, the code below:
 
 
 .. code-block:: python
@@ -154,7 +155,8 @@ Some tips for reviewing
     def znl_mean(ar):
         return ar.mean('xt_ocean')
 
-has a few issues. First, the names aren't easily understood. The method does not have any documentation, nor is it self-explanatory. Furthermore, the method assumes that ``xt_ocean`` is a coordinate of the data array; hard coding dimension names is fragile to future changes.
+has a few issues. First, the names aren't easily understood. The method does not have any documentation, nor is it self-explanatory. Furthermore, the method assumes that ``xt_ocean``
+is a coordinate of the data array; hard coding dimension names is fragile to future changes.
 
 A much better version, free from all the cons mentioned above, is:
 
