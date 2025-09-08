@@ -142,7 +142,9 @@ of the notebook itself.
 
 Some tips for reviewing
 ^^^^^^^^^^^^^^^^^^^^^^^
-
+* Does this PR close an issue? Does the author link to it or mention it?
+* (Ideally) does the user use a branch name that identifies the user and the feature (e.g. `username/feature_name`)
+* Has the author added their [affiliation details to this file](https://github.com/COSIMA/cosima-recipes/blob/main/.zenodo.json).
 * Does the pull request have a concise description of the proposed changes? If not, request it.
 * Have a look at the proposed changes. Do they make sense?
 * Is the proposed code clean and clear?
