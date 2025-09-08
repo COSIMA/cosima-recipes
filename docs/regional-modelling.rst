@@ -6,4 +6,4 @@ Local dishes (Regional configurations)
    :glob:
    :hidden:
 
-   04-Local-Dishes/*
+   04-Regional-Modelling/*

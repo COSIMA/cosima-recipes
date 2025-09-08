@@ -6,4 +6,4 @@ This is **NOT** the best way to view a recipe; you won't be getting the best pos
 
 We'd strongly urge you to browse through the recipes is via the website:
 
-https://cosima-recipes.readthedocs.io/en/latest/local-dishes.html
+https://cosima-recipes.readthedocs.io/en/latest/advanced.html

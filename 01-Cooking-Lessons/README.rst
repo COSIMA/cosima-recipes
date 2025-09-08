@@ -6,4 +6,4 @@ This is **NOT** the best way to view a recipes or cooking lessons; you won't be 
 
 We'd strongly urge you to browse through the recipes or cooking lessons is via the website:
 
-https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons-101/index.html
+https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons/index.html
