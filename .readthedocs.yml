@@ -7,13 +7,15 @@ sphinx:
 formats: []
 
 build:
-  os: ubuntu-22.04
+  os: ubuntu-24.04
   tools:
     python: "3"
   jobs:
     post_checkout:
-      - cp -r Recipes/ docs/
-      - cp -r Tutorials/ docs/
+      - cp -r 01-Cooking-Lessons-101/ docs/
+      - cp -r 02-Appetisers/ docs/
+      - cp -r 03-Mains/ docs/
+      - cp -r 04-Local-Dishes/ docs/
 
 python:
   install:
