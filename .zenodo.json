@@ -241,6 +241,12 @@
          "name": "Bull, Christopher Yit Sen",
          "orcid": "0000-0001-8362-3446",
          "type":"ProjectMember"
+      },
+      {
+         "affiliation": "Australian National University",
+         "name": "Curtin, Katja",
+         "orcid": "0009-0001-5528-1845",
+         "type":"ProjectMember"
       }
    ],
    "keywords": [
@@ -251,3 +257,4 @@
    ],
    "upload_type":"software"
 }
+
