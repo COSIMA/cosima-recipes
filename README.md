@@ -30,13 +30,22 @@ If you have never used the NCI see these [first steps instructions](https://acce
 
 ## Contents
 
- * #### [Cooking Lessons 101 (Tutorials)](https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons-101.html)
+ * #### [Cooking Lessons 101 (Tutorials)](https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons-101/index.html)
 
-   The starting point should be the [COSIMA_CookBook_Introduction](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/COSIMA_CookBook_Introduction.html) that showcases how we can use Intake catalog to interrogate about available output and load them.
+   The starting point should be all the **Basic** Tutorials:
 
-   Recipes load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/02-ACCESS-NRI_Intake_Catalog.html). The intake package is available on the conda-analysis python environments on `xp65`. The [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/ACCESS-NRI_Intake_Catalog.html) tutorial outlines the basic philosophy of the Intake catalog to load model output variables.
+   * #### [Basics](https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons-101/basics.html)
 
-   Also included here are some other tutorials, related to techniques (e.g., [Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/Making_Maps_with_Cartopy.html)) or tools (e.g., [Model Agnostic Analysis](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/02-Advanced/Model_Agnostic_Analysis.html)).
+      The [Introduction: loading, slicing, dicing model output](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/01-Loading-Slicing-Dicing-Output.html) should be the starting point.
+
+      Recipes load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/02-ACCESS-NRI_Intake_Catalog.html). The intake package is available on the conda-analysis python environments on `xp65`. The [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/ACCESS-NRI_Intake_Catalog.html) tutorial outlines the basic philosophy of the Intake catalog to load model output variables.
+
+      Also included here are some other tutorials, related to techniques (e.g., [Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/Making_Maps_with_Cartopy.html)).
+
+   After going through the **Basic** Tutorials, feel free to browse some of the **Advanced** ones:
+   
+   * #### [Advanced](https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons-101/advanced.html)
+
 
 ### Recipes
 
