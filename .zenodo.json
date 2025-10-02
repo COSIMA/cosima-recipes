@@ -241,6 +241,18 @@
          "name": "Bull, Christopher Yit Sen",
          "orcid": "0000-0001-8362-3446",
          "type":"ProjectMember"
+      },
+      {
+         "affiliation": "University of Melbourne",
+         "name": "Day, Noah",
+         "orcid": "0000-0003-4176-7956",
+         "type":"ProjectMember"
+      },
+      {
+         "affiliation": "Australian National University, Australia's Climate Simulator (ACCESS-NRI)",
+         "name": "Li, Minghang",
+         "orcid": "0000-0002-6167-9999",
+         "type":"ProjectMember"
       }
    ],
    "keywords": [
