@@ -20,7 +20,7 @@ Recipes
 .. _cf-xarray: https://cf-xarray.readthedocs.io/en/latest/
 .. _pint: https://pint.readthedocs.io/en/stable/
 
-
+ 
 Getting started with git
 ------------------------
 
@@ -140,9 +140,12 @@ Instead, the *review-notebook-app* bot will leave a comment with a **ReviewNB**
 button on every pull request: this lets you leave your feedback on a representation
 of the notebook itself.
 
-Some tips for reviewing
-^^^^^^^^^^^^^^^^^^^^^^^
+Some tips for writing a PR or reviewing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+* Does this PR close an issue? Does the author link to it or mention it?
+* (Optional) does the user use a branch name that identifies the user and the feature (e.g. `username/feature_name`)
+* (Optional) Has the author added their [affiliation details to this file](https://github.com/COSIMA/cosima-recipes/blob/main/.zenodo.json).
 * Does the pull request have a concise description of the proposed changes? If not, request it.
 * Have a look at the proposed changes. Do they make sense?
 * Is the proposed code clean and clear?
