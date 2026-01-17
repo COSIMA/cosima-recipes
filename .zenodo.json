@@ -1,7 +1,6 @@
 {
    "title":"COSIMA Cookbook: A cookbook of recipes for analysing ocean and sea ice model output",
    "license":"Apache-2.0",
-   "language": "Python",
    "creators":[
       {
          "affiliation":"University of Melbourne",
