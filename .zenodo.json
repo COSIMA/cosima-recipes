@@ -106,7 +106,7 @@
       },
       {
          "affiliation":"UNSW Sydney",
-         "name":"Ong, Ellie Q. Y. ",
+         "name":"Ong, Ellie Q. Y.",
          "orcid":"0000-0002-0392-7915",
          "type":"ProjectMember"
       },
@@ -203,19 +203,19 @@
       {
          "affiliation":"Australian National University, Australia's Climate Simulator (ACCESS-NRI)",
          "name":"White, Marc",
-         "orcid": "0000-0003-3882-418X",
+         "orcid":"0000-0003-3882-418X",
          "type":"ProjectMember"
       },
       {
          "affiliation":"University of Melbourne",
          "name":"Sohail, Taimoor",
-	 "orcid":"0000-0002-4162-3269",
+	     "orcid":"0000-0002-4162-3269",
          "type":"ProjectMember"
       },
       {
          "affiliation":"Australian National University",
          "name":"Barnes, Ashley J.",
-	 "orcid":"0000-0003-3165-8676",
+	     "orcid":"0000-0003-3165-8676",
          "type":"ProjectMember"
       },
       {
@@ -225,45 +225,45 @@
          "type":"ProjectMember"
       },
       {
-         "affiliation": "Australian National University, Australia's Climate Simulator (ACCESS-NRI)",
-         "name": "Turner, Charles",
-         "orcid": "0000-0002-3262-4972",
+         "affiliation":"Australian National University, Australia's Climate Simulator (ACCESS-NRI)",
+         "name":"Turner, Charles",
+         "orcid":"0000-0002-3262-4972",
          "type":"ProjectMember"
       },
       {
-         "affiliation": "University of Tasmania",
-         "name": "Rosevear, Madelaine G.",
-         "orcid": "0000-0003-4254-843X",
+         "affiliation":"University of Tasmania",
+         "name":"Rosevear, Madelaine G.",
+         "orcid":"0000-0003-4254-843X",
          "type":"ProjectMember"
       },
       {
-         "affiliation": "Australian National University, Australia's Climate Simulator (ACCESS-NRI)",
-         "name": "Bull, Christopher Yit Sen",
-         "orcid": "0000-0001-8362-3446",
+         "affiliation":"Australian National University, Australia's Climate Simulator (ACCESS-NRI)",
+         "name":"Bull, Christopher Yit Sen",
+         "orcid":"0000-0001-8362-3446",
          "type":"ProjectMember"
       },
       {
-         "affiliation": "University of Melbourne",
-         "name": "Day, Noah",
-         "orcid": "0000-0003-4176-7956",
+         "affiliation":"University of Melbourne",
+         "name":"Day, Noah",
+         "orcid":"0000-0003-4176-7956",
          "type":"ProjectMember"
       },
       {
-         "affiliation": "Australian National University, Australia's Climate Simulator (ACCESS-NRI)",
-         "name": "Li, Minghang",
-         "orcid": "0000-0002-6167-9999",
+         "affiliation":"Australian National University, Australia's Climate Simulator (ACCESS-NRI)",
+         "name":"Li, Minghang",
+         "orcid":"0000-0002-6167-9999",
          "type":"ProjectMember"
       },
       {
-         "affiliation": "Australian National University",
-         "name": "Ellepola, Anupiya",
-         "orcid": "0009-0002-8898-0068",
+         "affiliation":"Australian National University",
+         "name":"Ellepola, Anupiya",
+         "orcid":"0009-0002-8898-0068",
          "type":"ProjectMember"
       },
       {
-         "affiliation": "University of Southampton",
-         "name": "Narayanan, Aditya",
-         "orcid": "0000-0002-8967-2211",
+         "affiliation":"University of Southampton",
+         "name":"Narayanan, Aditya",
+         "orcid":"0000-0002-8967-2211",
          "type":"ProjectMember"
       }
    ],
