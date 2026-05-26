@@ -6,10 +6,14 @@ tags:
   - sea ice
   - computational learning
   - reproducible workflows
+  - Python
 authors:
   - name: Navid C. Constantinou
     orcid: 0000-0002-8149-4094
     affiliation: 9
+  - name: Julia Neme
+    orcid: 0000-0002-3573-996X
+    affiliation: 2
   - name: Andy McC. Hogg
     orcid: 0000-0001-5898-7635
     affiliation: 3
@@ -27,9 +31,6 @@ authors:
   - name: Aidan Heerdegen
     orcid: 0000-0002-4481-4896
     affiliation: 3
-  - name: Julia Neme
-    orcid: 0000-0002-3573-996X
-    affiliation: 2
   - name: Ryan M. Holmes
     orcid: 0000-0002-6799-9109
     affiliation: 4
@@ -153,7 +154,7 @@ affiliations:
     index: 6
   - name: Laboratoire d'Oceanographie Physique et Spatiale
     index: 7
-  - name: UNSW Sydney
+  - name: University of New South Wales Sydney
     index: 8
   - name: University of Melbourne
     index: 9
@@ -171,7 +172,7 @@ The COSIMA Cookbook is an open computational learning module for analysing
 ocean and sea-ice model output in Jupyter notebooks. It has been developed by
 the Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA) as a
 community resource for researchers, students, and practitioners working with
-large gridded datasets, especially output from the ACCESS-OM2 ocean-sea ice
+large gridded datasets, especially output from the ACCESS ocean-sea ice
 model configuration [@kiss2020accessom2]. The repository combines introductory
 tutorials with worked analysis examples, all exposed through a browsable Sphinx
 documentation site and backed by a citable archived release [@cosimaCookbook].
