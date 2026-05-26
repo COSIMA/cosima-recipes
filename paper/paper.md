@@ -213,6 +213,13 @@ advanced, and region-specific collections, giving learners an incremental path
 from first contact with the data ecosystem to adaptation of full workflows for
 their own science questions.
 
+Within this structure, the tutorials include examples of loading model output
+through intake-based catalogues [@intake] and incorporating Cartopy
+[@cartopy] for map-based visualisation. The recipe collection also includes a
+Lagrangian particle-tracking workflow built with Parcels
+[@lange2017parcels], as well as analyses that use xgcm [@xgcm] to handle
+variables defined on staggered finite-volume grids.
+
 The Cookbook grew from a practical need inside the COSIMA community: the tools
 used to analyse modern ocean model output are powerful, but the gap between
 package-level documentation and a reproducible end-to-end workflow remains
@@ -295,6 +302,8 @@ output, workflows, and pedagogical practices reflected in this repository. We
 also acknowledge the National Computational Infrastructure, which is supported
 by the Commonwealth government of Australia, and the ACCESS-NRI ecosystem that
 make the operational use of these notebooks possible.
-We acknowledge funding from the Australian Research Council under the Center of Excellence for the Weather of the 21st Century CE230100012, the Linkage Infrastructure, Equipment and Facilities LP200100406, and the Discovery Project DP240101274.
+We acknowledge funding from the Australian Research Council under the Center of
+Excellence for the Weather of the 21st Century CE230100012, the Linkage Infrastructure,
+Equipment and Facilities LP200100406, and the Discovery Project DP240101274.
 
 # References
