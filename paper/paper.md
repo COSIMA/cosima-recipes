@@ -68,7 +68,7 @@ authors:
     affiliation: 1
   - name: Christina Schmidt
     orcid: 0000-0002-7672-5054
-    affiliation: 8
+    affiliation: 7
   - name: Hannah Dawson
     orcid: 0000-0001-9113-1329
     affiliation: 11
@@ -84,7 +84,7 @@ authors:
   - name: Ruth Moorman
     orcid: 0000-0001-5054-1559
     affiliation: 5
-  - name: Josue Martinez-Moreno
+  - name: Josue Martínez-Moreno
     orcid: 0000-0002-8348-1588
     affiliation: 7
   - name: Jan Zika
@@ -154,7 +154,7 @@ affiliations:
     index: 5
   - name: Commonwealth Scientific and Industrial Research Organisation, Australia
     index: 6
-  - name: Laboratoire d'Oceanographie Physique et Spatiale, France
+  - name: British Antarctic Survey, UK
     index: 7
   - name: University of New South Wales Sydney, Australia
     index: 8
