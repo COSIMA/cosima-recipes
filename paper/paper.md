@@ -177,9 +177,8 @@ bibliography: paper.bib
 
 The COSIMA Cookbook is an open computational learning module for analysing
 ocean and sea-ice model output in Jupyter notebooks. It has been developed by
-the Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA) as a
-community resource for researchers, students, and practitioners working with
-large gridded datasets, especially output from the ACCESS ocean-sea ice
+the Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA; https://cosima.org.au) as a community resource for researchers, students, and practitioners working
+with large gridded datasets, especially output from the ACCESS ocean-sea ice
 model configuration [@kiss2020accessom2]. The repository combines introductory
 tutorials with worked analysis examples, all exposed through a browsable Sphinx
 documentation site and backed by a citable archived release [@cosimaCookbook].
