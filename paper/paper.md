@@ -273,6 +273,6 @@ output, workflows, and pedagogical practices reflected in this repository. We
 also acknowledge the National Computational Infrastructure, which is supported
 by the Commonwealth government of Australia, and the ACCESS-NRI ecosystem that
 make the operational use of these notebooks possible.
-We acknowledge funding from the Australian Research Council under the Center of Excellence for the Weather of the 21st Century CE230100012, the Linkage Infrastructure, Equipment and Facilities LP200100406, and the Discovery Project DP240101274 (N.C.C., T.S.).
+We acknowledge funding from the Australian Research Council under the Center of Excellence for the Weather of the 21st Century CE230100012, the Linkage Infrastructure, Equipment and Facilities LP200100406, and the Discovery Project DP240101274.
 
 # References
