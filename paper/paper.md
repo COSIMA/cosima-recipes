@@ -182,7 +182,8 @@ bibliography: paper.bib
 
 The COSIMA Cookbook is an open computational learning module for analysing
 ocean and sea-ice model output in Jupyter notebooks. It has been developed by
-the Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA; https://cosima.org.au) as a community resource for researchers, students, and practitioners working
+the Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA; https://cosima.org.au)
+as a community resource for researchers, students, and practitioners working
 with large gridded datasets, especially output from the ACCESS ocean-sea ice
 model configuration [@kiss2020accessom2]. The repository combines introductory
 tutorials with worked analysis examples, all exposed through a browsable Sphinx
@@ -193,10 +194,19 @@ release [@cosimaCookbook].
 landing page used to navigate tutorials and recipes. The live site is available
 at https://cosima-recipes.readthedocs.io. \label{fig:website}](website.png)
 
-Pedagogy and instructional structure are central to the project. "Cooking Lessons 101"
-introduces generic skills such as loading model output, working with labelled
-arrays, plotting, and interacting with shared data catalogues. These tutorials
-lead into domain-focused "recipes": self-contained notebooks showing how to
+The website sections are deliberately named using a gastronomy theme,
+consistent with the "Cookbook" concept 👩🏽‍🍳 👨🏻‍🍳. "Cooking Lessons 101" refers to
+tutorials that teach generic, transferable techniques; "Appetisers" are
+easier recipes that provide a good entry point after the tutorials; "Mains"
+are more elaborate and advanced analysis examples; and "Local Dishes" collect
+recipes for regional model configurations [@barnes2024regionalmom6].
+Together these sections present the documentation as a browsable collection of
+lessons and recipes gathered into a single cookbook 📒.
+
+Pedagogy and instructional structure are central to the project.
+"Cooking Lessons 101" introduces generic skills such as loading model output,
+working with labelled arrays, plotting, and interacting with shared data catalogues.
+These tutorials lead into domain-focused "recipes": self-contained notebooks showing how to
 perform concrete diagnostics and analyses on ocean and sea-ice datasets. The
 current repository contains dozens of notebooks grouped into introductory,
 advanced, and region-specific collections, giving learners an incremental path
@@ -253,7 +263,9 @@ new users first to introductory lessons, including material on loading,
 slicing, and visualising model output. Learners then move to more advanced
 tutorials and finally to recipe notebooks that address concrete scientific
 questions. The categories of "appetisers", "mains", and "local dishes" provide
-a lightweight pedagogical cue about expected complexity and scope.
+a lightweight pedagogical cue about expected complexity and scope, with "local
+dishes" specifically covering recipes for regional model configurations
+[@barnes2024regionalmom6].
 
 The intended mode of use is also explicit. The repository is designed around
 Jupyter-based analysis on the Australian National Computational Infrastructure,
