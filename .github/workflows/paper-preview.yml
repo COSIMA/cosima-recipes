@@ -11,6 +11,13 @@ on:
       - ".github/workflows/paper-preview.yml"
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: paper-preview
+  cancel-in-progress: true
+
 jobs:
   build-paper:
     name: Build JOSE Paper PDF
@@ -18,15 +25,96 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Build paper PDF with Open Journals container
+      - name: Build draft PDF
+        uses: openjournals/openjournals-draft-action@master
+        with:
+          journal: jose
+          paper-path: paper/paper.md
+
+      - name: Create Pages preview bundle
         run: |
-          docker run --rm \
-            -v "${{ github.workspace }}/paper:/data" \
-            -w /data \
-            openjournals/inara:latest \
-            paper.md -p -o pdf
+          mkdir -p paper-preview
+          cp paper/paper.pdf paper-preview/paper.pdf
+          cat > paper-preview/index.html <<'EOF'
+          <!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>COSIMA Cookbook JOSE paper preview</title>
+            <style>
+              :root {
+                color-scheme: light;
+                --bg: #f5f7fb;
+                --panel: #ffffff;
+                --text: #16202a;
+                --muted: #556371;
+                --accent: #0b6efd;
+                --border: #d9e1ea;
+              }
+              * { box-sizing: border-box; }
+              body {
+                margin: 0;
+                font-family: Georgia, "Times New Roman", serif;
+                background: linear-gradient(180deg, #eef3f8 0%, var(--bg) 100%);
+                color: var(--text);
+              }
+              main {
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 24px;
+              }
+              .card {
+                background: var(--panel);
+                border: 1px solid var(--border);
+                border-radius: 14px;
+                padding: 20px;
+                box-shadow: 0 10px 30px rgba(20, 32, 43, 0.08);
+                margin-bottom: 20px;
+              }
+              h1 {
+                margin: 0 0 8px;
+                font-size: 2rem;
+              }
+              p {
+                margin: 0 0 12px;
+                color: var(--muted);
+                line-height: 1.5;
+              }
+              a.button {
+                display: inline-block;
+                text-decoration: none;
+                background: var(--accent);
+                color: #fff;
+                padding: 10px 14px;
+                border-radius: 10px;
+                font-weight: 600;
+              }
+              iframe {
+                width: 100%;
+                height: 80vh;
+                border: 1px solid var(--border);
+                border-radius: 10px;
+                background: #fff;
+              }
+            </style>
+          </head>
+          <body>
+            <main>
+              <section class="card">
+                <h1>COSIMA Cookbook JOSE paper preview</h1>
+                <p>This page serves the latest PDF built from <code>paper/paper.md</code>.</p>
+                <a class="button" href="paper.pdf">Open the PDF directly</a>
+              </section>
+              <section class="card">
+                <iframe src="paper.pdf" title="Paper PDF preview"></iframe>
+              </section>
+            </main>
+          </body>
+          </html>
+          EOF
 
       - name: Upload paper PDF artifact
         uses: actions/upload-artifact@v4
@@ -35,6 +123,25 @@ jobs:
           path: paper/paper.pdf
           if-no-files-found: error
 
-      - name: Add workflow summary
-        run: |
-          echo "Built \`paper/paper.pdf\` and uploaded it as the \`jose-paper-preview\` artifact." >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: paper-preview
+
+  deploy-paper-preview:
+    name: Deploy paper preview
+    if: github.event_name != 'pull_request'
+    needs: build-paper
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
