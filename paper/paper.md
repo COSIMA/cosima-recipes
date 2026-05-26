@@ -16,131 +16,131 @@ authors:
     orcid: 0000-0002-3573-996X
     equal-contrib: true
     affiliation: 2
-  - name: Andy McC. Hogg
-    orcid: 0000-0001-5898-7635
-    affiliation: 3
-  - name: Angus Gibson
-    orcid: 0000-0001-7577-3604
+  - name: Wilton Aguiar
+    orcid: 0000-0003-2453-9791
     affiliation: 2
-  - name: Anton Steketee
-    orcid: 0009-0002-9081-4106
-    affiliation: 3
+  - name: Matthis Auger
+    orcid: 0000-0001-6228-5732
+    affiliation: 11
+  - name: Ashley J. Barnes
+    orcid: 0000-0003-3165-8676
+    affiliation: 2
   - name: Romain Beucher
     orcid: 0000-0003-3891-5444
     affiliation: 3
-  - name: Max Proft
+  - name: Dhruv Bhagtani
+    orcid: 0000-0002-1222-375X
+    affiliation: 2
+  - name: Christopher Yit Sen Bull
+    orcid: 0000-0001-8362-3446
     affiliation: 3
-  - name: Aidan Heerdegen
-    orcid: 0000-0002-4481-4896
-    affiliation: 3
-  - name: Ryan M. Holmes
-    orcid: 0000-0002-6799-9109
-    affiliation: 4
-  - name: Adele Morrison
-    orcid: 0009-0003-5143-5020
+  - name: Hannah Dawson
+    orcid: 0000-0001-9113-1329
+    affiliation: 11
+  - name: Noah Day
+    orcid: 0000-0003-4176-7956
+    affiliation: 9
+  - name: Fabio Boeira Dias
+    orcid: 0000-0002-2965-2120
+    affiliation: 8
+  - name: Edward Doddridge
+    orcid: 0000-0002-6097-5729
+    affiliation: 11
+  - name: Anupiya Ellepola
+    orcid: 0009-0002-8898-0068
     affiliation: 2
   - name: Denisse Fierro-Arcos
     orcid: 0000-0002-5039-6272
     affiliation: 11
-  - name: Andrew E. Kiss
-    orcid: 0000-0001-8960-9557
+  - name: Angus Gibson
+    orcid: 0000-0001-7577-3604
     affiliation: 2
-  - name: Micael Oliveira
-    orcid: 0000-0003-1364-0907
+  - name: Aidan Heerdegen
+    orcid: 0000-0002-4481-4896
     affiliation: 3
-  - name: Claire Yung
-    orcid: 0000-0002-0052-7668
-    affiliation: 2
-  - name: Edward Doddridge
-    orcid: 0000-0002-6097-5729
-    affiliation: 11
+  - name: Andy McC. Hogg
+    orcid: 0000-0001-5898-7635
+    affiliation: 3
+  - name: Ryan M. Holmes
+    orcid: 0000-0002-6799-9109
+    affiliation: 4
   - name: Wilma Huneke
     orcid: 0000-0001-8624-365X
     affiliation: 2
-  - name: Dhruv Bhagtani
-    orcid: 0000-0002-1222-375X
-    affiliation: 2
-  - name: Ellie Q. Y. Ong
-    orcid: 0000-0002-0392-7915
-    affiliation: 8
-  - name: James Munroe
-    orcid: 0000-0001-9098-6309
-    affiliation: 1
-  - name: Christina Schmidt
-    orcid: 0000-0002-7672-5054
-    affiliation: 7
-  - name: Hannah Dawson
-    orcid: 0000-0001-9113-1329
-    affiliation: 11
-  - name: Dougal T. Squire
-    orcid: 0000-0003-3271-6874
-    affiliation: 3
-  - name: Fabio Boeira Dias
-    orcid: 0000-0002-2965-2120
-    affiliation: 8
   - name: Jemma Jeffree
     orcid: 0000-0001-7190-7329
     affiliation: 2
-  - name: Ruth Moorman
-    orcid: 0000-0001-5054-1559
-    affiliation: 5
+  - name: Andrew E. Kiss
+    orcid: 0000-0001-8960-9557
+    affiliation: 2
+  - name: Minghang Li
+    orcid: 0000-0002-6167-9999
+    affiliation: 3
   - name: Josue Martínez-Moreno
     orcid: 0000-0002-8348-1588
     affiliation: 7
-  - name: Jan Zika
-    orcid: 0000-0003-3462-3559
-    affiliation: 8
   - name: Jan Jaap Meijer
     orcid: 0000-0001-8667-488X
     affiliation: 11
-  - name: Matthis Auger
-    orcid: 0000-0001-6228-5732
-    affiliation: 11
-  - name: Wilton Aguiar
-    orcid: 0000-0003-2453-9791
-    affiliation: 2
   - name: Thomas Moore
     orcid: 0000-0003-3930-1946
     affiliation: 6
-  - name: Felipe Vilela da Silva
-    orcid: 0000-0003-1967-880X
-    affiliation: 11
-  - name: Luwei Yang
-    orcid: 0000-0001-8570-7424
+  - name: Ruth Moorman
+    orcid: 0000-0001-5054-1559
+    affiliation: 5
+  - name: Adele Morrison
+    orcid: 0009-0003-5143-5020
     affiliation: 2
-  - name: Marc White
-    orcid: 0000-0003-3882-418X
+  - name: James Munroe
+    orcid: 0000-0001-9098-6309
+    affiliation: 1
+  - name: Aditya Narayanan
+    orcid: 0000-0002-8967-2211
+    affiliation: 10
+  - name: Micael Oliveira
+    orcid: 0000-0003-1364-0907
     affiliation: 3
-  - name: Taimoor Sohail
-    orcid: 0000-0002-4162-3269
-    affiliation: 9
-  - name: Ashley J. Barnes
-    orcid: 0000-0003-3165-8676
-    affiliation: 2
-  - name: Paul Spence
-    orcid: 0000-0001-5156-2204
-    affiliation: 11
-  - name: Charles Turner
-    orcid: 0000-0002-3262-4972
+  - name: Ellie Q. Y. Ong
+    orcid: 0000-0002-0392-7915
+    affiliation: 8
+  - name: Max Proft
     affiliation: 3
   - name: Madelaine G. Rosevear
     orcid: 0000-0003-4254-843X
     affiliation: 11
-  - name: Christopher Yit Sen Bull
-    orcid: 0000-0001-8362-3446
-    affiliation: 3
-  - name: Noah Day
-    orcid: 0000-0003-4176-7956
+  - name: Christina Schmidt
+    orcid: 0000-0002-7672-5054
+    affiliation: 7
+  - name: Taimoor Sohail
+    orcid: 0000-0002-4162-3269
     affiliation: 9
-  - name: Minghang Li
-    orcid: 0000-0002-6167-9999
+  - name: Paul Spence
+    orcid: 0000-0001-5156-2204
+    affiliation: 11
+  - name: Dougal T. Squire
+    orcid: 0000-0003-3271-6874
     affiliation: 3
-  - name: Anupiya Ellepola
-    orcid: 0009-0002-8898-0068
+  - name: Anton Steketee
+    orcid: 0009-0002-9081-4106
+    affiliation: 3
+  - name: Charles Turner
+    orcid: 0000-0002-3262-4972
+    affiliation: 3
+  - name: Felipe Vilela da Silva
+    orcid: 0000-0003-1967-880X
+    affiliation: 11
+  - name: Marc White
+    orcid: 0000-0003-3882-418X
+    affiliation: 3
+  - name: Luwei Yang
+    orcid: 0000-0001-8570-7424
     affiliation: 2
-  - name: Aditya Narayanan
-    orcid: 0000-0002-8967-2211
-    affiliation: 10
+  - name: Claire Yung
+    orcid: 0000-0002-0052-7668
+    affiliation: 2
+  - name: Jan Zika
+    orcid: 0000-0003-3462-3559
+    affiliation: 8
 affiliations:
   - name: 2i2c
     index: 1
@@ -166,6 +166,8 @@ affiliations:
     index: 11
 date: 26 May 2026
 bibliography: paper.bib
+
+Note: Coauthors contribution
 ---
 
 # Summary
@@ -178,6 +180,8 @@ large gridded datasets, especially output from the ACCESS ocean-sea ice
 model configuration [@kiss2020accessom2]. The repository combines introductory
 tutorials with worked analysis examples, all exposed through a browsable Sphinx
 documentation site and backed by a citable archived release [@cosimaCookbook].
+The first two authors contributed equally; authors from the third position
+onward are listed alphabetically by surname.[^author-order]
 
 The instructional structure is central to the project. "Cooking Lessons 101"
 introduces generic skills such as loading model output, working with labelled
@@ -265,3 +269,5 @@ also acknowledge the National Computational Infrastructure and the ACCESS-NRI
 ecosystem that make the operational use of these notebooks possible.
 
 # References
+
+[^author-order]: Authorship ordering after the first two authors follows alphabetical order by surname.
