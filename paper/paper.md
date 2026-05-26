@@ -184,7 +184,12 @@ the Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA; https://cosima.
 with large gridded datasets, especially output from the ACCESS ocean-sea ice
 model configuration [@kiss2020accessom2]. The repository combines introductory
 tutorials with worked analysis examples, all exposed through a browsable Sphinx
-documentation site and backed by a citable archived release [@cosimaCookbook].
+documentation site (\autoref{fig:website}) and backed by a citable archived
+release [@cosimaCookbook].
+
+![The COSIMA Cookbook documentation website, showing the browsable Sphinx-based
+landing page used to navigate tutorials and recipes. The live site is available
+at https://cosima-recipes.readthedocs.io. \label{fig:website}](website.png)
 
 The instructional structure is central to the project. "Cooking Lessons 101"
 introduces generic skills such as loading model output, working with labelled
