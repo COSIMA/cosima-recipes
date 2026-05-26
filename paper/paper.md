@@ -195,13 +195,13 @@ landing page used to navigate tutorials and recipes. The live site is available
 at https://cosima-recipes.readthedocs.io. \label{fig:website}](website.png)
 
 The website sections are deliberately named using a gastronomy theme,
-consistent with the "Cookbook" concept 👩🏽‍🍳 👨🏻‍🍳. "Cooking Lessons 101" refers to
+consistent with the "Cookbook" concept. "Cooking Lessons 101" refers to
 tutorials that teach generic, transferable techniques; "Appetisers" are
 easier recipes that provide a good entry point after the tutorials; "Mains"
 are more elaborate and advanced analysis examples; and "Local Dishes" collect
 recipes for regional model configurations [@barnes2024regionalmom6].
 Together these sections present the documentation as a browsable collection of
-lessons and recipes gathered into a single cookbook 📒.
+lessons and recipes gathered into a single cookbook.
 
 Pedagogy and instructional structure are central to the project.
 "Cooking Lessons 101" introduces generic skills such as loading model output,
