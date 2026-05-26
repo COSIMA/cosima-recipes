@@ -193,7 +193,7 @@ release [@cosimaCookbook].
 landing page used to navigate tutorials and recipes. The live site is available
 at https://cosima-recipes.readthedocs.io. \label{fig:website}](website.png)
 
-The instructional structure is central to the project. "Cooking Lessons 101"
+Pedagogy and instructional structure are central to the project. "Cooking Lessons 101"
 introduces generic skills such as loading model output, working with labelled
 arrays, plotting, and interacting with shared data catalogues. These tutorials
 lead into domain-focused "recipes": self-contained notebooks showing how to
