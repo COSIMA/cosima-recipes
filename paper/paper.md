@@ -167,7 +167,6 @@ affiliations:
 date: 26 May 2026
 bibliography: paper.bib
 
-Note: Coauthors contribution
 ---
 
 # Summary
@@ -180,8 +179,6 @@ large gridded datasets, especially output from the ACCESS ocean-sea ice
 model configuration [@kiss2020accessom2]. The repository combines introductory
 tutorials with worked analysis examples, all exposed through a browsable Sphinx
 documentation site and backed by a citable archived release [@cosimaCookbook].
-The first two authors contributed equally; authors from the third position
-onward are listed alphabetically by surname.[^author-order]
 
 The instructional structure is central to the project. "Cooking Lessons 101"
 introduces generic skills such as loading model output, working with labelled
@@ -261,6 +258,11 @@ Cookbook functions both as a learning module for end users and as a framework
 for teaching reproducible scientific communication through notebook design and
 peer review.
 
+# Author order
+
+The first two authors contributed equally; authors from the third position
+onward are listed alphabetically by surname.
+
 # Acknowledgements
 
 We acknowledge the COSIMA community for developing and maintaining the model
@@ -269,5 +271,3 @@ also acknowledge the National Computational Infrastructure and the ACCESS-NRI
 ecosystem that make the operational use of these notebooks possible.
 
 # References
-
-[^author-order]: Authorship ordering after the first two authors follows alphabetical order by surname.
