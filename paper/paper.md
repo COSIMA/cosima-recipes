@@ -218,7 +218,8 @@ through intake-based catalogues [@intake] and incorporating Cartopy
 [@cartopy] for map-based visualisation. The recipe collection also includes a
 Lagrangian particle-tracking workflow built with Parcels
 [@lange2017parcels], as well as analyses that use xgcm [@xgcm] to handle
-variables defined on staggered finite-volume grids.
+variables defined on staggered finite-volume grids and xESMF [@xesmf] for regridding
+model output.
 
 The Cookbook grew from a practical need inside the COSIMA community: the tools
 used to analyse modern ocean model output are powerful, but the gap between
