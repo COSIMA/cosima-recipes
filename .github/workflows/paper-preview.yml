@@ -1,0 +1,40 @@
+name: Paper Preview
+
+on:
+  push:
+    paths:
+      - "paper/**"
+      - ".github/workflows/paper-preview.yml"
+  pull_request:
+    paths:
+      - "paper/**"
+      - ".github/workflows/paper-preview.yml"
+  workflow_dispatch:
+
+jobs:
+  build-paper:
+    name: Build JOSE Paper PDF
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build paper PDF with Open Journals container
+        run: |
+          docker run --rm \
+            -v "${{ github.workspace }}/paper:/data" \
+            -w /data \
+            openjournals/inara:latest \
+            paper.md -p -o pdf
+
+      - name: Upload paper PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jose-paper-preview
+          path: paper/paper.pdf
+          if-no-files-found: error
+
+      - name: Add workflow summary
+        run: |
+          echo "Built \`paper/paper.pdf\` and uploaded it as the \`jose-paper-preview\` artifact." >> "$GITHUB_STEP_SUMMARY"
