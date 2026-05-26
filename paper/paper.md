@@ -10,9 +10,11 @@ tags:
 authors:
   - name: Navid C. Constantinou
     orcid: 0000-0002-8149-4094
+    equal-contrib: true
     affiliation: 9
   - name: Julia Neme
     orcid: 0000-0002-3573-996X
+    equal-contrib: true
     affiliation: 2
   - name: Andy McC. Hogg
     orcid: 0000-0001-5898-7635
