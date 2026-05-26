@@ -79,7 +79,7 @@ authors:
   - name: Minghang Li
     orcid: 0000-0002-6167-9999
     affiliation: 3
-  - name: Josue Martínez-Moreno
+  - name: Josué Martínez-Moreno
     orcid: 0000-0002-8348-1588
     affiliation: 9
   - name: Jan Jaap Meijer
