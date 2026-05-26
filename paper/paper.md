@@ -144,25 +144,25 @@ authors:
 affiliations:
   - name: 2i2c
     index: 1
-  - name: Australian National University
+  - name: Australian National University, Australia
     index: 2
-  - name: "Australian National University, Australia's Climate Simulator (ACCESS-NRI)"
+  - name: "Australian National University, Australia's Climate Simulator (ACCESS-NRI), Australia"
     index: 3
-  - name: Bureau of Meteorology
+  - name: Bureau of Meteorology, Australia
     index: 4
-  - name: California Institute of Technology
+  - name: California Institute of Technology, USA
     index: 5
-  - name: Commonwealth Scientific and Industrial Research Organisation
+  - name: Commonwealth Scientific and Industrial Research Organisation, Australia
     index: 6
-  - name: Laboratoire d'Oceanographie Physique et Spatiale
+  - name: Laboratoire d'Oceanographie Physique et Spatiale, France
     index: 7
-  - name: University of New South Wales Sydney
+  - name: University of New South Wales Sydney, Australia
     index: 8
-  - name: University of Melbourne
+  - name: University of Melbourne, Australia
     index: 9
-  - name: University of Southampton
+  - name: University of Southampton, UK
     index: 10
-  - name: University of Tasmania
+  - name: University of Tasmania, Australia
     index: 11
 date: 26 May 2026
 bibliography: paper.bib
