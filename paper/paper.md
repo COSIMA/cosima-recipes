@@ -194,16 +194,17 @@ release [@cosimaCookbook].
 landing page used to navigate tutorials and recipes. The live site is available
 at https://cosima-recipes.readthedocs.io. \label{fig:website}](website.png)
 
-The website sections are deliberately named using a gastronomy theme,
-consistent with the "Cookbook" concept. "Cooking Lessons 101" refers to
-tutorials that teach generic, transferable techniques; "Appetisers" are
-easier recipes that provide a good entry point after the tutorials; "Mains"
-are more elaborate and advanced analysis examples; and "Local Dishes" collect
-recipes for regional model configurations [@barnes2024regionalmom6].
+Following the "Cookbook" concept, the website sections are deliberately named
+using a gastronomy theme. "Cooking Lessons 101" refers to tutorials that teach
+generic, transferable techniques for handling ocean--sea ice model output; next
+come the "Appetisers" that are easier recipes that provide a good entry point
+after the tutorials; "Mains" are more elaborate and advanced analysis examples,
+and "Local Dishes" collect recipes for regional model configurations [@barnes2024regionalmom6].
 Together these sections present the documentation as a browsable collection of
 lessons and recipes gathered into a single cookbook.
 
-Pedagogy and instructional structure are central to the project.
+Pedagogy and instructional structure are central to the project. The idea is
+that these recipes provide the starting point for more elaborate analyses.
 "Cooking Lessons 101" introduces generic skills such as loading model output,
 working with labelled arrays, plotting, and interacting with shared data catalogues.
 These tutorials lead into domain-focused "recipes": self-contained notebooks showing how to
@@ -255,9 +256,14 @@ repository distinguishes tutorials from recipes. Tutorials teach transferable
 skills, while recipes demonstrate how those skills combine in realistic
 analysis tasks. Third, the project includes contributor guidance and notebook
 review conventions that encourage new analyses to be written in a reusable and
-pedagogically clear style.
+pedagogically clear style. A caveat is that some recipes use high-resolution
+model output with datasets of order terabytes, so the underlying data are not
+always practical to distribute or mirror in full. However, beyond the initial
+data-loading step, which usually occurs early in each recipe, the analysis
+workflows are generally applicable to most operational ocean--sea ice model
+outputs that can be loaded with xarray [@hoyer2017xarray].
 
-This structure is valuable beyond the immediate COSIMA context. Many research
+Thus, the structure is valuable beyond the immediate COSIMA context. Many research
 communities maintain model output on shared infrastructure and face the same
 challenge: turning expert tacit knowledge into examples that newcomers can
 adapt. The Cookbook offers a model for how a scientific collaboration can
