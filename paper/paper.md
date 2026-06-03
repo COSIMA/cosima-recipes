@@ -276,9 +276,9 @@ The learning experience is organised as a progression. The documentation points
 new users first to introductory lessons, including material on loading,
 slicing, and visualising model output. Learners then move to more advanced
 tutorials and finally to recipe notebooks that address concrete scientific
-questions. The categories of "appetisers", "mains", and "local dishes" provide
-a lightweight pedagogical cue about expected complexity and scope, with "local
-dishes" specifically covering recipes for regional model configurations
+questions. The categories of "easy" and "advanced" recipes provide
+a lightweight pedagogical cue about expected complexity and scope, with
+"regional specialties" specifically covering recipes for regional model configurations
 [@barnes2024regionalmom6].
 
 The intended mode of use is also explicit. The repository is designed around
