@@ -134,7 +134,7 @@ authors:
     affiliation: 14
   - name: Marc White
     orcid: 0000-0003-3882-418X
-    affiliation: 3
+    affiliation: "2, 3"
   - name: Luwei Yang
     orcid: 0000-0001-8570-7424
     affiliation: 2
