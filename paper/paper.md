@@ -195,11 +195,11 @@ landing page used to navigate tutorials and recipes. The live site is available
 at https://cosima-recipes.readthedocs.io. \label{fig:website}](website.png)
 
 Following the "Cookbook" concept, the website sections are deliberately named
-using a gastronomy theme. "Cooking Lessons 101" refers to tutorials that teach
+using a gastronomy theme. "Cooking Tutorials" refers to tutorials that teach
 generic, transferable techniques for handling ocean--sea ice model output; next
-come the "Appetisers" that are easier recipes that provide a good entry point
-after the tutorials; "Mains" are more elaborate and advanced analysis examples,
-and "Local Dishes" collect recipes for regional model configurations [@barnes2024regionalmom6].
+come the "Easy Recipes" that are easier recipes that provide a good entry point
+after the tutorials; "Advanced Recipes" are more elaborate and advanced analysis examples,
+and "Regional Specialties" collect recipes for regional model configurations [@barnes2024regionalmom6].
 Together these sections present the documentation as a browsable collection of
 lessons and recipes gathered into a single cookbook.
 
