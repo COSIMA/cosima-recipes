@@ -303,14 +303,16 @@ onward are listed alphabetically by surname.
 
 We are grateful to the COSIMA community for developing and maintaining the model
 output, workflows, and pedagogical practices and also for the great community
-spirit that defines COSIMA. We also acknowledge the National Computational Infrastructure,
-which is supported by the Commonwealth government of Australia, and the ACCESS National
-Research Infrastructure (ACCESS-NRI) ecosystem that make the operational use of these notebooks
-possible. ACCESS-NRI's ACCESS-OM2 and ACCESS-OM3 models are enabled by the Australian
-Government's National Collaborative Research Infrastructure Strategy (a.k.a. NCRIS).
+spirit that defines COSIMA. We acknowledge the National Computational Infrastructure (NCI),
+which is supported by the Commonwealth government of Australia for the computational
+resources provided under the National Computational Merit Allocation Scheme and the
+Australian National University Merit Allocation Scheme. We further acknowledge the ACCESS
+National Research Infrastructure (ACCESS-NRI) ecosystem that make the operational use of
+these notebooks possible. ACCESS-NRI's ACCESS-OM2 and ACCESS-OM3 models are enabled by
+the Australian Government's National Collaborative Research Infrastructure Strategy (a.k.a. NCRIS).
 We acknowledge funding from the Australian Research Council under the Center of
 Excellence for the Weather of the 21st Century CE230100012, the Linkage Infrastructure,
 Equipment and Facilities LP160100073 and LP200100406, and the Discovery
-Project DP240101274. We are also thankful for computational resources provided by the Australian Government through the National Computational Infrastructure (NCI) under the National Computational Merit Allocation Scheme and the Australian National University Merit Allocation Scheme.
+Project DP240101274.
 
 # References
