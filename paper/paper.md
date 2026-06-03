@@ -215,7 +215,7 @@ Within this structure, the tutorials include examples of loading model output
 through Intake-based catalogues [@intake] and incorporating Cartopy
 [@cartopy] for map-based visualisation. The recipe collection also includes a
 Lagrangian particle-tracking workflow built with Parcels
-[@Delandmeter-vanSebille-2019], as well as analyses that use xarray [@hoyer2017xarray] and Dask [@dask; @rocklin2015dask] to process very large multi-dimensional datasets in parallel, xgcm [@xgcm] to handle
+[@Delandmeter-vanSebille-2019], as well as analyses that use xarray [@hoyer2017xarray] and Dask [@rocklin2015dask; @dask] to process very large multi-dimensional datasets in parallel, xgcm [@xgcm] to handle
 variables defined on staggered finite-volume grids and xESMF [@xesmf] for regridding
 model output.
 
