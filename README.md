@@ -14,9 +14,9 @@
 This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
 A collection of cooking lessons and recipes for analysing ocean and sea ice model output produced by the [Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA)](http://cosima.org.au/).
 
-We explain: a "cooking lesson" here is a tutorial that teaches you something generic (e.g. about plotting or loading data); a "recipe" is an example of an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
-Both "cooking lessons" and "recipes" come in self-contained and well-documented Jupyter notebooks.
-All the lessons and the recipes combined form a cookbook 📒!
+We explain: a "cooking tutorial" here is a tutorial that teaches you something generic (e.g. about plotting or loading data); a "recipe" is an example of an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
+Both "cooking tutorials" and "recipes" come in self-contained and well-documented Jupyter notebooks.
+All the tutorials and the recipes combined form a cookbook 📒!
 
 Most recipes use output from the [ACCESS-OM2 model](https://doi.org/10.5194/gmd-13-401-2020), while some also use results from configurations of the [Modular Ocean Model 6 (MOM6)](https://github.com/mom-ocean/MOM6) and remote sensing observations.
 
@@ -43,7 +43,7 @@ If you have never used the NCI see these [first steps instructions](https://acce
       Also included here are some other tutorials, related to techniques (e.g., [Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/03-Maps_with_Cartopy.html)).
 
    After going through the **Basic** Tutorials, feel free to browse some of the **Advanced** ones:
-   
+
    * #### [Advanced](https://cosima-recipes.readthedocs.io/en/latest/cooking-tutorials/advanced.html)
 
 

@@ -11,15 +11,17 @@ Welcome to the COSIMA Cookbook!
 
 This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
 
-We explain: a "recipe" here is an example of an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
-Each "recipe" comes in a self-contained and well-documented Jupyter notebook.
-All the recipes combined form a cookbook 📒!
+We explain: a "cooking tutorial" here is a tutorial that teaches you something generic
+(e.g. about plotting or loading data); a "recipe" is an example of an analysis
+of some ocean-sea ice model output or some ocean-related observational datasets.
+Both "cooking lessons" and "recipes" come in self-contained and well-documented
+Jupyter notebooks. All the lessons and the recipes combined form a cookbook 📒!
 
 Happy cooking! 😉 🥙 🍱 🍲
 
-To get started you should first take the :doc:`Cooking Tutorials <tutorials>` (i.e., our tutorials).
+To get started you should first take the :doc:`Cooking Tutorials <tutorials>`.
 After you've gone through them and feel comfortable, browse through the
-available Recipes (i.e., examples) to find something the better suits your 'taste' (i.e., your needs)!
+available Recipes to find something that better suits your 'taste' (i.e., your needs)!
 
 The recipes are split into :doc:`easy-recipes` (i.e., easier/simpler recipes -- a good place
 to start after you've been through the :doc:`tutorials`), :doc:`advanced-recipes`
