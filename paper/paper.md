@@ -196,21 +196,21 @@ at https://cosima-recipes.readthedocs.io. \label{fig:website}](website.png)
 
 Following the "Cookbook" concept, the website sections are deliberately named
 using a gastronomy theme. "Cooking Tutorials" refers to tutorials that teach
-generic, transferable techniques for handling ocean--sea ice model output; next
-come the "Easy Recipes" that are easier recipes that provide a good entry point
-after the tutorials; "Advanced Recipes" are more elaborate and advanced analysis examples,
-and "Regional Specialties" collect recipes for regional model configurations [@barnes2024regionalmom6].
+generic, transferable techniques for handling ocean--sea ice model output.
+Then comes the main part of any cookbook, its recipes. Here, by "recipes"
+we mean self-contained notebooks showing how to perform concrete diagnostics
+and analyses on ocean and sea-ice datasets. First come the "Easy Recipes" that
+provide a good entry point after the tutorials; then the "Advanced Recipes"
+that are more elaborate and advanced analysis examples, and last the "Regional Specialties"
+collect recipes for regional model configurations [@barnes2024regionalmom6].
 Together these sections present the documentation as a browsable collection of
 lessons and recipes gathered into a single cookbook.
 
 Pedagogy and instructional structure are central to the project. The idea is
 that these recipes provide the starting point for more elaborate analyses.
-"Cooking Lessons 101" introduces generic skills such as loading model output,
+"Cooking Tutorials" introduces generic skills such as loading model output,
 working with labelled arrays, plotting, and interacting with shared data catalogues.
-These tutorials lead into domain-focused "recipes": self-contained notebooks showing how to
-perform concrete diagnostics and analyses on ocean and sea-ice datasets. The
-current repository contains dozens of notebooks grouped into introductory,
-advanced, and region-specific collections, giving learners an incremental path
+These tutorials lead into domain-focused recipes giving learners an incremental path
 from first contact with the data ecosystem to adaptation of full workflows for
 their own science questions.
 
