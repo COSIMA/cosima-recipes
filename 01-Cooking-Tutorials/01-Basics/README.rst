@@ -6,4 +6,4 @@ This is **NOT** the best way to view these tutorials; you won't be getting the b
 
 We'd strongly urge you to browse through the Basics tutorials via the website:
 
-https://cosima-recipes.readthedocs.io/en/latest/coocking-tutorials/basics.html
+https://cosima-recipes.readthedocs.io/en/latest/cooking-tutorials/basics.html

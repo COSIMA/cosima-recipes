@@ -34,7 +34,7 @@ If you have never used the NCI see these [first steps instructions](https://acce
 
    The starting point should be all the **Basic** Tutorials:
 
-   * #### [Basics](https://cosima-recipes.readthedocs.io/en/latest/coocking-tutorials/basics.html)
+   * #### [Basics](https://cosima-recipes.readthedocs.io/en/latest/cooking-tutorials/basics.html)
 
       The [Introduction: loading, slicing, dicing model output](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/01-Loading-Slicing-Dicing-Output.html) should be the starting point.
 
@@ -44,7 +44,7 @@ If you have never used the NCI see these [first steps instructions](https://acce
 
    After going through the **Basic** Tutorials, feel free to browse some of the **Advanced** ones:
    
-   * #### [Advanced](https://cosima-recipes.readthedocs.io/en/latest/coocking-tutorials/advanced.html)
+   * #### [Advanced](https://cosima-recipes.readthedocs.io/en/latest/cooking-tutorials/advanced.html)
 
 
 ### Recipes
