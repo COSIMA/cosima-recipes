@@ -44,13 +44,13 @@ html_static_path = ['_static']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
     '_build', 'Thumbs.db', '.DS_Store',
-    '01-Cooking-Lessons-101/README.rst',
-    '01-Cooking-Lessons-101/01-Basics/README.rst',
-    '01-Cooking-Lessons-101/02-Advanced/README.rst',
+    '01-Cooking-Tutorials/README.rst',
+    '01-Cooking-Tutorials/01-Basics/README.rst',
+    '01-Cooking-Tutorials/02-Advanced/README.rst',
     'Recipes/README.rst',
-    '02-Appetisers/README.rst',
-    '03-Mains/README.rst',
-    '04-Local-Dishes/README.rst',
+    '02-Easy-Recipes/README.rst',
+    '03-Advanced-Recipes/README.rst',
+    '04-Regional-Specialties/README.rst',
 ]
 
 
@@ -71,10 +71,10 @@ html_theme_options = {
 
 nbsphinx_execute = "never"
 nbsphinx_thumbnails = {
-    "01-Cooking-Lessons-101/01-Basics/01-COSIMA_CookBook_Introduction": "_static/thumbnails/cookbook.png",
-    "01-Cooking-Lessons-101/01-Basics/02-ACCESS-NRI_Intake_Catalog": "_static/thumbnails/intake.png",
-    "01-Cooking-Lessons-101/02-Advanced/Make_Your_Own_Database": "_static/thumbnails/database.png",
-    "01-Cooking-Lessons-101/02-Advanced/Submitting_analysis_jobs_to_gadi": "_static/thumbnails/gadi.png",
-    "01-Cooking-Lessons-101/02-Advanced/Using_Explorer_tools": "_static/thumbnails/explore.png",
-    "01-Cooking-Lessons-101/02-Advanced/intake_to_dask_efficiently_chunking": "_static/thumbnails/dask.png",
+    "01-Cooking-Tutorials/01-Basics/01-Loading-Slicing-Dicing-Output": "_static/thumbnails/cookbook.png",
+    "01-Cooking-Tutorials/01-Basics/02-ACCESS-NRI_Intake_Catalog": "_static/thumbnails/intake.png",
+    "01-Cooking-Tutorials/02-Advanced/Make_Your_Own_Intake_Datastore": "_static/thumbnails/database.png",
+    "01-Cooking-Tutorials/02-Advanced/Submitting_analysis_jobs_to_gadi": "_static/thumbnails/gadi.png",
+    "01-Cooking-Tutorials/02-Advanced/Spatial_selection": "_static/thumbnails/explore.png",
+    "01-Cooking-Tutorials/02-Advanced/intake_to_dask_efficiently_chunking": "_static/thumbnails/dask.png",
 }

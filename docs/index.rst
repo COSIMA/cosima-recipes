@@ -17,30 +17,30 @@ All the recipes combined form a cookbook 📒!
 
 Happy cooking! 😉 🥙 🍱 🍲
 
-To get started you should first take the :doc:`Cooking Lessons 101 <cooking-lessons-101/index>` (i.e., our Tutorials).
+To get started you should first take the :doc:`Cooking Tutorials <tutorials>` (i.e., our tutorials).
 After you've gone through them and feel comfortable, browse through the
 available Recipes (i.e., examples) to find something the better suits your 'taste' (i.e., your needs)!
 
-The recipes are split into :doc:`appetisers` (i.e., easier/simpler recipes -- a good place
-to start after you've been through the :doc:`cooking-lessons-101/index`), :doc:`mains`
-(i.e. more elaborate/advanced recipes) and :doc:`local-dishes` (i.e. recipes for regional
+The recipes are split into :doc:`easy-recipes` (i.e., easier/simpler recipes -- a good place
+to start after you've been through the :doc:`tutorials`), :doc:`advanced-recipes`
+(i.e. more elaborate/advanced recipes) and :doc:`regional-specialties` (i.e. recipes for regional
 configurations).
 
-The  :doc:`COSIMA Cookbook tutorial <01-Cooking-Lessons-101/01-Basics/COSIMA_CookBook_Introduction>` is perhaps the best place to start.
+The :doc:`COSIMA Cookbook tutorial <01-Cooking-Tutorials/01-Basics/01-Loading-Slicing-Dicing-Output>` is perhaps the best place to start.
 
 .. toctree::
    :maxdepth: 2
    :caption: Lessons
 
-   Cooking Lessons 101 <cooking-lessons-101/index>
+   Cooking Tutorials <tutorials>
 
 .. toctree::
    :maxdepth: 2
    :caption: Recipes
 
-   Appetisers <appetisers>
-   Mains <mains>
-   Local Dishes <local-dishes>
+   Easy Recipes <easy-recipes>
+   Advanced Recipes <advanced-recipes>
+   Regional Specialties <regional-specialties>
 
 .. toctree::
    :maxdepth: 2
