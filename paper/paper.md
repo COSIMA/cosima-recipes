@@ -202,7 +202,7 @@ we mean self-contained notebooks showing how to perform concrete diagnostics
 and analyses on ocean and sea-ice datasets. First come the "Easy Recipes" that
 provide a good entry point after the tutorials; then the "Advanced Recipes"
 that are more elaborate and advanced analysis examples, and last the "Regional Specialties"
-collect recipes for regional model configurations [@barnes2024regionalmom6].
+contains recipes for regional model configurations [@barnes2024regionalmom6].
 Together these sections present the documentation as a browsable collection of
 lessons and recipes gathered into a single cookbook.
 
