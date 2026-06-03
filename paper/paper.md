@@ -212,7 +212,7 @@ from first contact with the data ecosystem to adaptation of full workflows for
 their own science questions.
 
 Within this structure, the tutorials include examples of loading model output
-through intake-based catalogues [@intake] and incorporating Cartopy
+through Intake-based catalogues [@intake] and incorporating Cartopy
 [@cartopy] for map-based visualisation. The recipe collection also includes a
 Lagrangian particle-tracking workflow built with Parcels
 [@Delandmeter-vanSebille-2019], as well as analyses that use xgcm [@xgcm] to handle
