@@ -312,7 +312,7 @@ Australian National University Merit Allocation Scheme. We further acknowledge t
 National Research Infrastructure (ACCESS-NRI) ecosystem that make the operational use of
 these notebooks possible. ACCESS-NRI's ACCESS-OM2 and ACCESS-OM3 models are enabled by
 the Australian Government's National Collaborative Research Infrastructure Strategy (a.k.a. NCRIS).
-We acknowledge funding from the Australian Research Council under the Center of
+We acknowledge funding from the Australian Research Council under the Centre of
 Excellence for the Weather of the 21st Century CE230100012, the Linkage Infrastructure,
 Equipment and Facilities LP160100073 and LP200100406, and the Discovery
 Project DP240101274.
