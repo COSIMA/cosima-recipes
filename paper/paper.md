@@ -218,7 +218,7 @@ Within this structure, the tutorials include examples of loading model output
 through intake-based catalogues [@intake] and incorporating Cartopy
 [@cartopy] for map-based visualisation. The recipe collection also includes a
 Lagrangian particle-tracking workflow built with Parcels
-[@lange2017parcels], as well as analyses that use xgcm [@xgcm] to handle
+[@Delandmeter-vanSebille-2019], as well as analyses that use xgcm [@xgcm] to handle
 variables defined on staggered finite-volume grids and xESMF [@xesmf] for regridding
 model output.
 
