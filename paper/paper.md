@@ -293,7 +293,7 @@ generalise workflows so that they remain useful to others. In that sense, the
 Cookbook functions both as a learning module for end users and as a framework
 for teaching reproducible scientific communication through notebook design and
 peer review.
-
+The easy access to data and analysis provided by the COSIMA Cookbook has enabled rapid community adoption of the ACCESS ocean and sea-ice model configurations, facilitating, to this day, [well over 100 peer-reviewed papers](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ) and many PhD projects.
 # Author order
 
 The first two authors contributed equally; authors from the third position
