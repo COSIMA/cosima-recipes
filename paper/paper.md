@@ -91,7 +91,7 @@ authors:
   - name: Ruth Moorman
     orcid: 0000-0001-5054-1559
     affiliation: 6
-  - name: Adele Morrison
+  - name: Adele K. Morrison
     orcid: 0009-0003-5143-5020
     affiliation: 2
   - name: James Munroe
