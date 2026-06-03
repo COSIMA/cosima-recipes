@@ -185,7 +185,7 @@ ocean and sea-ice model output in Jupyter notebooks. It has been developed by
 the Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA; https://cosima.org.au)
 as a community resource for researchers, students, and practitioners working
 with large gridded datasets, especially output from the ACCESS ocean-sea ice
-model configuration [@kiss2020accessom2]. The repository combines introductory
+model configurations [e.g. @kiss2020accessom2]. The repository combines introductory
 tutorials with worked analysis examples, all exposed through a browsable Sphinx
 documentation site (\autoref{fig:website}) and backed by a citable archived
 release [@cosimaCookbook].
