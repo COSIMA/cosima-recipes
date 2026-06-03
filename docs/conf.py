@@ -14,6 +14,8 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+from pathlib import Path
+
 
 # -- Project information -----------------------------------------------------
 
@@ -31,6 +33,7 @@ master_doc = 'index'
 # ones.
 extensions = [
     'nbsphinx',
+    'sphinx_reredirects',
     'sphinx_gallery.load_style',
 ]
 
@@ -78,3 +81,32 @@ nbsphinx_thumbnails = {
     "01-Cooking-Tutorials/02-Advanced/Spatial_selection": "_static/thumbnails/explore.png",
     "01-Cooking-Tutorials/02-Advanced/intake_to_dask_efficiently_chunking": "_static/thumbnails/dask.png",
 }
+
+redirects = {
+    "appetisers": "easy-recipes.html",
+    "mains": "advanced-recipes.html",
+    "local-dishes": "regional-specialties.html",
+    "cooking-lessons-101": "/tutorials.html",
+    "cooking-lessons-101/index": "/tutorials.html",
+    "cooking-lessons-101/basics": "/cooking-tutorials/basics.html",
+    "cooking-lessons-101/advanced": "/cooking-tutorials/advanced.html",
+    "coocking-tutorials/basics": "/cooking-tutorials/basics.html",
+    "coocking-tutorials/advanced": "/cooking-tutorials/advanced.html",
+}
+
+_renamed_doc_prefixes = [
+    ("01-Cooking-Lessons-101", "01-Cooking-Tutorials"),
+    ("02-Appetisers", "02-Easy-Recipes"),
+    ("03-Mains", "03-Advanced-Recipes"),
+    ("04-Local-Dishes", "04-Regional-Specialties"),
+]
+
+_docs_root = Path(__file__).resolve().parent
+for old_prefix, new_prefix in _renamed_doc_prefixes:
+    new_dir = _docs_root / new_prefix
+    if not new_dir.exists():
+        continue
+    for notebook in new_dir.rglob("*.ipynb"):
+        docname = notebook.relative_to(_docs_root).with_suffix("").as_posix()
+        redirects[docname.replace(new_prefix, old_prefix, 1)] = f"/{docname}.html"
+from pathlib import Path
