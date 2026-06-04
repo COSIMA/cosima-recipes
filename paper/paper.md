@@ -322,7 +322,7 @@ showcases best practices to the broader oceanographic community and enabled rapi
 community adoption of the ACCESS ocean and sea-ice model configurations internationally,
 facilitating to date well over [100 peer-reviewed papers](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ) and scores of PhD projects.
 
-# Author order
+# Author Order
 
 The first two authors contributed equally; authors from the third position
 onward are listed alphabetically by surname.
