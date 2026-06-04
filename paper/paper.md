@@ -33,16 +33,16 @@ authors:
     affiliation: 10
   - name: Christopher Yit Sen Bull
     orcid: 0000-0001-8362-3446
-    affiliation: 4
+    affiliation: 3
   - name: Hannah Dawson
     orcid: 0000-0001-9113-1329
     affiliation: 15
   - name: Noah Day
     orcid: 0000-0003-4176-7956
-    affiliation: 13
+    affiliation: 12
   - name: Fabio Boeira Dias
     orcid: 0000-0002-2965-2120
-    affiliation: 12
+    affiliation: 13
   - name: Edward Doddridge
     orcid: 0000-0002-6097-5729
     affiliation: 15
@@ -63,7 +63,7 @@ authors:
     affiliation: 3
   - name: Andy McC. Hogg
     orcid: 0000-0001-5898-7635
-    affiliation: "3, 4"
+    affiliation: "2, 3, 4"
   - name: Ryan M. Holmes
     orcid: 0000-0002-6799-9109
     affiliation: 5
@@ -119,7 +119,7 @@ authors:
     affiliation: 11
   - name: Taimoor Sohail
     orcid: 0000-0002-4162-3269
-    affiliation: 13
+    affiliation: 12
   - name: Paul Spence
     orcid: 0000-0001-5156-2204
     affiliation: "4, 15"
@@ -146,7 +146,7 @@ authors:
     affiliation: 2
   - name: Jan Zika
     orcid: 0000-0003-3462-3559
-    affiliation: 12
+    affiliation: 13
 affiliations:
   - name: 2i2c
     index: 1
@@ -170,9 +170,9 @@ affiliations:
     index: 10
   - name: British Antarctic Survey, UK
     index: 11
-  - name: University of New South Wales Sydney, Australia
-    index: 12
   - name: University of Melbourne, Australia
+    index: 12
+  - name: University of New South Wales Sydney, Australia
     index: 13
   - name: University of Southampton, UK
     index: 14
