@@ -256,7 +256,7 @@ common diagnostics. Some calculations, for example computing cross-contour trans
 require non-trivial development, understanding of model numerics, and validation before
 they can be used confidently. If every new user or project had to reconstruct
 those workflows independently, a large amount of effort would be repeatedly spent
-on rebuilding analysis code rather than doing science with the model.
+on rebuilding analysis code rather than conducting research using the model output.
 
 The COSIMA Cookbook fills that need with a domain-specific, openly maintained
 collection of computational lessons and examples. Its contribution is not a new
