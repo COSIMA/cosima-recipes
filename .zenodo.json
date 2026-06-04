@@ -264,7 +264,13 @@
          "name":"Narayanan, Aditya",
          "orcid":"0000-0002-8967-2211",
          "type":"ProjectMember"
-      }
+      },
+      {
+         "affiliation":"GEOMAR Helmholtz Centre for Ocean Research Kiel",
+         "name":"Huguenin, Maurice F.",
+         "orcid":"0000-0002-1476-0452",
+         "type":"ProjectMember"
+      },
    ],
    "keywords": [
      "Ocean Modeling",
