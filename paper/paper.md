@@ -148,7 +148,7 @@ authors:
     orcid: 0000-0003-3462-3559
     affiliation: 13
 affiliations:
-  - name: 2i2c
+  - name: 2i2c, USA
     index: 1
   - name: Australian National University, Australia
     index: 2
