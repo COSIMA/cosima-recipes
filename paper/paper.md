@@ -91,6 +91,9 @@ authors:
   - name: Ruth Moorman
     orcid: 0000-0001-5054-1559
     affiliation: 6
+  - name: Paige Martin
+    orcid: 0000-0003-3538-633X
+    affiliation: 3
   - name: Adele K. Morrison
     orcid: 0009-0003-5143-5020
     affiliation: 2
@@ -243,12 +246,28 @@ foundations for these tasks, but they do not by themselves show a learner how
 to translate a research question into a robust analysis workflow for a specific
 model and computing environment.
 
+That gap is not only pedagogical; it directly affects how quickly model output
+can be turned into science. For a beginner, becoming productive with a model
+often requires substantial time just to understand the structure of the output,
+the relevant conventions, and the computational environment in which analysis is
+expected to run. There is also substantial scientific labour embedded in many
+common diagnostics. Some calculations, such as cross-contour transport, require
+non-trivial development and validation before they can be used confidently. If
+every new user or project had to reconstruct those workflows independently, a
+large amount of effort would be repeatedly spent on rebuilding analysis code
+rather than doing science with the model.
+
 The COSIMA Cookbook fills that need with a domain-specific, openly maintained
 collection of computational lessons and examples. Its contribution is not a new
-analysis package; rather, it is a reusable learning resource that makes
-existing scientific software, data conventions, and model output more
-approachable. This aligns well with JOSE's emphasis on open educational
-resources that enable computational learning through authentic practice.
+analysis library; rather, it is a reusable scientific and educational resource
+that exposes complete, well-documented workflows in the same notebook format in
+which many researchers actually explore data and communicate methods. By
+choosing notebooks instead of packaging these examples only as a software
+library, the project makes intermediate reasoning, methodological choices, and
+practical execution details visible to learners while still giving more
+experienced users analysis patterns they can adapt directly for research. This
+aligns well with JOSE's emphasis on open educational resources that enable
+computational learning through authentic practice.
 
 Several design decisions make the Cookbook particularly useful for adoption by
 other groups. First, each notebook is intended to be self-contained and
