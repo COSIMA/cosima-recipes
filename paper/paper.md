@@ -251,11 +251,11 @@ can be turned into science. For a beginner, becoming productive with a model
 often requires substantial time just to understand the structure of the output,
 the relevant conventions, and the computational environment in which analysis is
 expected to run. There is also substantial scientific labour embedded in many
-common diagnostics. Some calculations, such as cross-contour transport, require
-non-trivial development and validation before they can be used confidently. If
-every new user or project had to reconstruct those workflows independently, a
-large amount of effort would be repeatedly spent on rebuilding analysis code
-rather than doing science with the model.
+common diagnostics. Some calculations, for example computing cross-contour transports,
+require non-trivial development, understanding of model numerics, and validation before
+they can be used confidently. If every new user or project had to reconstruct
+those workflows independently, a large amount of effort would be repeatedly spent
+on rebuilding analysis code rather than doing science with the model.
 
 The COSIMA Cookbook fills that need with a domain-specific, openly maintained
 collection of computational lessons and examples. Its contribution is not a new
