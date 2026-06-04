@@ -96,4 +96,5 @@ Hence, users who put together a pull request for a new contribution, should ensu
 
 If you use a recipe from the Cookbook for your research or teaching, or have based your analysis on one of the recipes, we would be grateful if you could cite:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14353852.svg)](https://doi.org/10.5281/zenodo.14353852)
+> Constantinou, N. C. et al. (2026). COSIMA Cookbook: A cookbook of recipes for analysing ocean and sea ice model output. Zenodo. doi:[10.5281/zenodo.14353852](https://doi.org/10.5281/zenodo.14353852) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14353852.svg)](https://doi.org/10.5281/zenodo.14353852)
+
