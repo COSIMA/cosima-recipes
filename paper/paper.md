@@ -43,7 +43,7 @@ authors:
   - name: Fabio Boeira Dias
     orcid: 0000-0002-2965-2120
     affiliation: 13
-  - name: Edward Doddridge
+  - name: Edward W. Doddridge
     orcid: 0000-0002-6097-5729
     affiliation: 15
   - name: Anupiya Ellepola
