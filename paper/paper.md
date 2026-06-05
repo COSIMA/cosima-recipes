@@ -208,7 +208,7 @@ Then comes the main part of any cookbook, its recipes. Here, by "recipes"
 we mean self-contained notebooks showing how to perform concrete diagnostics
 and analyses on ocean and sea-ice datasets. First come the "Easy Recipes" that
 provide a good entry point after the tutorials; then the "Advanced Recipes"
-that are more elaborate and advanced analysis examples, and last the "Regional Specialties"
+that are more elaborate and demonstrate advanced analysis techniques, and lastly the "Regional Specialties"
 contains recipes for regional model configurations [@barnes2024regionalmom6].
 Together these sections present the documentation as a browsable collection of
 lessons and recipes gathered into a single cookbook.
@@ -236,7 +236,7 @@ package-level documentation and a reproducible end-to-end workflow remains
 large. Users need to understand not only Python and Jupyter
 [@kluyver2016jupyter], but also how to navigate high-dimensional model output,
 shared high-performance computing environments, and domain-specific analysis
-conventions. The Cookbook addresses that gap by packaging reusable workflows in
+conventions. The Cookbook addresses this gap by packaging reusable workflows in
 the same medium in which users actually work.
 
 # Statement of Need
@@ -260,7 +260,7 @@ they can be used confidently. If every new user or project had to reconstruct
 those workflows independently, a large amount of effort would be repeatedly spent
 on rebuilding analysis code rather than conducting research using the model output.
 
-The COSIMA Cookbook fills that need with a domain-specific, openly maintained
+The COSIMA Cookbook facilitates knowledge sharing and accelerates research with a domain-specific, openly maintained
 collection of computational lessons and examples. Its contribution is not a new
 analysis library; rather, it is a reusable scientific and educational resource
 that exposes complete, well-documented workflows in the same notebook format in
@@ -320,7 +320,7 @@ generalise workflows so that they remain useful to others. In that sense, the
 Cookbook functions both as a learning module for end users and as a framework
 for teaching reproducible scientific communication through notebook design and
 peer review. The easy access to data and analysis provided by the COSIMA Cookbook
-showcases best practices to the broader oceanographic community and enabled rapid
+showcases best practices to the broader oceanographic community and has enabled rapid
 community adoption of the ACCESS ocean and sea-ice model configurations internationally,
 facilitating to date well over [100 peer-reviewed papers](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ) and scores of PhD projects.
 
