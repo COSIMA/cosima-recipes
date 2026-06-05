@@ -260,12 +260,12 @@ they can be used confidently. If every new user or project had to reconstruct
 those workflows independently, a large amount of effort would be repeatedly spent
 on rebuilding analysis code rather than conducting research using the model output.
 
-The COSIMA Cookbook facilitates knowledge sharing and accelerates research with a domain-specific, openly maintained
-collection of computational lessons and examples. Its contribution is not a new
-analysis library; rather, it is a reusable scientific and educational resource
-that exposes complete, well-documented workflows in the same notebook format in
-which many researchers actually explore data and communicate methods. By
-choosing notebooks instead of packaging these examples only as a software
+The COSIMA Cookbook facilitates knowledge sharing and accelerates research with
+a domain-specific, openly maintained collection of computational lessons and examples.
+Its contribution is not a new analysis library; rather, it is a reusable scientific
+and educational resource that exposes complete, well-documented workflows in the same
+notebook format in which many researchers actually explore data and communicate methods.
+By choosing notebooks instead of packaging these examples only as a software
 library, the project makes intermediate reasoning, methodological choices, and
 practical execution details visible to learners while still giving more
 experienced users analysis patterns they can adapt directly for research. This
