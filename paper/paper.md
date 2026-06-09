@@ -215,8 +215,7 @@ contains recipes for regional model configurations [@barnes2024regionalmom6].
 Together these sections present the documentation as a browsable collection of
 lessons and recipes gathered into a single cookbook.
 
-Pedagogy and instructional structure are central to the project. The idea is
-that these recipes provide the starting point for more elaborate analyses.
+Pedagogy and instructional structure are central to the project. The recipes provide the starting point for more elaborate analyses.
 "Cooking Tutorials" introduces generic skills such as loading model output,
 working with labelled arrays, plotting, and interacting with shared data catalogues.
 These tutorials lead into domain-focused recipes giving learners an incremental path
