@@ -233,7 +233,7 @@ and xESMF [@xesmf] for regridding model output.
 
 The Cookbook grew from a practical need inside the COSIMA community: the tools
 used to analyse modern ocean model output are powerful, but the gap between
-package-level documentation and a reproducible end-to-end workflow remains
+package-level documentation and reproducible end-to-end workflows remains
 large. Users need to understand not only Python and Jupyter
 [@kluyver2016jupyter], but also how to navigate high-dimensional model output,
 shared high-performance computing environments, and domain-specific analysis
