@@ -6,4 +6,4 @@ Advanced
    :glob:
    :hidden:
 
-   ../01-Cooking-Lessons-101/02-Advanced/*
+   ../01-Cooking-Tutorials/02-Advanced/*

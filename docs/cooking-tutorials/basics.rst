@@ -6,4 +6,4 @@ Basics
    :glob:
    :hidden:
 
-   ../01-Cooking-Lessons-101/01-Basics/*
+   ../01-Cooking-Tutorials/01-Basics/*
