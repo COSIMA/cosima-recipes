@@ -222,14 +222,15 @@ These tutorials lead into domain-focused recipes giving learners an incremental 
 from first contact with the data ecosystem to adaptation of full workflows for
 their own science questions.
 
-Within this structure, the tutorials leverage and demonstrate open source tools for scientific analysis of large data. This includes examples of loading model output
-through Intake-based catalogues [@intake], using xarray [@hoyer2017xarray] 
+Within this structure, the tutorials leverage and demonstrate open source tools for
+scientific analysis of large data. This includes examples of loading model output
+through Intake-based catalogues [@intake], using xarray [@hoyer2017xarray]
 and Dask [@rocklin2015dask; @dask] to process very large multi-dimensional datasets
-in parallel. The recipe collection includes a
-Lagrangian particle-tracking workflow built with Parcels
-[@Delandmeter-vanSebille-2019], as well as analyses that use xgcm [@xgcm] to handle variables defined on staggered finite-volume grids, and xESMF [@xesmf] for regridding model output.
-Figures are generated using matplotlib[@hunter...] and incorporating Cartopy
-[@cartopy] for map-based visualisation.
+in parallel. The recipe collection includes a Lagrangian particle-tracking workflow
+built with Parcels [@Delandmeter-vanSebille-2019], as well as analyses that use
+xgcm [@xgcm] to handle variables defined on staggered finite-volume grids, and xESMF [@xesmf]
+for regridding model output. Figures are generated using matplotlib [@Hunter2007matplotlib]
+incorporating Cartopy [@cartopy] for map-based visualisation.
 
 The Cookbook grew from a practical need inside the COSIMA community: the tools
 used to analyse modern ocean model output are powerful, but the gap between
