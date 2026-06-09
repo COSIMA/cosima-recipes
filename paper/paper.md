@@ -336,8 +336,7 @@ onward are listed alphabetically by surname.
 This work was supported by computational resources provided by the Australian Government through the National Computational Infrastructure (NCI) under the National Computational Merit
 Allocation Scheme and the Australian National University Allocation Scheme. We thank the
 vibrant communities of the Consortium for Ocean–Sea Ice Modelling in Australia (COSIMA;
-[cosima.org.au](https://cosima.org.au)) and the Australian Community Climate and Earth System
-Simulator National Research Infrastructure (ACCESS-NRI; [access-nri.org.au](https://access-nri.org.au))
+[cosima.org.au](https://cosima.org.au)) and Australia’s climate simulator (ACCESS-NRI; [access-nri.org.au](https://access-nri.org.au))
 for making the ACCESS-OM2 and ACCESS-OM3 outputs and analysis tools available through the NCI.
 We further acknowledge funding from the Australian Research Council under the Centre of
 Excellence for the Weather of the 21st Century CE230100012, the Linkage Infrastructure,
