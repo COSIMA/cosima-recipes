@@ -194,8 +194,9 @@ the Consortium for Ocean--Sea Ice Modelling in Australia (COSIMA; <https://cosim
 as a community resource for researchers, students, and practitioners working
 with large gridded datasets, especially output from the ACCESS ocean--sea ice
 model configurations [e.g. @kiss2020accessom2]. The repository combines introductory
-tutorials with worked analysis examples, all exposed through a browsable Sphinx
-documentation site (\autoref{fig:website}) and backed by a citable archived
+tutorials with worked analysis examples, all exposed through a browsable
+documentation site built with Sphinx, a documentation generator for Python
+projects [@sphinx] (\autoref{fig:website}) and backed by a citable archived
 release [@cosimaCookbook].
 
 ![The COSIMA Cookbook documentation website, showing the browsable Sphinx-based
