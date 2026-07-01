@@ -42,7 +42,7 @@ authors:
     affiliation: 14
   - name: Fabio Boeira Dias
     orcid: 0000-0002-2965-2120
-    affiliation: 15
+    affiliation: 17
   - name: Edward W. Doddridge
     orcid: 0000-0002-6097-5729
     affiliation: 17
@@ -69,7 +69,7 @@ authors:
     affiliation: 4
   - name: Wilma Huneke
     orcid: 0000-0001-8624-365X
-    affiliation: "1, 10"
+    affiliation: 10
   - name: Jemma Jeffree
     orcid: 0000-0001-7190-7329
     affiliation: "1, 3"
