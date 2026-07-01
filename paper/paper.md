@@ -150,7 +150,7 @@ affiliations:
     index: 1
   - name: Australian National University, Australia
     index: 2
-  - name: "Australian National University, Australia's Climate Simulator (ACCESS-NRI), Australia"
+  - name: "Australia's Climate Simulator (ACCESS-NRI), Australian National University, Canberra, Australia"
     index: 3
   - name: Australian Research Council Centre of Excellence for the Weather of the 21st Century, Australia
     index: 4
