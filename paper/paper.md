@@ -109,8 +109,6 @@ authors:
   - name: Ellie Q. Y. Ong
     orcid: 0000-0002-0392-7915
     affiliation: "4, 10"
-  - name: Max Proft
-    affiliation: 3
   - name: Madelaine G. Rosevear
     orcid: 0000-0003-4254-843X
     affiliation: "4, 16"
