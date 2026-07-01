@@ -226,7 +226,7 @@ their own science questions.
 
 Within this structure, the tutorials leverage and demonstrate open source tools for
 scientific analysis of large data. This includes examples of loading model output
-through Intake-based catalogues [@intake], using xarray [@hoyer2017xarray]
+through Intake-based catalogues [@intake], using Xarray [@hoyer2017xarray]
 and Dask [@rocklin2015dask; @dask] to process very large multi-dimensional datasets
 in parallel. The recipe collection includes a Lagrangian particle-tracking workflow
 built with Parcels [@Delandmeter-vanSebille-2019], as well as analyses that use
