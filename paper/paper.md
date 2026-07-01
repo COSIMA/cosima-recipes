@@ -344,7 +344,7 @@ repositories on Github, where analysis workflows, methods, and implementation ch
 to community scrutiny and reuse. In that sense, the
 Cookbook functions both as a learning resource for end users and as a framework
 for teaching reproducible scientific communication through notebook design and
-peer review. COSIMA workshops and hackathons provide periodic opportunities to review,
+peer review. COSIMA workshops and [hackathons](https://forum.access-hive.org.au/t/cosima-2-day-hackathon-v5-0-monday-sep-8-tuesday-sep-9-2025/4794) provide periodic opportunities to review,
 update, and extend existing recipes, ensuring the Cookbook remains a living resource that
 keeps pace with evolving tools and community best practices.
 The easy access to data and analysis provided by the COSIMA Cookbook has enabled rapid
