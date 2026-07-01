@@ -209,19 +209,20 @@ examples the follow. Then comes the main part of any cookbook -- its recipes.
 Here, by "recipes" we mean self-contained notebooks showing how to perform concrete
 diagnostics and analyses on ocean and sea-ice datasets. First come the "Easy Recipes" that
 provide a good starting point after the tutorials; then the "Advanced Recipes"
-that are more elaborate and demonstrate advanced analysis techniques, and lastly the
+that are more elaborate and demonstrate advanced analysis techniques. Lastly, the
 "Regional Specialties" contains recipes for regional model configurations [@barnes2024regionalmom6].
 This gastronomy framing is shared by other computational workflow collections, such as
 [Project Pythia Cookbooks](https://cookbooks.projectpythia.org) for the general
 geoscience community and the [FAIR Cookbook](https://faircookbook.elixir-europe.org/content/home.html)
 for working with life science data.
 
-Pedagogy and instructional structure are central to the project. "Cooking Tutorials"
-introduces generic skills such as loading model output, working with labelled arrays,
-plotting, and interacting with shared data catalogues. The recipes provide the starting point
-for more elaborate analyses. These tutorials lead into domain-focused recipes giving
-learners an incremental path from first contact with the data ecosystem to adaptation
-of full workflows for their own science questions.
+Pedagogy is central to the project. "Cooking Tutorials" introduces generic skills such
+as loading model output, working with labelled arrays, plotting, and interacting with
+shared data catalogues. These tutorials lead into domain-focused recipes giving learners an incremental path from first contact with the data ecosystem to adaptation of full
+workflows for their own science questions. The recipes provide the starting point for
+more elaborate analyses.  The categories of "easy" and "advanced" recipes provide
+a lightweight pedagogical cue about expected complexity and scope
+
 
 Within this structure, the tutorials leverage and demonstrate open source tools for
 scientific analysis of large data. This includes examples of loading model output
@@ -276,7 +277,7 @@ experienced users analysis patterns they can adapt directly for research. This
 aligns well with JOSE's emphasis on open educational resources that enable
 computational learning through authentic practice.
 
-Several design decisions make the Cookbook particularly useful for adoption by
+Several design decisions have made the Cookbook particularly useful for adoption by
 other groups. First, each notebook is intended to be self-contained and
 well-documented, so learners can read, run, and modify a complete workflow
 without reconstructing missing context from scattered notes. Second, the
@@ -284,14 +285,14 @@ repository distinguishes tutorials from recipes. Tutorials teach transferable
 skills, while recipes demonstrate how those skills combine in realistic
 analysis tasks. Third, the project includes contributor guidance and notebook
 review conventions that encourage new analyses to be written in a reusable and
-pedagogically clear style. A caveat is that some recipes use high-resolution
+pedagogically clear style. A caveat is that most recipes use high-resolution
 model output with datasets of order terabytes, so the underlying data are not
-always practical to distribute or mirror in full. However, beyond the initial
-data-loading step, which usually occurs early in each recipe, the analysis
-workflows are generally applicable to most operational ocean--sea ice model
-outputs that can be loaded with Xarray [@hoyer2017xarray].
+always practical to distribute or mirror in full. However, beyond the data-loading step,
+which usually early on in each recipe, the analysis workflows are generally
+applicable to most operational ocean--sea ice model outputs that can be
+loaded with Xarray [@hoyer2017xarray].
 
-Thus, the design renders the Cookbook valuable beyond the immediate COSIMA context.
+Thus, the design renders the Cookbook valuable beyond the immediate the COSIMA context.
 Many research communities maintain model output on shared infrastructure and face the same
 challenge: turning expert tacit knowledge into examples that newcomers can
 adapt. The Cookbook offers a model for how a scientific collaboration can
@@ -312,23 +313,15 @@ therefore grow more valuable alongside AI adoption.
 
 # Educational Design and Experience of Use
 
-The learning experience is organised as a progression. The documentation points
-new users first to introductory lessons, including material on loading,
-slicing, and visualising model output. Learners then move to more advanced
-tutorials and finally to recipe notebooks that address concrete scientific
-questions. The categories of "easy" and "advanced" recipes provide
-a lightweight pedagogical cue about expected complexity and scope, with
-"regional specialties" specifically covering recipes for regional model configurations
-[@barnes2024regionalmom6].
-
-The intended mode of use is also explicit. The tutorials and recipes showcase Jupyter-based
-analysis that can be run directly on Australia's National Computational Infrastructure,
-and include guidance on running notebooks through JupyterLab sessions and on
-accessing shared data holdings. This makes the Cookbook more than a static
-collection of examples: it is operational documentation for a real analysis
-environment. At the same time, the notebooks demonstrate broadly transferable
-workflows for working with labelled geophysical data, so individual lessons can
-be reused or adapted for specific research questions or for use on other computational platforms.
+As we have elaborated above, the learning experience is organised as a progression.
+The tutorials and recipes showcase Jupyter-based analysis that can be run directly
+on Australia's National Computational Infrastructure, and include guidance on
+running notebooks through JupyterLab sessions and on accessing shared data holdings.
+This makes the Cookbook more than a static collection of examples: it is operational
+documentation for a real analysis environment. At the same time, the notebooks
+demonstrate broadly transferable workflows for working with labelled geophysical data,
+so individual lessons can be reused or adapted for specific research questions or
+for use on other computational platforms.
 
 The project also supports community authorship. Contributors are encouraged to
 submit new notebooks through pull requests, document their methods clearly, and
@@ -336,18 +329,22 @@ generalise workflows so that they remain useful to others. This is particularly 
 it is relatively rare for the computer code underlying scientific analyses to be peer reviewed
 with the same care as the manuscript itself. The COSIMA community provides several examples of
 the recipe ecosystem being extended into full research projects built on peer-authored software
-repositories on Github, where analysis workflows, methods, and implementation choices are exposed
-to community scrutiny and reuse. In that sense, the
+repositories on Github, where analysis workflows, methods, and implementation choices
+are exposed to community scrutiny and reuse. In that sense, the
 Cookbook functions both as a learning resource for end users and as a framework
 for teaching reproducible scientific communication through notebook design and
-peer review. COSIMA workshops and [hackathons](https://forum.access-hive.org.au/t/cosima-2-day-hackathon-v5-0-monday-sep-8-tuesday-sep-9-2025/4794) provide periodic opportunities to review,
-update, and extend existing recipes, ensuring the Cookbook remains a living resource that
-keeps pace with evolving tools and community best practices.
-The easy access to data and analysis provided by the COSIMA Cookbook has enabled rapid
-adoption of ACCESS ocean and sea-ice model configurations internationally — not only
-within physical oceanography but also across adjacent disciplines such as marine ecology,
-where researchers have used it as an entry point to ACCESS model output.
-This reach has facilitated well over [100 peer-reviewed papers](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ) and more than 20 PhD projects to completion.
+peer review. The COSIMA commmunity holds annual workshops and
+[hackathons](https://forum.access-hive.org.au/t cosima-2-day-hackathon-v5-0-monday-sep-8-tuesday-sep-9-2025/4794)
+that provide periodic opportunities to review, update, and extend existing recipes,
+ensuring the Cookbook remains a living resource that keeps pace with evolving tools
+and community best practices. The easy access to data and analysis provided by the
+COSIMA Cookbook has enabled rapid adoption of ACCESS ocean and sea-ice model
+configurations internationally — not only within physical oceanography but also
+across adjacent disciplines such as marine ecology [@FierroArcos2023], where
+researchers have used it as an entry point to ACCESS model output.
+This reach has facilitated well over
+[100 peer-reviewed papers](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ)
+and more than 20 PhD projects to completion.
 
 # Author Order
 
