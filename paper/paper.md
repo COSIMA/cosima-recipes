@@ -237,7 +237,9 @@ xgcm [@xgcm] to handle variables defined on staggered finite-volume grids, and x
 for regridding model output. Figures are generated using matplotlib [@Hunter2007matplotlib]
 incorporating Cartopy [@cartopy] for map-based visualisation.
 
-The Cookbook grew from a practical need inside the COSIMA community [@cosima_movie]:
+The Cookbook grew from a practical need inside the COSIMA community (watch
+["COSIMA: The Movie"](https://youtu.be/bmUYRoPKtIA) to get a sense of what the COSIMA
+community is all about). The need was the following:
 the tools used to analyse modern ocean model output are powerful, but the gap between
 package-level documentation and reproducible end-to-end workflows remains
 large. Users need to understand not only Python and Jupyter
