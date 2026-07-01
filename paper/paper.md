@@ -331,8 +331,7 @@ for teaching reproducible scientific communication through notebook design and
 peer review. The easy access to data and analysis provided by the COSIMA Cookbook
 showcases best practices to the broader oceanographic community and has enabled rapid
 community adoption of the ACCESS ocean and sea-ice model configurations internationally,
-facilitating to date well over [100 peer-reviewed papers](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ) and more than 20 PhD projects to completion with several
-other underway.
+facilitating to date well over [100 peer-reviewed papers](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ) and more than 20 PhD projects to completion to date.
 
 # Author Order
 
