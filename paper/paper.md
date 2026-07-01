@@ -258,11 +258,16 @@ can be turned into science. For a beginner, becoming productive with a model
 often requires substantial time just to understand the structure of the output,
 the relevant conventions, and the computational environment in which analysis is
 expected to run. There is also substantial scientific labour embedded in many
-common diagnostics. Some calculations, for example computing cross-contour transports,
-require non-trivial development, understanding of model numerics, and validation before
-they can be used confidently. If every new user or project had to reconstruct
-those workflows independently, a large amount of effort would be repeatedly spent
-on rebuilding analysis code rather than conducting research using the model output.
+common diagnostics. Some calculations, require non-trivial development, understanding
+of model numerics, and validation before they can be used confidently; examples
+of such elaborate calculations are the "Advanced Recipes".
+If every new user or project had to reconstruct those workflows independently,
+a large amount of effort would be repeatedly spent on rebuilding analysis code
+rather than conducting research using the model output.
+Additionally, the Cookbook becomes a learning tool for those new to physical ocean
+and sea ice science, as it outlines how to interrogate the model output and
+plot commonly used quantities; and this can be often independent of model and the
+analysis environment.
 
 The COSIMA Cookbook facilitates knowledge sharing and accelerates research with
 a domain-specific, openly maintained collection of computational lessons and examples.
