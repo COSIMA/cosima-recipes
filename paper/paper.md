@@ -299,8 +299,8 @@ data-loading step, which usually occurs early in each recipe, the analysis
 workflows are generally applicable to most operational ocean--sea ice model
 outputs that can be loaded with Xarray [@hoyer2017xarray].
 
-Thus, the structure is valuable beyond the immediate COSIMA context. Many research
-communities maintain model output on shared infrastructure and face the same
+Thus, the design renders the Cookbook valuable beyond the immediate COSIMA context.
+Many research communities maintain model output on shared infrastructure and face the same
 challenge: turning expert tacit knowledge into examples that newcomers can
 adapt. The Cookbook offers a model for how a scientific collaboration can
 capture that knowledge in version-controlled notebooks, publish it as a living open
