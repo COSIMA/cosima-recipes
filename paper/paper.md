@@ -187,7 +187,7 @@ bibliography: paper.bib
 
 # Summary
 
-The COSIMA Cookbook is an open computational learning module for analysing
+The COSIMA Cookbook is an open educational resource for analysing
 ocean and sea-ice model output in Jupyter notebooks [@kluyver2016jupyter].
 It has been developed by the Consortium for Ocean--Sea Ice Modelling in Australia
 (COSIMA; <https://cosima.org.au>) as a community resource for researchers,
@@ -237,42 +237,36 @@ xgcm [@xgcm] to handle variables defined on staggered finite-volume grids, and x
 for regridding model output. Figures are generated using matplotlib [@Hunter2007matplotlib]
 incorporating Cartopy [@cartopy] for map-based visualisation.
 
-The Cookbook grew from a practical need inside the COSIMA community (watch
-["COSIMA: The Movie"](https://youtu.be/bmUYRoPKtIA) to get a sense of what the COSIMA
-community is all about). The need was the following:
-the tools used to analyse modern ocean model output are powerful, but the gap between
-package-level documentation and reproducible end-to-end workflows remains
-large. Users need to understand not only Python and Jupyter
-[@kluyver2016jupyter], but also how to navigate high-dimensional and often very large model output,
+The Cookbook grew from a practical need inside the COSIMA community [@cosima_movie]:
+powerful tools for analysing modern ocean model output already existed, but the gap between
+package-level documentation and reproducible end-to-end workflows left new users
+largely on their own. Productive use requires fluency not only in Python and Jupyter
+[@kluyver2016jupyter], but also in navigating high-dimensional, often very large model output,
 shared high-performance computing environments, and domain-specific analysis
-conventions. The Cookbook addresses this gap by packaging reusable workflows in
-the same medium in which users actually work.
+conventions. The Cookbook bridges this gap by packaging reusable workflows in
+the same medium in which researchers actually work.
 
 # Statement of Need
 
-Analysing or configuring climate models has a steep entry cost. As explained above,
-new users must learn how to find datasets, load them efficiently, interpret metadata,
+Analysing or configuring climate models carries a steep entry cost. New users must learn
+how to find datasets, load them efficiently, interpret metadata,
 operate on multi-dimensional arrays, and produce scientifically meaningful diagnostics.
 General-purpose libraries such as Xarray [@hoyer2017xarray] provide the
 foundations for these tasks, but they do not by themselves show a learner how
 to translate a research question into a robust analysis workflow for a specific
-model and computing environment. Thus, the Cookbook becomes a learning tool
-for those new to ocean and sea ice science, as it outlines how to interrogate
-the model output and plot commonly used quantities; and this can be often independent
-of model and the analysis environment.
+model and computing environment. The Cookbook serves as a learning tool
+for those new to ocean and sea ice science, showing how to interrogate model output
+and visualise commonly used diagnostics — skills that transfer broadly across models
+and computing environments.
 
-That gap is not only pedagogical; it directly affects how quickly model output
-can be turned into science. For a beginner to become productive with a model
-output and pursue science question there is often the prerequisite of spending
-(often substantial time) to understand the structure of the output, the relevant
-conventions, and the computational environment in which analysis is expected to run.
-There is also substantial scientific labour embedded in many common diagnostics.
-Some calculations, require non-trivial development, understanding
-of model numerics, and validation before they can be used confidently; examples
-of such elaborate calculations are the "Advanced Recipes".
-If every new user or project had to reconstruct those workflows independently,
-a large amount of effort would be repeatedly spent on rebuilding analysis code
-rather than conducting research using the model output.
+The gap is not only pedagogical; it directly slows science. Before any analysis can begin,
+a newcomer typically spends substantial time deciphering the structure of the output,
+the relevant conventions, and the computational environment. There is also
+substantial scientific labour embedded in many common diagnostics:
+some calculations require non-trivial development, understanding
+of model numerics, and validation before they can be used with confidence — these are the
+"Advanced Recipes". If every new user had to reconstruct those workflows independently,
+enormous effort would be spent rebuilding analysis code rather than doing science.
 
 The COSIMA Cookbook facilitates knowledge sharing and accelerates research with
 a domain-specific, openly maintained collection of computational lessons and examples.
@@ -308,6 +302,16 @@ adapt. The Cookbook offers a model for how a scientific collaboration can
 capture that knowledge in version-controlled notebooks, publish it as a living open
 resource online, and continuously improve it through community contribution.
 
+The rise of AI-assisted coding tools adds a further dimension to the Cookbook's value.
+Such tools can lower barriers for newcomers, but they generate far better code when given
+a well-structured, domain-specific example as context rather than starting from a blank
+slate. A Cookbook recipe that is self-contained, clearly documented, and validated against real
+model output is precisely such a starting point. A researcher can hand a recipe together
+with a description of their own dataset to an AI coding agent and obtain a well-adapted
+analysis workflow with much less effort than building one from scratch. The Cookbook's
+relevance thus grows alongside AI adoption: the quality of its examples becomes more, not
+less, important.
+
 # Educational Design and Experience of Use
 
 The learning experience is organised as a progression. The documentation points
@@ -336,12 +340,16 @@ with the same care as the manuscript itself. The COSIMA community provides sever
 the recipe ecosystem being extended into full research projects built on peer-authored software
 repositories on Github, where analysis workflows, methods, and implementation choices are exposed
 to community scrutiny and reuse. In that sense, the
-Cookbook functions both as a learning module for end users and as a framework
+Cookbook functions both as a learning resource for end users and as a framework
 for teaching reproducible scientific communication through notebook design and
-peer review. The easy access to data and analysis provided by the COSIMA Cookbook
-showcases best practices to the broader oceanographic community and has enabled rapid
-community adoption of the ACCESS ocean and sea-ice model configurations internationally,
-facilitating to date well over [100 peer-reviewed papers](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ) and more than 20 PhD projects to completion to date.
+peer review. COSIMA workshops and hackathons provide periodic opportunities to review,
+update, and extend existing recipes, ensuring the Cookbook remains a living resource that
+keeps pace with evolving tools and community best practices.
+The easy access to data and analysis provided by the COSIMA Cookbook has enabled rapid
+adoption of ACCESS ocean and sea-ice model configurations internationally — not only
+within physical oceanography but also across adjacent disciplines such as marine ecology,
+where researchers have used it as an entry point to ACCESS model output.
+This reach has facilitated well over [100 peer-reviewed papers](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ) and more than 20 PhD projects to completion.
 
 # Author Order
 
@@ -354,8 +362,9 @@ This work was supported by computational resources provided by the Australian Go
 through the National Computational Infrastructure (NCI) under the National Computational Merit
 Allocation Scheme and the Australian National University Allocation Scheme. We thank the
 vibrant communities of the Consortium for Ocean–Sea Ice Modelling in Australia (COSIMA;
-[cosima.org.au](https://cosima.org.au)) and Australia’s climate simulator (ACCESS-NRI; [access-nri.org.au](https://access-nri.org.au))
-for making the ACCESS-OM2 and ACCESS-OM3 outputs and analysis tools available through the NCI.
+[cosima.org.au](https://cosima.org.au)) and Australia’s climate simulator (ACCESS-NRI;
+[access-nri.org.au](https://access-nri.org.au)) for making the ACCESS-OM2 and ACCESS-OM3 outputs
+and analysis tools available through the NCI.
 We further acknowledge funding from the Australian Research Council under the Centre of
 Excellence for the Weather of the 21st Century CE230100012, the Linkage Infrastructure,
 Equipment and Facilities LP160100073 and LP200100406, and the Discovery Project DP240101274.
