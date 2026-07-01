@@ -196,8 +196,8 @@ with large gridded datasets, especially output from the ACCESS ocean--sea ice
 model configurations [e.g. @kiss2020accessom2]. The repository combines introductory
 tutorials with worked analysis examples, all exposed through a browsable
 documentation site built with Sphinx, a documentation generator for Python
-projects [@sphinx] (\autoref{fig:website}) and backed by a citable archived
-release [@cosimaCookbook].
+projects [@sphinx] (\autoref{fig:website}). Tagged versions of the repository
+are uploaded to a citable archived release [@cosimaCookbook].
 
 ![The COSIMA Cookbook documentation website, showing the browsable Sphinx-based
 landing page used to navigate tutorials and recipes. The live site is available
