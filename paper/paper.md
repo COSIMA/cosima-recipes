@@ -342,7 +342,8 @@ the commmunity reviews, updates, and extends existing recipes, ensuring the Cook
 a living resource that keeps pace with evolving tools and community best practices.
 The easy access to data and analysis provided by the COSIMA Cookbook has enabled rapid
 adoption of ACCESS ocean and sea-ice model configurations internationally — not only within
-physical oceanography but also across adjacent disciplines such as marine ecology[@FierroArcos2023], where researchers have used it as an entry point to ACCESS model output.
+physical oceanography but also across adjacent disciplines such as marine ecology
+[@FierroArcos2023], where researchers have used it as an entry point to ACCESS model output.
 This accessibility has facilitated well over
 [100 peer-reviewed papers](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ)
 and more than 20 PhD projects to completion to date.
