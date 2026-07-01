@@ -204,8 +204,8 @@ lives at <https://cosima-recipes.readthedocs.io>. \label{fig:website}](website.p
 The COSIMA Cookbook is deliberately organized using a gastronomy theme to help users
 quickly understand and navigate the website. "Cooking Tutorials" refers to
 tutorials that teach generic, transferable techniques for handling ocean--sea ice
-model output. These tutorials give the users the basis for understanding the analysis
-examples the follow. Then comes the main part of any cookbook -- its recipes.
+model output. These tutorials give the users the foundations for understanding the analysis
+done in the examples. Then comes the main part of any cookbook -- its recipes.
 Here, by "recipes" we mean self-contained notebooks showing how to perform concrete
 diagnostics and analyses on ocean and sea-ice datasets. First come the "Easy Recipes" that
 provide a good starting point after the tutorials; then the "Advanced Recipes"
@@ -292,7 +292,7 @@ which usually early on in each recipe, the analysis workflows are generally
 applicable to most operational ocean--sea ice model outputs that can be
 loaded with Xarray [@hoyer2017xarray].
 
-Thus, the design renders the Cookbook valuable beyond the immediate the COSIMA context.
+Thus, the design renders the Cookbook valuable beyond the immediate COSIMA context.
 Many research communities maintain model output on shared infrastructure and face the same
 challenge: turning expert tacit knowledge into examples that newcomers can
 adapt. The Cookbook offers a model for how a scientific collaboration can
