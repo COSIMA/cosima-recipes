@@ -188,14 +188,13 @@ bibliography: paper.bib
 # Summary
 
 The COSIMA Cookbook is an open computational learning module for analysing
-ocean and sea-ice model output in Jupyter notebooks
-[@kluyver2016jupyter]. It has been developed by
-the Consortium for Ocean--Sea Ice Modelling in Australia (COSIMA; <https://cosima.org.au>)
-as a community resource for researchers, students, and practitioners working
-with large gridded datasets, especially output from the ACCESS ocean--sea ice
-model configurations [e.g. @kiss2020accessom2]. It is developed openly in a
-GitHub repository and it combines introductory tutorials with worked analysis
-examples as Python Jupyter notebooks.
+ocean and sea-ice model output in Jupyter notebooks [@kluyver2016jupyter].
+It has been developed by the Consortium for Ocean--Sea Ice Modelling in Australia
+(COSIMA; <https://cosima.org.au>) as a community resource for researchers,
+students, and practitioners working with large gridded datasets, especially output
+from the ACCESS ocean--sea ice model configurations [e.g. @kiss2020accessom2].
+The Cookbook is developed openly in a GitHub repository and it combines Python Jupyter
+notebooks of introductory tutorials together with worked analysis examples.
 All tutorials and examples are exposed through a browsable documentation site
 built with Sphinx, a documentation generator for Python
 projects [@sphinx] (\autoref{fig:website}). Tagged versions of the repository
@@ -205,24 +204,28 @@ are uploaded to a citable archived release [@cosimaCookbook].
 landing page used to navigate tutorials and recipes. The documentation website
 lives at https://cosima-recipes.readthedocs.io. \label{fig:website}](website.png)
 
-The COSIMA Cookbook is deliberately organized
-using a gastronomy theme to help users quickly understand and navigate the website. "Cooking Tutorials" refers to tutorials that teach
-generic, transferable techniques for handling ocean--sea ice model output.
+The COSIMA Cookbook is deliberately organized using a gastronomy theme to help users
+quickly understand and navigate the website. "Cooking Tutorials" refers to
+tutorials that teach generic, transferable techniques for handling ocean--sea ice model output.
 Then comes the main part of any cookbook -- its recipes. Here, by "recipes"
 we mean self-contained notebooks showing how to perform concrete diagnostics
 and analyses on ocean and sea-ice datasets. First come the "Easy Recipes" that
 provide a good starting point after the tutorials; then the "Advanced Recipes"
-that are more elaborate and demonstrate advanced analysis techniques, and lastly the "Regional Specialties"
-contains recipes for regional model configurations [@barnes2024regionalmom6].
+that are more elaborate and demonstrate advanced analysis techniques, and lastly the
+"Regional Specialties" contains recipes for regional model configurations [@barnes2024regionalmom6].
 Together these sections present the documentation as a browsable collection of
-lessons and recipes gathered into a single cookbook. The COSIMA Cookbook is one of several examples of using a gastronomy theme for computational workflows, for example [Project Pythia Cookbooks](https://cookbooks.projectpythia.org) for the general geoscience community and the [FAIR Cookbook](https://faircookbook.elixir-europe.org/content/home.html) for working with life science data.
+lessons and recipes gathered into a single cookbook. The COSIMA Cookbook is one of
+several examples of using a gastronomy theme for computational workflows, for
+example [Project Pythia Cookbooks](https://cookbooks.projectpythia.org) for the general
+geoscience community and the [FAIR Cookbook](https://faircookbook.elixir-europe.org/content/home.html)
+for working with life science data.
 
-Pedagogy and instructional structure are central to the project. The recipes provide the starting point for more elaborate analyses.
-"Cooking Tutorials" introduces generic skills such as loading model output,
-working with labelled arrays, plotting, and interacting with shared data catalogues.
-These tutorials lead into domain-focused recipes giving learners an incremental path
-from first contact with the data ecosystem to adaptation of full workflows for
-their own science questions.
+Pedagogy and instructional structure are central to the project. "Cooking Tutorials"
+introduces generic skills such as loading model output, working with labelled arrays,
+plotting, and interacting with shared data catalogues. The recipes provide the starting point
+for more elaborate analyses. These tutorials lead into domain-focused recipes giving
+learners an incremental path from first contact with the data ecosystem to adaptation
+of full workflows for their own science questions.
 
 Within this structure, the tutorials leverage and demonstrate open source tools for
 scientific analysis of large data. This includes examples of loading model output
@@ -245,29 +248,29 @@ the same medium in which users actually work.
 
 # Statement of Need
 
-Analysing or configuring climate models has a steep entry cost. New users must learn
-how to find datasets, load them efficiently, interpret metadata, operate on
-multi-dimensional arrays, and produce scientifically meaningful diagnostics.
+Analysing or configuring climate models has a steep entry cost. As explained above,
+new users must learn how to find datasets, load them efficiently, interpret metadata,
+operate on multi-dimensional arrays, and produce scientifically meaningful diagnostics.
 General-purpose libraries such as Xarray [@hoyer2017xarray] provide the
 foundations for these tasks, but they do not by themselves show a learner how
 to translate a research question into a robust analysis workflow for a specific
-model and computing environment.
+model and computing environment. Thus, the Cookbook becomes a learning tool
+for those new to ocean and sea ice science, as it outlines how to interrogate
+the model output and plot commonly used quantities; and this can be often independent
+of model and the analysis environment.
 
 That gap is not only pedagogical; it directly affects how quickly model output
-can be turned into science. For a beginner, becoming productive with a model
-often requires substantial time just to understand the structure of the output,
-the relevant conventions, and the computational environment in which analysis is
-expected to run. There is also substantial scientific labour embedded in many
-common diagnostics. Some calculations, require non-trivial development, understanding
+can be turned into science. For a beginner to become productive with a model
+output and pursue science question there is often the prerequisite of spending
+(often substantial time) to understand the structure of the output, the relevant
+conventions, and the computational environment in which analysis is expected to run.
+There is also substantial scientific labour embedded in many common diagnostics.
+Some calculations, require non-trivial development, understanding
 of model numerics, and validation before they can be used confidently; examples
 of such elaborate calculations are the "Advanced Recipes".
 If every new user or project had to reconstruct those workflows independently,
 a large amount of effort would be repeatedly spent on rebuilding analysis code
 rather than conducting research using the model output.
-Additionally, the Cookbook becomes a learning tool for those new to physical ocean
-and sea ice science, as it outlines how to interrogate the model output and
-plot commonly used quantities; and this can be often independent of model and the
-analysis environment.
 
 The COSIMA Cookbook facilitates knowledge sharing and accelerates research with
 a domain-specific, openly maintained collection of computational lessons and examples.
@@ -314,7 +317,8 @@ a lightweight pedagogical cue about expected complexity and scope, with
 "regional specialties" specifically covering recipes for regional model configurations
 [@barnes2024regionalmom6].
 
-The intended mode of use is also explicit. The tutorials and recipes showcase Jupyter-based analysis that can be run directly on Australia's National Computational Infrastructure,
+The intended mode of use is also explicit. The tutorials and recipes showcase Jupyter-based
+analysis that can be run directly on Australia's National Computational Infrastructure,
 and include guidance on running notebooks through JupyterLab sessions and on
 accessing shared data holdings. This makes the Cookbook more than a static
 collection of examples: it is operational documentation for a real analysis
