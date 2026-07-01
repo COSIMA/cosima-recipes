@@ -203,10 +203,11 @@ lives at <https://cosima-recipes.readthedocs.io>. \label{fig:website}](website.p
 
 The COSIMA Cookbook is deliberately organized using a gastronomy theme to help users
 quickly understand and navigate the website. "Cooking Tutorials" refers to
-tutorials that teach generic, transferable techniques for handling ocean--sea ice model output.
-Then comes the main part of any cookbook -- its recipes. Here, by "recipes"
-we mean self-contained notebooks showing how to perform concrete diagnostics
-and analyses on ocean and sea-ice datasets. First come the "Easy Recipes" that
+tutorials that teach generic, transferable techniques for handling ocean--sea ice
+model output. These tutorials give the users the basis for understanding the analysis
+examples the follow. Then comes the main part of any cookbook -- its recipes.
+Here, by "recipes" we mean self-contained notebooks showing how to perform concrete
+diagnostics and analyses on ocean and sea-ice datasets. First come the "Easy Recipes" that
 provide a good starting point after the tutorials; then the "Advanced Recipes"
 that are more elaborate and demonstrate advanced analysis techniques, and lastly the
 "Regional Specialties" contains recipes for regional model configurations [@barnes2024regionalmom6].
