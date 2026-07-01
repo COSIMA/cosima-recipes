@@ -215,7 +215,7 @@ provide a good starting point after the tutorials; then the "Advanced Recipes"
 that are more elaborate and demonstrate advanced analysis techniques, and lastly the "Regional Specialties"
 contains recipes for regional model configurations [@barnes2024regionalmom6].
 Together these sections present the documentation as a browsable collection of
-lessons and recipes gathered into a single cookbook.
+lessons and recipes gathered into a single cookbook. The COSIMA Cookbook is one of several examples of using a gastronomy theme for computational workflows, for example [Project Pythia Cookbooks](https://cookbooks.projectpythia.org) for the general geoscience community and the [FAIR Cookbook](https://faircookbook.elixir-europe.org/content/home.html) for working with life science data.
 
 Pedagogy and instructional structure are central to the project. The recipes provide the starting point for more elaborate analyses.
 "Cooking Tutorials" introduces generic skills such as loading model output,
@@ -226,7 +226,7 @@ their own science questions.
 
 Within this structure, the tutorials leverage and demonstrate open source tools for
 scientific analysis of large data. This includes examples of loading model output
-through Intake-based catalogues [@intake], using xarray [@hoyer2017xarray]
+through Intake-based catalogues [@intake], using Xarray [@hoyer2017xarray]
 and Dask [@rocklin2015dask; @dask] to process very large multi-dimensional datasets
 in parallel. The recipe collection includes a Lagrangian particle-tracking workflow
 built with Parcels [@Delandmeter-vanSebille-2019], as well as analyses that use
@@ -248,7 +248,7 @@ the same medium in which users actually work.
 Ocean and climate model analysis has a steep entry cost. New users must learn
 how to find datasets, load them efficiently, interpret metadata, operate on
 multi-dimensional arrays, and produce scientifically meaningful diagnostics.
-General-purpose libraries such as xarray [@hoyer2017xarray] provide the
+General-purpose libraries such as Xarray [@hoyer2017xarray] provide the
 foundations for these tasks, but they do not by themselves show a learner how
 to translate a research question into a robust analysis workflow for a specific
 model and computing environment.
