@@ -201,7 +201,7 @@ projects [@sphinx]; see \autoref{fig:website}. Tagged versions of the repository
 are uploaded to a citable archived release [@cosimaCookbook].
 
 ![The COSIMA Cookbook documentation website, showing the browsable Sphinx-based
-landing page used to navigate tutorials and recipes. The documentation website
+landing page used to navigate tutorials and recipes. The website
 lives at <https://cosima-recipes.readthedocs.io>. \label{fig:website}](website.png)
 
 The COSIMA Cookbook is deliberately organized using a gastronomy theme to help users
@@ -302,15 +302,17 @@ adapt. The Cookbook offers a model for how a scientific collaboration can
 capture that knowledge in version-controlled notebooks, publish it as a living open
 resource online, and continuously improve it through community contribution.
 
-The rise of AI-assisted coding tools adds a further dimension to the Cookbook's value.
-Such tools can lower barriers for newcomers, but they generate far better code when given
-a well-structured, domain-specific example as context rather than starting from a blank
-slate. A Cookbook recipe that is self-contained, clearly documented, and validated against real
-model output is precisely such a starting point. A researcher can hand a recipe together
-with a description of their own dataset to an AI coding agent and obtain a well-adapted
-analysis workflow with much less effort than building one from scratch. The Cookbook's
-relevance thus grows alongside AI adoption: the quality of its examples becomes more, not
-less, important.
+The rise of AI-assisted coding tools adds a further dimension to the Cookbook's value —
+and arguably makes it more important, not less. Such tools can rapidly generate analysis
+code, and they produce far better results when given a well-structured, domain-specific
+recipe as context rather than starting from scratch. But the deeper point is this: as
+AI-generated code becomes routine, the critical skill shifts from *writing* code to
+*understanding and evaluating* it. A researcher who has worked through the Cookbook knows
+why a workflow is structured the way it is — which parameters matter, where scientific
+assumptions enter, and what a plausible result looks like. That understanding is what
+allows AI-generated code to be trusted, corrected, and adapted for specific science
+questions. Resources that teach the reasoning behind an analysis, not just its mechanics,
+therefore grow more valuable alongside AI adoption.
 
 # Educational Design and Experience of Use
 
