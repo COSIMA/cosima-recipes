@@ -11,7 +11,7 @@ authors:
   - name: Navid C. Constantinou
     orcid: 0000-0002-8149-4094
     equal-contrib: true
-    affiliation: "4, 13"
+    affiliation: "4, 14"
   - name: Julia Neme
     orcid: 0000-0002-3573-996X
     equal-contrib: true
@@ -21,7 +21,7 @@ authors:
     affiliation: 2
   - name: Matthis Auger
     orcid: 0000-0001-6228-5732
-    affiliation: 16
+    affiliation: 13
   - name: Ashley J. Barnes
     orcid: 0000-0003-3165-8676
     affiliation: "4, 10"
@@ -36,22 +36,22 @@ authors:
     affiliation: 3
   - name: Hannah Dawson
     orcid: 0000-0001-9113-1329
-    affiliation: 16
+    affiliation: 17
   - name: Noah Day
     orcid: 0000-0003-4176-7956
-    affiliation: 13
+    affiliation: 14
   - name: Fabio Boeira Dias
     orcid: 0000-0002-2965-2120
-    affiliation: 14
+    affiliation: 15
   - name: Edward W. Doddridge
     orcid: 0000-0002-6097-5729
-    affiliation: 16
+    affiliation: 17
   - name: Anupiya Ellepola
     orcid: 0009-0002-8898-0068
     affiliation: 2
   - name: Denisse Fierro-Arcos
     orcid: 0000-0002-5039-6272
-    affiliation: 16
+    affiliation: 17
   - name: Angus Gibson
     orcid: 0000-0001-7577-3604
     affiliation: 2
@@ -84,7 +84,7 @@ authors:
     affiliation: 12
   - name: Jan Jaap Meijer
     orcid: 0000-0001-8667-488X
-    affiliation: 16
+    affiliation: 17
   - name: Thomas Moore
     orcid: 0000-0003-3930-1946
     affiliation: 7
@@ -102,7 +102,7 @@ authors:
     affiliation: 1
   - name: Aditya Narayanan
     orcid: 0000-0002-8967-2211
-    affiliation: 15
+    affiliation: 16
   - name: Micael Oliveira
     orcid: 0000-0003-1364-0907
     affiliation: 3
@@ -111,16 +111,16 @@ authors:
     affiliation: "4, 10"
   - name: Madelaine G. Rosevear
     orcid: 0000-0003-4254-843X
-    affiliation: "4, 16"
+    affiliation: "4, 17"
   - name: Christina Schmidt
     orcid: 0000-0002-7672-5054
     affiliation: 12
   - name: Taimoor Sohail
     orcid: 0000-0002-4162-3269
-    affiliation: 13
+    affiliation: 14
   - name: Paul Spence
     orcid: 0000-0001-5156-2204
-    affiliation: "4, 16"
+    affiliation: "4, 17"
   - name: Dougal T. Squire
     orcid: 0000-0003-3271-6874
     affiliation: 3
@@ -144,7 +144,7 @@ authors:
     affiliation: 2
   - name: Jan Zika
     orcid: 0000-0003-3462-3559
-    affiliation: 14
+    affiliation: 15
 affiliations:
   - name: Earthdata Associates, Canada
     index: 1
@@ -170,14 +170,16 @@ affiliations:
     index: 11
   - name: British Antarctic Survey, UK
     index: 12
-  - name: University of Melbourne, Australia
+  - name: University of Brest, France
     index: 13
-  - name: University of New South Wales Sydney, Australia
+  - name: University of Melbourne, Australia
     index: 14
-  - name: University of Southampton, UK
+  - name: University of New South Wales Sydney, Australia
     index: 15
-  - name: University of Tasmania, Australia
+  - name: University of Southampton, UK
     index: 16
+  - name: University of Tasmania, Australia
+    index: 17
 date: 1 July 2026
 bibliography: paper.bib
 
