@@ -342,9 +342,9 @@ COSIMA Cookbook has enabled rapid adoption of ACCESS ocean and sea-ice model
 configurations internationally — not only within physical oceanography but also
 across adjacent disciplines such as marine ecology [@FierroArcos2023], where
 researchers have used it as an entry point to ACCESS model output.
-This reach has facilitated well over
+This accessibility has facilitated well over
 [100 peer-reviewed papers](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ)
-and more than 20 PhD projects to completion.
+and more than 20 PhD projects to completion to date.
 
 # Author Order
 
@@ -360,8 +360,7 @@ vibrant communities of the Consortium for Ocean–Sea Ice Modelling in Australia
 [cosima.org.au](https://cosima.org.au)) and Australia’s climate simulator (ACCESS-NRI;
 [access-nri.org.au](https://access-nri.org.au)) for making the ACCESS-OM2 and ACCESS-OM3 outputs
 and analysis tools available through the NCI.
-We further acknowledge funding from the Australian Research Council under the Centre of
-Excellence for the Weather of the 21st Century CE230100012, the Linkage Infrastructure,
-Equipment and Facilities LP160100073 and LP200100406, and the Discovery Project DP240101274.
+We further acknowledge funding from the Australian Research Council under the Centres of
+Excellence for Climate Extremes CE170100023 and for the Weather of the 21st Century CE230100012, the Linkage Infrastructure, Equipment and Facilities LP160100073 and LP200100406, and the Discovery Project DP240101274.
 
 # References
