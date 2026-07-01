@@ -193,11 +193,8 @@ It has been developed by the Consortium for Ocean--Sea Ice Modelling in Australi
 (COSIMA; <https://cosima.org.au>) as a community resource for researchers,
 students, and practitioners working with large gridded datasets, especially output
 from the ACCESS ocean--sea ice model configurations [e.g. @kiss2020accessom2].
-The Cookbook is developed openly in a GitHub repository and it combines Python Jupyter
-notebooks of introductory tutorials together with worked analysis examples.
-All tutorials and examples are exposed through a browsable documentation site
-built with Sphinx, a documentation generator for Python
-projects [@sphinx]; see \autoref{fig:website}. Tagged versions of the repository
+The Cookbook is developed openly in a GitHub repository, with all content exposed
+through a documentation site built with Sphinx [@sphinx]; see \autoref{fig:website}. Tagged versions of the repository
 are uploaded to a citable archived release [@cosimaCookbook].
 
 ![The COSIMA Cookbook documentation website, showing the browsable Sphinx-based
@@ -213,10 +210,8 @@ and analyses on ocean and sea-ice datasets. First come the "Easy Recipes" that
 provide a good starting point after the tutorials; then the "Advanced Recipes"
 that are more elaborate and demonstrate advanced analysis techniques, and lastly the
 "Regional Specialties" contains recipes for regional model configurations [@barnes2024regionalmom6].
-Together these sections present the documentation as a browsable collection of
-lessons and recipes gathered into a single cookbook. The COSIMA Cookbook is one of
-several examples of using a gastronomy theme for computational workflows, for
-example [Project Pythia Cookbooks](https://cookbooks.projectpythia.org) for the general
+This gastronomy framing is shared by other computational workflow collections, such as
+[Project Pythia Cookbooks](https://cookbooks.projectpythia.org) for the general
 geoscience community and the [FAIR Cookbook](https://faircookbook.elixir-europe.org/content/home.html)
 for working with life science data.
 
