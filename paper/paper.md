@@ -202,8 +202,8 @@ projects [@sphinx] (\autoref{fig:website}). Tagged versions of the repository
 are uploaded to a citable archived release [@cosimaCookbook].
 
 ![The COSIMA Cookbook documentation website, showing the browsable Sphinx-based
-landing page used to navigate tutorials and recipes. The live site is available
-at https://cosima-recipes.readthedocs.io. \label{fig:website}](website.png)
+landing page used to navigate tutorials and recipes. The documentation website
+lives at https://cosima-recipes.readthedocs.io. \label{fig:website}](website.png)
 
 Following the "Cookbook" concept, the website sections are deliberately named
 using a gastronomy theme. "Cooking Tutorials" refers to tutorials that teach
