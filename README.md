@@ -14,9 +14,9 @@
 This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
 A collection of cooking lessons and recipes for analysing ocean and sea ice model output produced by the [Consortium for Ocean-Sea Ice Modelling in Australia (COSIMA)](http://cosima.org.au/).
 
-We explain: a "cooking lesson" here is a tutorial that teaches you something generic (e.g. about plotting or loading data); a "recipe" is an example of an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
-Both "cooking lessons" and "recipes" come in self-contained and well-documented Jupyter notebooks.
-All the lessons and the recipes combined form a cookbook 📒!
+We explain: a "cooking tutorial" here is a tutorial that teaches you something generic (e.g. about plotting or loading data); a "recipe" is an example of an analysis of some ocean-sea ice model output or some ocean-related observational datasets.
+Both "cooking tutorials" and "recipes" come in self-contained and well-documented Jupyter notebooks.
+All the tutorials and the recipes combined form a cookbook 📒!
 
 Most recipes use output from the [ACCESS-OM2 model](https://doi.org/10.5194/gmd-13-401-2020), while some also use results from configurations of the [Modular Ocean Model 6 (MOM6)](https://github.com/mom-ocean/MOM6) and remote sensing observations.
 
@@ -30,13 +30,22 @@ If you have never used the NCI see these [first steps instructions](https://acce
 
 ## Contents
 
- * #### [Cooking Lessons 101 (Tutorials)](https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons-101.html)
+ * #### [Cooking Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials.html)
 
-   The starting point should be the [COSIMA_CookBook_Introduction](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/COSIMA_CookBook_Introduction.html) that showcases how we can use Intake catalog to interrogate about available output and load them.
+   The starting point should be all the **Basic** Tutorials:
 
-   Recipes load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/02-ACCESS-NRI_Intake_Catalog.html). The intake package is available on the conda-analysis python environments on `xp65`. The [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/ACCESS-NRI_Intake_Catalog.html) tutorial outlines the basic philosophy of the Intake catalog to load model output variables.
+   * #### [Basics](https://cosima-recipes.readthedocs.io/en/latest/cooking-tutorials/basics.html)
 
-   Also included here are some other tutorials, related to techniques (e.g., [Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/01-Basics/Making_Maps_with_Cartopy.html)) or tools (e.g., [Model Agnostic Analysis](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Lessons-101/02-Advanced/Model_Agnostic_Analysis.html)).
+      The [Introduction: loading, slicing, dicing model output](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/01-Loading-Slicing-Dicing-Output.html) should be the starting point.
+
+      Recipes load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/02-ACCESS-NRI_Intake_Catalog.html). The intake package is available on the conda-analysis python environments on `xp65`. The [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/02-ACCESS-NRI_Intake_Catalog.html) tutorial outlines the basic philosophy of the Intake catalog to load model output variables.
+
+      Also included here are some other tutorials, related to techniques (e.g., [Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/03-Maps_with_Cartopy.html)).
+
+   After going through the **Basic** Tutorials, feel free to browse some of the **Advanced** ones:
+
+   * #### [Advanced](https://cosima-recipes.readthedocs.io/en/latest/cooking-tutorials/advanced.html)
+
 
 ### Recipes
 
@@ -45,15 +54,15 @@ The main part of this cookbook: All the recipes!
 These are Jupyter notebooks for either simple or not-so-simple diagnostics and analyses. All recipes are aimed to be self-contained and  well-documented and explained.
 If you can find a recipe that suits your purposes, then this is the best place to start.
 
-* #### [Appetisers (easy)](https://cosima-recipes.readthedocs.io/en/latest/appetisers.html)
+* #### [Easy Recipes](https://cosima-recipes.readthedocs.io/en/latest/easy-recipes.html)
 
-   Easier/simpler recipes; a good place to start after you’ve been through the [Cooking Lessons 101 (Tutorials)](https://cosima-recipes.readthedocs.io/en/latest/cooking-lessons-101.html)
+   Easier/simpler recipes; a good place to start after you’ve been through the [Cooking Tutorials](https://cosima-recipes.readthedocs.io/en/latest/tutorials.html)
 
-* #### [Mains (advanced)](https://cosima-recipes.readthedocs.io/en/latest/mains.html)
+* #### [Advanced Recipes](https://cosima-recipes.readthedocs.io/en/latest/advanced-recipes.html)
 
    More elaborate/advanced recipes.
 
-* #### [Local Dishes (regional Configurations)](https://cosima-recipes.readthedocs.io/en/latest/local-dishes.html)
+* #### [Regional Specialties](https://cosima-recipes.readthedocs.io/en/latest/regional-specialties.html)
 
    Recipes for regional configurations.
 
@@ -87,4 +96,5 @@ Hence, users who put together a pull request for a new contribution, should ensu
 
 If you use a recipe from the Cookbook for your research or teaching, or have based your analysis on one of the recipes, we would be grateful if you could cite:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14353852.svg)](https://doi.org/10.5281/zenodo.14353852)
+> Constantinou, N. C. et al. (2026). COSIMA Cookbook: A cookbook of recipes for analysing ocean and sea ice model output. Zenodo. doi:[10.5281/zenodo.14353852](https://doi.org/10.5281/zenodo.14353852) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14353852.svg)](https://doi.org/10.5281/zenodo.14353852)
+
