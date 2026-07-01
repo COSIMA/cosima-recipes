@@ -11,29 +11,29 @@ authors:
   - name: Navid C. Constantinou
     orcid: 0000-0002-8149-4094
     equal-contrib: true
-    affiliation: "4, 14"
+    affiliation: "3, 14"
   - name: Julia Neme
     orcid: 0000-0002-3573-996X
     equal-contrib: true
-    affiliation: 2
+    affiliation: 1
   - name: Wilton Aguiar
     orcid: 0000-0003-2453-9791
-    affiliation: 2
+    affiliation: 1
   - name: Matthis Auger
     orcid: 0000-0001-6228-5732
     affiliation: 13
   - name: Ashley J. Barnes
     orcid: 0000-0003-3165-8676
-    affiliation: "4, 10"
+    affiliation: "3, 10"
   - name: Romain Beucher
     orcid: 0000-0003-3891-5444
-    affiliation: 3
+    affiliation: "1, 2"
   - name: Dhruv Bhagtani
     orcid: 0000-0002-1222-375X
     affiliation: 11
   - name: Christopher Yit Sen Bull
     orcid: 0000-0001-8362-3446
-    affiliation: 3
+    affiliation: "1, 2"
   - name: Hannah Dawson
     orcid: 0000-0001-9113-1329
     affiliation: 17
@@ -48,37 +48,37 @@ authors:
     affiliation: 17
   - name: Anupiya Ellepola
     orcid: 0009-0002-8898-0068
-    affiliation: 2
+    affiliation: 1
   - name: Denisse Fierro-Arcos
     orcid: 0000-0002-5039-6272
     affiliation: 17
   - name: Angus Gibson
     orcid: 0000-0001-7577-3604
-    affiliation: 2
+    affiliation: 1
   - name: Maurice F. Huguenin
     orcid: 0000-0002-1476-0452
     affiliation: 8
   - name: Aidan Heerdegen
     orcid: 0000-0002-4481-4896
-    affiliation: 3
+    affiliation: "1, 2"
   - name: Andy McC. Hogg
     orcid: 0000-0001-5898-7635
-    affiliation: "2, 3, 4"
+    affiliation: "1, 2, 3"
   - name: Ryan M. Holmes
     orcid: 0000-0002-6799-9109
-    affiliation: 5
+    affiliation: 4
   - name: Wilma Huneke
     orcid: 0000-0001-8624-365X
-    affiliation: "2, 10"
+    affiliation: "1, 10"
   - name: Jemma Jeffree
     orcid: 0000-0001-7190-7329
-    affiliation: "2, 4"
+    affiliation: "1, 3"
   - name: Andrew E. Kiss
     orcid: 0000-0001-8960-9557
-    affiliation: 2
+    affiliation: 1
   - name: Minghang Li
     orcid: 0000-0002-6167-9999
-    affiliation: 3
+    affiliation: "1, 2"
   - name: Josué Martínez-Moreno
     orcid: 0000-0002-8348-1588
     affiliation: 12
@@ -87,31 +87,31 @@ authors:
     affiliation: 17
   - name: Thomas Moore
     orcid: 0000-0003-3930-1946
-    affiliation: 7
+    affiliation: 6
   - name: Ruth Moorman
     orcid: 0000-0001-5054-1559
-    affiliation: 6
+    affiliation: 5
   - name: Paige Martin
     orcid: 0000-0003-3538-633X
-    affiliation: 3
+    affiliation: "1, 2"
   - name: Adele K. Morrison
     orcid: 0009-0003-5143-5020
-    affiliation: 2
+    affiliation: 1
   - name: James Munroe
     orcid: 0000-0001-9098-6309
-    affiliation: 1
+    affiliation: 7
   - name: Aditya Narayanan
     orcid: 0000-0002-8967-2211
     affiliation: 16
   - name: Micael Oliveira
     orcid: 0000-0003-1364-0907
-    affiliation: 3
+    affiliation: "1, 2"
   - name: Ellie Q. Y. Ong
     orcid: 0000-0002-0392-7915
-    affiliation: "4, 10"
+    affiliation: "3, 10"
   - name: Madelaine G. Rosevear
     orcid: 0000-0003-4254-843X
-    affiliation: "4, 17"
+    affiliation: "3, 17"
   - name: Christina Schmidt
     orcid: 0000-0002-7672-5054
     affiliation: 12
@@ -120,45 +120,45 @@ authors:
     affiliation: 14
   - name: Paul Spence
     orcid: 0000-0001-5156-2204
-    affiliation: "4, 17"
+    affiliation: "3, 17"
   - name: Dougal T. Squire
     orcid: 0000-0003-3271-6874
-    affiliation: 3
+    affiliation: "1, 2"
   - name: Anton Steketee
     orcid: 0009-0002-9081-4106
-    affiliation: 3
+    affiliation: "1, 2"
   - name: Charles Turner
     orcid: 0000-0002-3262-4972
-    affiliation: 3
+    affiliation: "1, 2"
   - name: Felipe Vilela da Silva
     orcid: 0000-0003-1967-880X
     affiliation: 9
   - name: Marc White
     orcid: 0000-0003-3882-418X
-    affiliation: "2, 3"
+    affiliation: "1, 2"
   - name: Luwei Yang
     orcid: 0000-0001-8570-7424
-    affiliation: 2
+    affiliation: 1
   - name: Claire Yung
     orcid: 0000-0002-0052-7668
-    affiliation: 2
+    affiliation: 1
   - name: Jan Zika
     orcid: 0000-0003-3462-3559
     affiliation: 15
 affiliations:
-  - name: Earthdata Associates, Canada
-    index: 1
   - name: Australian National University, Australia
+    index: 1
+  - name: "Australia's Climate Simulator (ACCESS-NRI), Australia"
     index: 2
-  - name: "Australia's Climate Simulator (ACCESS-NRI), Australian National University, Canberra, Australia"
-    index: 3
   - name: Australian Research Council Centre of Excellence for the Weather of the 21st Century, Australia
-    index: 4
+    index: 3
   - name: Bureau of Meteorology, Australia
-    index: 5
+    index: 4
   - name: California Institute of Technology, USA
-    index: 6
+    index: 5
   - name: Commonwealth Scientific and Industrial Research Organisation, Australia
+    index: 6
+  - name: Earthdata Associates, Canada
     index: 7
   - name: GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany
     index: 8
