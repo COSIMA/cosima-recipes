@@ -339,7 +339,8 @@ onward are listed alphabetically by surname.
 
 # Acknowledgements
 
-This work was supported by computational resources provided by the Australian Government through the National Computational Infrastructure (NCI) under the National Computational Merit
+This work was supported by computational resources provided by the Australian Government
+through the National Computational Infrastructure (NCI) under the National Computational Merit
 Allocation Scheme and the Australian National University Allocation Scheme. We thank the
 vibrant communities of the Consortium for Ocean–Sea Ice Modelling in Australia (COSIMA;
 [cosima.org.au](https://cosima.org.au)) and Australia’s climate simulator (ACCESS-NRI; [access-nri.org.au](https://access-nri.org.au))
