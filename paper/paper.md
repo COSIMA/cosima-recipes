@@ -1,5 +1,5 @@
 ---
-title: "COSIMA Cookbook: a community resource for ocean and sea-ice modelling"
+title: "COSIMA Cookbook: a community-driven resource for ocean and sea-ice modelling science"
 tags:
   - Jupyter
   - oceanography
