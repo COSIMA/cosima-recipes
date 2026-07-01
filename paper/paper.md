@@ -197,7 +197,7 @@ The Cookbook is developed openly in a GitHub repository and it combines Python J
 notebooks of introductory tutorials together with worked analysis examples.
 All tutorials and examples are exposed through a browsable documentation site
 built with Sphinx, a documentation generator for Python
-projects [@sphinx] (\autoref{fig:website}). Tagged versions of the repository
+projects [@sphinx]; see \autoref{fig:website}. Tagged versions of the repository
 are uploaded to a citable archived release [@cosimaCookbook].
 
 ![The COSIMA Cookbook documentation website, showing the browsable Sphinx-based
