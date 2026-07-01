@@ -202,7 +202,7 @@ are uploaded to a citable archived release [@cosimaCookbook].
 
 ![The COSIMA Cookbook documentation website, showing the browsable Sphinx-based
 landing page used to navigate tutorials and recipes. The documentation website
-lives at https://cosima-recipes.readthedocs.io. \label{fig:website}](website.png)
+lives at <https://cosima-recipes.readthedocs.io>. \label{fig:website}](website.png)
 
 The COSIMA Cookbook is deliberately organized using a gastronomy theme to help users
 quickly understand and navigate the website. "Cooking Tutorials" refers to
@@ -237,8 +237,8 @@ xgcm [@xgcm] to handle variables defined on staggered finite-volume grids, and x
 for regridding model output. Figures are generated using matplotlib [@Hunter2007matplotlib]
 incorporating Cartopy [@cartopy] for map-based visualisation.
 
-The Cookbook grew from a practical need inside the COSIMA community: the tools
-used to analyse modern ocean model output are powerful, but the gap between
+The Cookbook grew from a practical need inside the COSIMA community [@cosima_movie]:
+the tools used to analyse modern ocean model output are powerful, but the gap between
 package-level documentation and reproducible end-to-end workflows remains
 large. Users need to understand not only Python and Jupyter
 [@kluyver2016jupyter], but also how to navigate high-dimensional and often very large model output,
