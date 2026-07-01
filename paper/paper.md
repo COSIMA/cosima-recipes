@@ -215,7 +215,7 @@ provide a good starting point after the tutorials; then the "Advanced Recipes"
 that are more elaborate and demonstrate advanced analysis techniques, and lastly the "Regional Specialties"
 contains recipes for regional model configurations [@barnes2024regionalmom6].
 Together these sections present the documentation as a browsable collection of
-lessons and recipes gathered into a single cookbook.
+lessons and recipes gathered into a single cookbook. The COSIMA Cookbook is one of several examples of using a gastronomy theme for computational workflows, for example [Project Pythia Cookbooks](https://cookbooks.projectpythia.org) for the general geoscience community and the [FAIR Cookbook](https://faircookbook.elixir-europe.org/content/home.html) for working with life science data.
 
 Pedagogy and instructional structure are central to the project. The recipes provide the starting point for more elaborate analyses.
 "Cooking Tutorials" introduces generic skills such as loading model output,
