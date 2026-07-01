@@ -194,8 +194,14 @@ It has been developed by the Consortium for Ocean--Sea Ice Modelling in Australi
 students, and practitioners working with large gridded datasets, especially output
 from the ACCESS ocean--sea ice model configurations [e.g. @kiss2020accessom2].
 The Cookbook is developed openly in a GitHub repository, with all content exposed
-through a documentation site built with Sphinx [@sphinx]; see \autoref{fig:website}. Tagged versions of the repository
-are uploaded to a citable archived release [@cosimaCookbook].
+through a documentation site built with Sphinx [@sphinx]; see \autoref{fig:website}.
+Tagged versions of the repository are uploaded to a citable archived release [@cosimaCookbook].
+
+The Cookbook grew out of a loosely organised collection of Python scripts and Jupyter
+notebooks — many of which were broken. During the first COVID-19 lockdown in 2020,
+the community held its first hackathon [@cosima_hackathon_2020]: a full-day online sprint
+to bring those notebooks up to date. Annual workshops and hackathons since then have
+gradually shaped the repository into its current curated state.
 
 ![The COSIMA Cookbook documentation website, showing the browsable Sphinx-based
 landing page used to navigate tutorials and recipes. The website
@@ -222,7 +228,6 @@ shared data catalogues. These tutorials lead into domain-focused recipes giving 
 workflows for their own science questions. The recipes provide the starting point for
 more elaborate analyses.  The categories of "easy" and "advanced" recipes provide
 a lightweight pedagogical cue about expected complexity and scope
-
 
 Within this structure, the tutorials leverage and demonstrate open source tools for
 scientific analysis of large data. This includes examples of loading model output
@@ -330,18 +335,14 @@ it is relatively rare for the computer code underlying scientific analyses to be
 with the same care as the manuscript itself. The COSIMA community provides several examples of
 the recipe ecosystem being extended into full research projects built on peer-authored software
 repositories on Github, where analysis workflows, methods, and implementation choices
-are exposed to community scrutiny and reuse. In that sense, the
-Cookbook functions both as a learning resource for end users and as a framework
-for teaching reproducible scientific communication through notebook design and
-peer review. The COSIMA commmunity holds annual workshops and
-[hackathons](https://forum.access-hive.org.au/t cosima-2-day-hackathon-v5-0-monday-sep-8-tuesday-sep-9-2025/4794)
-that provide periodic opportunities to review, update, and extend existing recipes,
-ensuring the Cookbook remains a living resource that keeps pace with evolving tools
-and community best practices. The easy access to data and analysis provided by the
-COSIMA Cookbook has enabled rapid adoption of ACCESS ocean and sea-ice model
-configurations internationally — not only within physical oceanography but also
-across adjacent disciplines such as marine ecology [@FierroArcos2023], where
-researchers have used it as an entry point to ACCESS model output.
+are exposed to community scrutiny and reuse. In that sense, the Cookbook functions both
+as a learning resource for end users and as a framework for teaching reproducible scientific
+communication through notebook design and peer review. During regularly organised hackathons,
+the commmunity reviews, updates, and extends existing recipes, ensuring the Cookbook remains
+a living resource that keeps pace with evolving tools and community best practices.
+The easy access to data and analysis provided by the COSIMA Cookbook has enabled rapid
+adoption of ACCESS ocean and sea-ice model configurations internationally — not only within
+physical oceanography but also across adjacent disciplines such as marine ecology[@FierroArcos2023], where researchers have used it as an entry point to ACCESS model output.
 This accessibility has facilitated well over
 [100 peer-reviewed papers](https://scholar.google.com/citations?hl=en&user=inVqu_4AAAAJ)
 and more than 20 PhD projects to completion to date.
