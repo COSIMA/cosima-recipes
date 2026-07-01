@@ -318,7 +318,12 @@ be reused or adapted outside that environment.
 
 The project also supports community authorship. Contributors are encouraged to
 submit new notebooks through pull requests, document their methods clearly, and
-generalise workflows so that they remain useful to others. In that sense, the
+generalise workflows so that they remain useful to others. This is particularly valuable as
+it is relatively rare for the computer code underlying scientific analyses to be peer reviewed
+with the same care as the manuscript itself. The COSIMA community provides several examples of
+the recipe ecosystem being extended into full research projects built on peer-authored software
+repositories on Github, where analysis workflows, methods, and implementation choices are exposed
+to community scrutiny and reuse. In that sense, the
 Cookbook functions both as a learning module for end users and as a framework
 for teaching reproducible scientific communication through notebook design and
 peer review. The easy access to data and analysis provided by the COSIMA Cookbook
