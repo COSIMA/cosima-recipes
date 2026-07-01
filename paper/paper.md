@@ -248,7 +248,7 @@ the same medium in which users actually work.
 Ocean and climate model analysis has a steep entry cost. New users must learn
 how to find datasets, load them efficiently, interpret metadata, operate on
 multi-dimensional arrays, and produce scientifically meaningful diagnostics.
-General-purpose libraries such as xarray [@hoyer2017xarray] provide the
+General-purpose libraries such as Xarray [@hoyer2017xarray] provide the
 foundations for these tasks, but they do not by themselves show a learner how
 to translate a research question into a robust analysis workflow for a specific
 model and computing environment.
