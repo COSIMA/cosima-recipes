@@ -238,14 +238,14 @@ The Cookbook grew from a practical need inside the COSIMA community: the tools
 used to analyse modern ocean model output are powerful, but the gap between
 package-level documentation and reproducible end-to-end workflows remains
 large. Users need to understand not only Python and Jupyter
-[@kluyver2016jupyter], but also how to navigate high-dimensional model output,
+[@kluyver2016jupyter], but also how to navigate high-dimensional and often very large model output,
 shared high-performance computing environments, and domain-specific analysis
 conventions. The Cookbook addresses this gap by packaging reusable workflows in
 the same medium in which users actually work.
 
 # Statement of Need
 
-Ocean and climate model analysis has a steep entry cost. New users must learn
+Analysing or configuring climate models has a steep entry cost. New users must learn
 how to find datasets, load them efficiently, interpret metadata, operate on
 multi-dimensional arrays, and produce scientifically meaningful diagnostics.
 General-purpose libraries such as Xarray [@hoyer2017xarray] provide the
@@ -289,14 +289,14 @@ model output with datasets of order terabytes, so the underlying data are not
 always practical to distribute or mirror in full. However, beyond the initial
 data-loading step, which usually occurs early in each recipe, the analysis
 workflows are generally applicable to most operational ocean--sea ice model
-outputs that can be loaded with xarray [@hoyer2017xarray].
+outputs that can be loaded with Xarray [@hoyer2017xarray].
 
 Thus, the structure is valuable beyond the immediate COSIMA context. Many research
 communities maintain model output on shared infrastructure and face the same
 challenge: turning expert tacit knowledge into examples that newcomers can
 adapt. The Cookbook offers a model for how a scientific collaboration can
-capture that knowledge in version-controlled notebooks, publish it as a living
-resource, and continuously improve it through community contribution.
+capture that knowledge in version-controlled notebooks, publish it as a living open
+resource online, and continuously improve it through community contribution.
 
 # Educational Design and Experience of Use
 
@@ -309,14 +309,13 @@ a lightweight pedagogical cue about expected complexity and scope, with
 "regional specialties" specifically covering recipes for regional model configurations
 [@barnes2024regionalmom6].
 
-The intended mode of use is also explicit. The repository is designed around
-Jupyter-based analysis on the Australian National Computational Infrastructure,
-with guidance on running notebooks through ARE/JupyterLab sessions and on
+The intended mode of use is also explicit. The tutorials and recipes showcase Jupyter-based analysis that can be run directly on Australia's National Computational Infrastructure,
+and include guidance on running notebooks through JupyterLab sessions and on
 accessing shared data holdings. This makes the Cookbook more than a static
 collection of examples: it is operational documentation for a real analysis
 environment. At the same time, the notebooks demonstrate broadly transferable
-patterns for working with labelled geophysical data, so individual lessons can
-be reused or adapted outside that environment.
+workflows for working with labelled geophysical data, so individual lessons can
+be reused or adapted for specific research questions or for use on other computational platforms.
 
 The project also supports community authorship. Contributors are encouraged to
 submit new notebooks through pull requests, document their methods clearly, and
