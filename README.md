@@ -5,7 +5,7 @@
 
 Many of the notebooks in this repository currently contain bugs, do not run, or simply produce incorrect analyses. This means the current contents **may not work as expected**.
 
-We are working to fix this, but it may take some time. To speed this process up, please feel free to contribute back if you notice something is wrong. This can be done by raising issues, submitting PRs or reviewing PRs. Feel free to use the recipes for inspiration, but ensure you fully understand any code you are building your analysis off.
+We are working to fix this, but it may take some time. To speed this process up, please feel free to contribute back if you notice something is wrong. This can be done by [raising issues, submitting PRs or reviewing PRs](https://github.com/COSIMA/cosima-recipes/wiki). Feel free to use the recipes for inspiration, but ensure you fully understand any code you are building your analysis off.
 
 </div>
 
