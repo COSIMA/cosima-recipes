@@ -1,3 +1,14 @@
+# <div align="center"> <span style="color:red">:warning:  :x: :x: :x: !!! WARNING !!! :x: :x: :x: :warning:</span>
+
+
+##  <div align="center"> :construction::construction::construction: THIS REPOSITORY IS UNDER MAINTENANCE :construction::construction::construction:  </span>
+
+Many of the notebooks in this repository currently contain bugs, do not run, or simply produce incorrect analyses. This means the current contents **may not work as expected**.
+
+We are working to fix this, but it may take some time. To speed this process up, please feel free to contribute back if you notice something is wrong. This can be done by [raising issues, submitting PRs or reviewing PRs](https://github.com/COSIMA/cosima-recipes/wiki). Feel free to use the recipes for inspiration, but ensure you fully understand any code you are building your analysis off.
+
+</div>
+
 <img src="https://github.com/COSIMA/logo/blob/master/png/logo_word.png" width="800"/>
 <br/> <br/>
 
@@ -86,7 +97,7 @@ We are always delighted to expand the cookbook with more recipes.
 If the process of contributing to the repository sounds a bit intimidating to you, rest assured that we will guide you and help you with submitting your contribution.
 
 To make a contribution follow the steps laid out in the [beginner's guide on how to contribute](
-https://cosima-recipes.readthedocs.io/en/latest/contributing.html). If they sound intimidating then don't worry!
+https://cosima-recipes.readthedocs.io/en/latest/contributing.html) and the [wiki](https://github.com/COSIMA/cosima-recipes/wiki). If they sound intimidating then don't worry!
 Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explaining briefly what the contribution you want to make is and we'll help out with the process!
 
 Contributors to the COSIMA Cookbook are added to the [**citable DOI**](https://github.com/COSIMA/cosima-recipes?tab=readme-ov-file#citation) entry associated with the repository.
