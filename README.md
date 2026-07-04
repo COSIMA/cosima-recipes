@@ -1,11 +1,6 @@
-# <div align="center"> <span style="color:red">:warning:  :x: :x: :x: !!! WARNING !!! :x: :x: :x: :warning:</span>
+# <div align="center"> <span style="color:red">:warning:  NOTICE :warning:</span>
 
-
-##  <div align="center"> :construction::construction::construction: THIS REPOSITORY IS UNDER MAINTENANCE :construction::construction::construction:  </span>
-
-Many of the notebooks in this repository currently contain bugs, do not run, or simply produce incorrect analyses. This means the current contents **may not work as expected**.
-
-We are working to fix this, but it may take some time. To speed this process up, please feel free to contribute back if you notice something is wrong. This can be done by [raising issues, submitting PRs or reviewing PRs](https://github.com/COSIMA/cosima-recipes/wiki). Feel free to use the recipes for inspiration, but ensure you fully understand any code you are building your analysis off.
+Some of the notebooks in this repository are being overhauled while we work to fix known bugs. Whilst this is ongoing, please ensure any code you base your analysis off is **working as expected**. To speed this process up, please feel free to contribute back if you notice something is wrong. This can be done by [raising issues, submitting PRs or reviewing PRs](https://github.com/COSIMA/cosima-recipes/wiki). 
 
 </div>
 
