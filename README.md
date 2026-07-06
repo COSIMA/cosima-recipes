@@ -1,9 +1,3 @@
-# <div align="center"> <span style="color:red">:warning:  NOTICE :warning:</span>
-
-Some of the notebooks in this repository are being overhauled while we work to fix known bugs. Whilst this is ongoing, please ensure any code you base your analysis off is **working as expected**. To speed this process up, please feel free to contribute back if you notice something is wrong. This can be done by [raising issues, submitting PRs or reviewing PRs](https://github.com/COSIMA/cosima-recipes/wiki). 
-
-</div>
-
 <img src="https://github.com/COSIMA/logo/blob/master/png/logo_word.png" width="800"/>
 <br/> <br/>
 
