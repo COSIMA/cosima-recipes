@@ -83,7 +83,7 @@ jobs:
           while qstat "${job_id}" >/dev/null 2>&1; do
             date -u '+PBS job still active at %Y-%m-%dT%H:%M:%SZ'
             qstat -f "${job_id}" | awk '
-              /job_state =/ || /queue =/ || /resources_used.walltime =/ || /resources_used.mem =/ || /resources_used.cpupercent =/ || /exec_host =/ { print }
+              /Job_Owner =/ || /^    project =/ || /job_state =/ || /queue =/ || /resources_used.walltime =/ || /resources_used.mem =/ || /resources_used.cpupercent =/ || /exec_host =/ { print }
             '
             if [ -f .ci/recipe_notebooks.live.log ]; then
               current_log_line="$(wc -l < .ci/recipe_notebooks.live.log)"
