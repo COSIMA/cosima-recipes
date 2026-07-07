@@ -1,5 +1,6 @@
 import os
 import re
+import time
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -33,6 +34,7 @@ def recipe_notebooks():
 
 NOTEBOOKS = recipe_notebooks()
 NOTEBOOK_COUNT = len(NOTEBOOKS)
+RESULTS = []
 
 
 def pytest_report_header(config):
@@ -49,6 +51,39 @@ def notebook_cases():
         pytest.param(index, NOTEBOOK_COUNT, notebook, id=str(notebook))
         for index, notebook in enumerate(NOTEBOOKS, start=1)
     ]
+
+
+def format_table(rows):
+    headers = ("#", "Status", "Time", "Notebook")
+    widths = [len(header) for header in headers]
+    for row in rows:
+        values = (str(row["index"]), row["status"], f'{row["seconds"]:.1f}s', str(row["notebook"]))
+        widths = [max(width, len(value)) for width, value in zip(widths, values)]
+
+    def render(values):
+        return " | ".join(str(value).ljust(width) for value, width in zip(values, widths))
+
+    separator = "-+-".join("-" * width for width in widths)
+    lines = [render(headers), separator]
+    for row in rows:
+        lines.append(
+            render((str(row["index"]), row["status"], f'{row["seconds"]:.1f}s', str(row["notebook"])))
+        )
+    return lines
+
+
+def pytest_terminal_summary(terminalreporter, exitstatus, config):
+    if not RESULTS:
+        return
+
+    total = len(RESULTS)
+    passed = sum(row["status"] == "PASS" for row in RESULTS)
+    failed = sum(row["status"] == "FAIL" for row in RESULTS)
+
+    terminalreporter.write_sep("=", "Recipe notebook summary")
+    for line in format_table(RESULTS):
+        terminalreporter.write_line(line)
+    terminalreporter.write_line(f"Total: {total} | Success: {passed} | Fail: {failed}")
 
 
 @contextmanager
@@ -96,6 +131,7 @@ def run_notebook(notebook_filename, tmp_path, notebook_index, notebook_count):
     temporary file. If an error occurs while executing a cell, it returns a
     concise failure report instead of dumping noisy child-process tracebacks.
     '''
+    start = time.monotonic()
     print(
         f"\nNotebook {notebook_index}/{notebook_count}: Running {notebook_filename}",
         flush=True,
@@ -123,7 +159,10 @@ def run_notebook(notebook_filename, tmp_path, notebook_index, notebook_count):
         with open(notebook_filename_out, mode="w", encoding="utf-8") as f:
             nbformat.write(nb, f)
 
+    seconds = time.monotonic() - start
+
     if failure is not None:
+        RESULTS.append({"index": notebook_index, "status": "FAIL", "seconds": seconds, "notebook": notebook_filename})
         stderr_size = stderr_log.stat().st_size if stderr_log.exists() else 0
         message = "\n".join(
             (
@@ -136,6 +175,7 @@ def run_notebook(notebook_filename, tmp_path, notebook_index, notebook_count):
         print(message, flush=True)
         return message
 
+    RESULTS.append({"index": notebook_index, "status": "PASS", "seconds": seconds, "notebook": notebook_filename})
     print(
         f"Notebook {notebook_index}/{notebook_count}: Successfully ran {notebook_filename}",
         flush=True,

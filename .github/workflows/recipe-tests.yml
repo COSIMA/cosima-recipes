@@ -80,11 +80,17 @@ jobs:
           echo "Submitted PBS job ${job_id}"
 
           last_log_line=0
-          while qstat "${job_id}" >/dev/null 2>&1; do
+          while [ ! -f .ci/recipe_notebooks.exit ]; do
             date -u '+PBS job still active at %Y-%m-%dT%H:%M:%SZ'
-            qstat -f "${job_id}" | awk '
-              /Job_Owner =/ || /^    project =/ || /job_state =/ || /queue =/ || /resources_used.walltime =/ || /resources_used.mem =/ || /resources_used.cpupercent =/ || /exec_host =/ { print }
-            '
+            if qstat "${job_id}" >/dev/null 2>&1; then
+              if ! qstat -f "${job_id}" | awk '
+                /Job_Owner =/ || /^    project =/ || /job_state =/ || /queue =/ || /resources_used.walltime =/ || /resources_used.mem =/ || /resources_used.cpupercent =/ || /exec_host =/ { print }
+              '; then
+                echo "Warning: qstat -f ${job_id} failed; continuing to wait for PBS exit file"
+              fi
+            else
+              echo "Warning: qstat ${job_id} did not report an active job; continuing to wait for PBS exit file"
+            fi
             if [ -f .ci/recipe_notebooks.live.log ]; then
               current_log_line="$(wc -l < .ci/recipe_notebooks.live.log)"
               if [ "${current_log_line}" -gt "${last_log_line}" ]; then
