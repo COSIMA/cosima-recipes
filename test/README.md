@@ -7,11 +7,11 @@ The notebook test discovers all notebooks under:
 - `03-Advanced-Recipes`
 - `04-Regional-Specialties`
 
-On NCI, run the suite with the `conda/analysis3` module:
+On NCI, run the suite with the `conda/analysis3-25.09` module:
 
 ```bash
 module use /g/data/xp65/public/modules
-module load conda/analysis3
+module load conda/analysis3-25.09
 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -s --tb=short -ra test/test_notebooks.py
 ```
 

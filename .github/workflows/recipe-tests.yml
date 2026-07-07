@@ -15,7 +15,7 @@ jobs:
     timeout-minutes: 720
     env:
       MODULEPATH_ROOT: /g/data/xp65/public/modules
-      ANALYSIS_MODULE: conda/analysis3
+      ANALYSIS_MODULE: conda/analysis3-25.09
       PBS_PROJECT: v46
       PBS_QUEUE: normal
       PBS_STORAGE: gdata/xp65+gdata/ik11+gdata/cj50+gdata/ol01+gdata/v46
