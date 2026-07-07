@@ -12,7 +12,7 @@ On NCI, run the suite with the `conda/analysis3` module:
 ```bash
 module use /g/data/xp65/public/modules
 module load conda/analysis3
-PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -ra test/test_notebooks.py
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -s -ra test/test_notebooks.py
 ```
 
 For cells in notebooks which are expected to fail, you need to add a 'skip-execution' tag which will cause the cell to be skipped in automated testing.

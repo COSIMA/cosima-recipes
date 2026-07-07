@@ -20,10 +20,10 @@ COSIMA/cosima-recipes -> Settings -> Actions -> Runners -> New self-hosted runne
 The script installs the runner into:
 
 ```text
-$HOME/actions-runner/cosima-recipes-gadi
+/g/data/v46/txs156/actions-runner/cosima-recipes-gadi
 ```
 
-Override this with `GITHUB_RUNNER_ROOT=/path/to/runner` if needed.
+Override this with `GITHUB_RUNNER_ROOT=/path/to/runner` if needed. The default is on `/g/data` to avoid home quota issues.
 
 ## Start the runner
 
@@ -65,6 +65,6 @@ PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -ra test/test_notebooks.py
 To remove the runner registration:
 
 ```bash
-cd $HOME/actions-runner/cosima-recipes-gadi
+cd /g/data/v46/txs156/actions-runner/cosima-recipes-gadi
 ./config.sh remove --token <remove-token-from-github>
 ```

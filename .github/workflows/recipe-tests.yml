@@ -32,7 +32,7 @@ jobs:
           set -euo pipefail
 
           mkdir -p .ci
-          rm -f .ci/recipe_notebooks.log .ci/recipe_notebooks.exit
+          rm -f .ci/recipe_notebooks.log .ci/recipe_notebooks.live.log .ci/recipe_notebooks.exit
 
           cat > .ci/run_recipe_notebooks.pbs <<PBS
           #!/bin/bash
@@ -47,7 +47,9 @@ jobs:
           #PBS -j oe
           #PBS -o .ci/recipe_notebooks.log
 
-          set -u
+          set -euo pipefail
+
+          exec > >(stdbuf -oL tee -a .ci/recipe_notebooks.live.log) 2>&1
 
           finish() {
             status=\$?
@@ -62,15 +64,41 @@ jobs:
           module use "${MODULEPATH_ROOT}"
           module load "${ANALYSIS_MODULE}"
 
-          PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -ra test/test_notebooks.py
+          PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -s -ra test/test_notebooks.py
           PBS
 
-          qsub -W block=true .ci/run_recipe_notebooks.pbs
+          job_id="$(qsub .ci/run_recipe_notebooks.pbs)"
+          echo "Submitted PBS job ${job_id}"
 
-          if [ -f .ci/recipe_notebooks.log ]; then
+          last_log_line=0
+          while qstat "${job_id}" >/dev/null 2>&1; do
+            date -u '+PBS job still active at %Y-%m-%dT%H:%M:%SZ'
+            qstat -f "${job_id}" | awk '
+              /job_state =/ || /queue =/ || /resources_used.walltime =/ || /resources_used.mem =/ || /resources_used.cpupercent =/ || /exec_host =/ { print }
+            '
+            if [ -f .ci/recipe_notebooks.live.log ]; then
+              current_log_line="$(wc -l < .ci/recipe_notebooks.live.log)"
+              if [ "${current_log_line}" -gt "${last_log_line}" ]; then
+                echo "--- new PBS output ---"
+                sed -n "$((last_log_line + 1)),${current_log_line}p" .ci/recipe_notebooks.live.log
+                echo "--- end new PBS output ---"
+                last_log_line="${current_log_line}"
+              fi
+            fi
+            sleep 60
+          done
+
+          if [ -f .ci/recipe_notebooks.live.log ]; then
+            current_log_line="$(wc -l < .ci/recipe_notebooks.live.log)"
+            if [ "${current_log_line}" -gt "${last_log_line}" ]; then
+              echo "--- final PBS output ---"
+              sed -n "$((last_log_line + 1)),${current_log_line}p" .ci/recipe_notebooks.live.log
+              echo "--- end final PBS output ---"
+            fi
+          elif [ -f .ci/recipe_notebooks.log ]; then
             cat .ci/recipe_notebooks.log
           else
-            echo "PBS output file .ci/recipe_notebooks.log was not found"
+            echo "PBS output file .ci/recipe_notebooks.live.log was not found"
           fi
 
           if [ ! -f .ci/recipe_notebooks.exit ]; then
