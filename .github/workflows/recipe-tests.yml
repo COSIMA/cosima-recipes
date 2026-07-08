@@ -23,6 +23,7 @@ jobs:
       PBS_MEM: 126GB
       PBS_WALLTIME: '10:00:00'
       PYTEST_DISABLE_PLUGIN_AUTOLOAD: '1'
+      HEARTBEAT_SECONDS: '600'
     steps:
       - uses: actions/checkout@v4
 
@@ -100,7 +101,7 @@ jobs:
                 last_log_line="${current_log_line}"
               fi
             fi
-            sleep 60
+            sleep "${HEARTBEAT_SECONDS}"
           done
 
           if [ -f .ci/recipe_notebooks.live.log ]; then
