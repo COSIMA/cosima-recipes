@@ -1,0 +1,37 @@
+#!/bin/bash
+#PBS -N gh_runner
+#PBS -P v46
+#PBS -q normal
+#PBS -l ncpus=1
+#PBS -l mem=4GB
+#PBS -l walltime=24:00:00
+#PBS -l storage=gdata/v46+gdata/xp65+gdata/ik11+gdata/cj50+gdata/ol01
+#PBS -l wd
+#PBS -j oe
+#PBS -o /g/data/v46/txs156/actions-runner/cosima-recipes-gadi/runner-pbs.log
+
+set -euo pipefail
+
+RUNNER_ROOT="${GITHUB_RUNNER_ROOT:-/g/data/v46/txs156/actions-runner/cosima-recipes-gadi}"
+REPO_CHECKOUT="${GITHUB_RUNNER_REPO:-/g/data/v46/txs156/cosima-recipes}"
+RESUBMIT="${GITHUB_RUNNER_RESUBMIT:-0}"
+
+resubmit_runner() {
+  status=$?
+  if [ "${RESUBMIT}" = "1" ]; then
+    echo "Resubmitting GitHub runner PBS job from exit status ${status}"
+    cd "${REPO_CHECKOUT}"
+    qsub .github/gadi-runner/runner.pbs || true
+  fi
+}
+trap resubmit_runner EXIT
+
+if [ -f /etc/profile.d/modules.sh ]; then
+  source /etc/profile.d/modules.sh
+fi
+
+cd "${RUNNER_ROOT}"
+echo "Starting GitHub runner on $(hostname) at $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+echo "Runner root: ${RUNNER_ROOT}"
+echo "Resubmit on exit: ${RESUBMIT}"
+exec ./run.sh

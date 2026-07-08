@@ -33,6 +33,33 @@ Override this with `GITHUB_RUNNER_ROOT=/path/to/runner` if needed. The default i
 
 For unattended operation, start that command under whatever process supervisor is appropriate for the host. The runner must remain online for GitHub to dispatch PR checks to it.
 
+
+## Run the listener inside PBS
+
+A detached login-node process can disappear when the host is cleaned up or your session environment ends. For a more persistent setup, run the GitHub listener itself as a small PBS job:
+
+```bash
+cd /g/data/v46/txs156/cosima-recipes
+.github/gadi-runner/submit-pbs-runner.sh
+```
+
+This submits `.github/gadi-runner/runner.pbs`, which requests 1 CPU, 4 GB, and 24 hours. The runner job only listens for GitHub Actions work; the recipe workflow still submits the heavier notebook test job separately.
+
+To have the runner PBS job resubmit itself when it exits, submit it with:
+
+```bash
+GITHUB_RUNNER_RESUBMIT=1 .github/gadi-runner/submit-pbs-runner.sh
+```
+
+Use that only if it is acceptable for the project allocation, because it keeps a small PBS job around continuously.
+
+Check it with:
+
+```bash
+qstat -u "$USER"
+tail -f /g/data/v46/txs156/actions-runner/cosima-recipes-gadi/runner-pbs.log
+```
+
 ## Required labels
 
 The workflow uses:
