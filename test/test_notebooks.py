@@ -32,24 +32,43 @@ def recipe_notebooks():
     return sorted(notebooks)
 
 
-NOTEBOOKS = recipe_notebooks()
-NOTEBOOK_COUNT = len(NOTEBOOKS)
+ALL_NOTEBOOKS = recipe_notebooks()
+ALL_NOTEBOOK_COUNT = len(ALL_NOTEBOOKS)
+SELECTED_NOTEBOOK = os.environ.get("RECIPE_NOTEBOOK_PATH")
+if SELECTED_NOTEBOOK:
+    selected_path = Path(SELECTED_NOTEBOOK)
+    NOTEBOOKS = [path for path in ALL_NOTEBOOKS if path == selected_path]
+    if not NOTEBOOKS:
+        raise RuntimeError(f"RECIPE_NOTEBOOK_PATH does not match a discovered notebook: {SELECTED_NOTEBOOK}")
+else:
+    NOTEBOOKS = ALL_NOTEBOOKS
 RESULTS = []
 
 
+def notebook_position(notebook):
+    return ALL_NOTEBOOKS.index(notebook) + 1
+
+
 def pytest_report_header(config):
-    lines = [f"Recipe notebook test plan: {NOTEBOOK_COUNT} notebooks"]
+    if SELECTED_NOTEBOOK:
+        notebook = NOTEBOOKS[0]
+        return [
+            f"Recipe notebook test plan: 1 selected notebook out of {ALL_NOTEBOOK_COUNT}",
+            f"  {notebook_position(notebook)}/{ALL_NOTEBOOK_COUNT} {notebook}",
+        ]
+
+    lines = [f"Recipe notebook test plan: {ALL_NOTEBOOK_COUNT} notebooks"]
     lines.extend(
-        f"  {index}/{NOTEBOOK_COUNT} {notebook}"
-        for index, notebook in enumerate(NOTEBOOKS, start=1)
+        f"  {index}/{ALL_NOTEBOOK_COUNT} {notebook}"
+        for index, notebook in enumerate(ALL_NOTEBOOKS, start=1)
     )
     return lines
 
 
 def notebook_cases():
     return [
-        pytest.param(index, NOTEBOOK_COUNT, notebook, id=str(notebook))
-        for index, notebook in enumerate(NOTEBOOKS, start=1)
+        pytest.param(notebook_position(notebook), ALL_NOTEBOOK_COUNT, notebook, id=str(notebook))
+        for notebook in NOTEBOOKS
     ]
 
 

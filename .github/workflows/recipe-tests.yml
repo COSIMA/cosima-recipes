@@ -19,9 +19,10 @@ jobs:
       PBS_PROJECT: v46
       PBS_QUEUE: normal
       PBS_STORAGE: gdata/xp65+gdata/ik11+gdata/cj50+gdata/ol01+gdata/v46
-      PBS_NCPUS: '28'
-      PBS_MEM: 126GB
-      PBS_WALLTIME: '10:00:00'
+      PBS_NCPUS: '4'
+      PBS_MEM: 32GB
+      PBS_WALLTIME: '04:00:00'
+      PBS_ARRAY_CONCURRENCY: '6'
       PYTEST_DISABLE_PLUGIN_AUTOLOAD: '1'
       HEARTBEAT_SECONDS: '600'
     steps:
@@ -33,12 +34,36 @@ jobs:
           set -euo pipefail
 
           mkdir -p .ci
-          rm -f .ci/recipe_notebooks.log .ci/recipe_notebooks.live.log .ci/recipe_notebooks.exit
+          rm -f .ci/notebooks.txt .ci/notebook_*.log .ci/notebook_*.exit .ci/notebook_*.status .ci/reported_statuses .ci/run_recipe_notebooks.pbs
+
+          python - <<'PY' > .ci/notebooks.txt
+          from pathlib import Path
+
+          recipe_directories = (
+              "01-Cooking-Tutorials",
+              "02-Easy-Recipes",
+              "03-Advanced-Recipes",
+              "04-Regional-Specialties",
+          )
+          notebooks = []
+          for recipe_directory in recipe_directories:
+              notebooks.extend(
+                  path
+                  for path in Path(recipe_directory).rglob("*.ipynb")
+                  if ".ipynb_checkpoints" not in path.parts
+              )
+          for notebook in sorted(notebooks):
+              print(notebook)
+          PY
+
+          notebook_count="$(wc -l < .ci/notebooks.txt)"
+          echo "Recipe notebook test plan: ${notebook_count} notebooks"
+          nl -ba .ci/notebooks.txt
 
           job_id=""
           cleanup_pbs_job() {
             if [ -n "${job_id}" ] && qstat "${job_id}" >/dev/null 2>&1; then
-              echo "Canceling PBS job ${job_id}"
+              echo "Canceling PBS array job ${job_id}"
               qdel "${job_id}" || true
             fi
           }
@@ -49,21 +74,29 @@ jobs:
           #PBS -N recipe_notebooks
           #PBS -P ${PBS_PROJECT}
           #PBS -q ${PBS_QUEUE}
+          #PBS -J 1-${notebook_count}%${PBS_ARRAY_CONCURRENCY}
           #PBS -l ncpus=${PBS_NCPUS}
           #PBS -l mem=${PBS_MEM}
           #PBS -l walltime=${PBS_WALLTIME}
           #PBS -l storage=${PBS_STORAGE}
           #PBS -l wd
           #PBS -j oe
-          #PBS -o .ci/recipe_notebooks.log
+          #PBS -o .ci/notebook_array.log
 
           set -euo pipefail
 
-          exec > >(stdbuf -oL tee -a .ci/recipe_notebooks.live.log) 2>&1
+          index="\${PBS_ARRAY_INDEX}"
+          notebook="\$(sed -n "\${index}p" .ci/notebooks.txt)"
+          padded_index="\$(printf "%03d" "\${index}")"
+          log_file=".ci/notebook_\${padded_index}.log"
+          exit_file=".ci/notebook_\${padded_index}.exit"
+          status_file=".ci/notebook_\${padded_index}.status"
+
+          exec > >(stdbuf -oL tee -a "\${log_file}") 2>&1
 
           finish() {
             status=\$?
-            echo "\${status}" > .ci/recipe_notebooks.exit
+            echo "\${status}" > "\${exit_file}"
           }
           trap finish EXIT
 
@@ -74,52 +107,95 @@ jobs:
           module use "${MODULEPATH_ROOT}"
           module load "${ANALYSIS_MODULE}"
 
-          PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -s --tb=short -ra test/test_notebooks.py
+          echo "Notebook \${index}/${notebook_count}: \${notebook}"
+          echo "Started at \$(date -u '+%Y-%m-%dT%H:%M:%SZ') on \$(hostname)"
+          start="\$(date +%s)"
+
+          set +e
+          RECIPE_NOTEBOOK_PATH="\${notebook}" PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -s --tb=short -ra test/test_notebooks.py
+          status=\$?
+          set -e
+
+          end="\$(date +%s)"
+          seconds="\$((end - start))"
+          if [ "\${status}" -eq 0 ]; then
+            result=PASS
+          else
+            result=FAIL
+          fi
+          printf '%s|%s|%s|%s\n' "\${index}" "\${result}" "\${seconds}" "\${notebook}" > "\${status_file}"
+          echo "Notebook \${index}/${notebook_count}: \${result} in \${seconds}s"
+          exit "\${status}"
           PBS
 
           job_id="$(qsub .ci/run_recipe_notebooks.pbs)"
-          echo "Submitted PBS job ${job_id}"
+          echo "Submitted PBS notebook array ${job_id} (${notebook_count} notebooks, max ${PBS_ARRAY_CONCURRENCY} concurrent)"
 
-          last_log_line=0
-          while [ ! -f .ci/recipe_notebooks.exit ]; do
-            date -u '+PBS job still active at %Y-%m-%dT%H:%M:%SZ'
+          touch .ci/reported_statuses
+          while [ "$(find .ci -maxdepth 1 -name 'notebook_*.exit' | wc -l)" -lt "${notebook_count}" ]; do
+            completed="$(find .ci -maxdepth 1 -name 'notebook_*.exit' | wc -l)"
+            statuses="$(find .ci -maxdepth 1 -name 'notebook_*.status' | wc -l)"
+            date -u "+PBS notebook array active at %Y-%m-%dT%H:%M:%SZ (${completed}/${notebook_count} tasks exited, ${statuses}/${notebook_count} statuses written)"
             if qstat "${job_id}" >/dev/null 2>&1; then
               if ! qstat -f "${job_id}" | awk '
                 /Job_Owner =/ || /^    project =/ || /job_state =/ || /queue =/ || /resources_used.walltime =/ || /resources_used.mem =/ || /resources_used.cpupercent =/ || /exec_host =/ { print }
               '; then
-                echo "Warning: qstat -f ${job_id} failed; continuing to wait for PBS exit file"
+                echo "Warning: qstat -f ${job_id} failed; continuing to wait for array task exit files"
               fi
             else
-              echo "Warning: qstat ${job_id} did not report an active job; continuing to wait for PBS exit file"
+              echo "Warning: qstat ${job_id} did not report an active array job; continuing to wait for array task exit files"
             fi
-            if [ -f .ci/recipe_notebooks.live.log ]; then
-              current_log_line="$(wc -l < .ci/recipe_notebooks.live.log)"
-              if [ "${current_log_line}" -gt "${last_log_line}" ]; then
-                echo "--- new PBS output ---"
-                sed -n "$((last_log_line + 1)),${current_log_line}p" .ci/recipe_notebooks.live.log
-                echo "--- end new PBS output ---"
-                last_log_line="${current_log_line}"
+
+            for status_file in .ci/notebook_*.status; do
+              [ -e "${status_file}" ] || continue
+              if ! grep -Fxq "${status_file}" .ci/reported_statuses; then
+                echo "--- completed notebook ---"
+                cat "${status_file}"
+                echo "--- end completed notebook ---"
+                echo "${status_file}" >> .ci/reported_statuses
               fi
-            fi
+            done
             sleep "${HEARTBEAT_SECONDS}"
           done
 
-          if [ -f .ci/recipe_notebooks.live.log ]; then
-            current_log_line="$(wc -l < .ci/recipe_notebooks.live.log)"
-            if [ "${current_log_line}" -gt "${last_log_line}" ]; then
-              echo "--- final PBS output ---"
-              sed -n "$((last_log_line + 1)),${current_log_line}p" .ci/recipe_notebooks.live.log
-              echo "--- end final PBS output ---"
-            fi
-          elif [ -f .ci/recipe_notebooks.log ]; then
-            cat .ci/recipe_notebooks.log
-          else
-            echo "PBS output file .ci/recipe_notebooks.live.log was not found"
-          fi
+          python - <<'PY'
+          from pathlib import Path
+          import sys
 
-          if [ ! -f .ci/recipe_notebooks.exit ]; then
-            echo "PBS job did not write .ci/recipe_notebooks.exit"
-            exit 1
-          fi
+          status_files = sorted(Path('.ci').glob('notebook_*.status'))
+          rows = []
+          for status_file in status_files:
+              index, status, seconds, notebook = status_file.read_text().rstrip('\n').split('|', 3)
+              rows.append((int(index), status, int(seconds), notebook))
+          rows.sort()
 
-          exit "$(cat .ci/recipe_notebooks.exit)"
+          headers = ('#', 'Status', 'Time', 'Notebook')
+          values = [(str(index), status, f'{seconds}s', notebook) for index, status, seconds, notebook in rows]
+          widths = [len(header) for header in headers]
+          for row in values:
+              widths = [max(width, len(value)) for width, value in zip(widths, row)]
+
+          def render(row):
+              return ' | '.join(value.ljust(width) for value, width in zip(row, widths))
+
+          print('= Recipe notebook summary =')
+          print(render(headers))
+          print('-+-'.join('-' * width for width in widths))
+          for row in values:
+              print(render(row))
+          passed = sum(status == 'PASS' for _, status, _, _ in rows)
+          failed = sum(status == 'FAIL' for _, status, _, _ in rows)
+          print(f'Total: {len(rows)} | Success: {passed} | Fail: {failed}')
+
+          for index, status, seconds, notebook in rows:
+              if status == 'FAIL':
+                  print(f'\n--- failure log: {index} {notebook} ---')
+                  log_file = Path('.ci') / f'notebook_{index:03d}.log'
+                  if log_file.exists():
+                      print(log_file.read_text(errors='replace'))
+                  else:
+                      print(f'Missing log file: {log_file}')
+                  print(f'--- end failure log: {index} {notebook} ---')
+
+          sys.exit(1 if failed else 0)
+          PY
