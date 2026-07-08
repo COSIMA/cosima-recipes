@@ -283,6 +283,18 @@
          "orcid":"0000-0003-3538-633X",
          "type":"ProjectMember"
       },
+      {
+         "affiliation":"Australian National University",
+         "name":"Meng, Hangyu",
+         "orcid":"0000-0001-5310-3079",
+         "type":"ProjectMember"
+      },
+      {
+         "affiliation":"Australian National University",
+         "name":"Sholeninova, Polina",
+         "orcid":"0000-0001-9476-1246",
+         "type":"ProjectMember"
+      }
    ],
    "keywords": [
      "Ocean Modeling",
