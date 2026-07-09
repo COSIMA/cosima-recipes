@@ -1,80 +1,209 @@
-import pytest
+import os
+import re
+import time
+from contextlib import contextmanager
 from pathlib import Path
+
+import pytest
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor, CellExecutionError
+from nbconvert.preprocessors import TagRemovePreprocessor
 
 
-def run_notebook(notebook_filename):
+RECIPE_DIRECTORIES = (
+    "01-Cooking-Tutorials",
+    "02-Easy-Recipes",
+    "03-Advanced-Recipes",
+    "04-Regional-Specialties",
+)
+ANSI_ESCAPE = re.compile(r"\x1b\[[0-?]*[ -/]*[@-~]")
+SUMMARY_TRACEBACK_LINES = 12
+
+
+def recipe_notebooks():
+    notebooks = []
+    for recipe_directory in RECIPE_DIRECTORIES:
+        notebooks.extend(
+            path
+            for path in Path(recipe_directory).rglob("*.ipynb")
+            if ".ipynb_checkpoints" not in path.parts
+        )
+
+    return sorted(notebooks)
+
+
+ALL_NOTEBOOKS = recipe_notebooks()
+ALL_NOTEBOOK_COUNT = len(ALL_NOTEBOOKS)
+SELECTED_NOTEBOOK = os.environ.get("RECIPE_NOTEBOOK_PATH")
+if SELECTED_NOTEBOOK:
+    selected_path = Path(SELECTED_NOTEBOOK)
+    NOTEBOOKS = [path for path in ALL_NOTEBOOKS if path == selected_path]
+    if not NOTEBOOKS:
+        raise RuntimeError(f"RECIPE_NOTEBOOK_PATH does not match a discovered notebook: {SELECTED_NOTEBOOK}")
+else:
+    NOTEBOOKS = ALL_NOTEBOOKS
+RESULTS = []
+
+
+def notebook_position(notebook):
+    return ALL_NOTEBOOKS.index(notebook) + 1
+
+
+def pytest_report_header(config):
+    if SELECTED_NOTEBOOK:
+        notebook = NOTEBOOKS[0]
+        return [
+            f"Recipe notebook test plan: 1 selected notebook out of {ALL_NOTEBOOK_COUNT}",
+            f"  {notebook_position(notebook)}/{ALL_NOTEBOOK_COUNT} {notebook}",
+        ]
+
+    lines = [f"Recipe notebook test plan: {ALL_NOTEBOOK_COUNT} notebooks"]
+    lines.extend(
+        f"  {index}/{ALL_NOTEBOOK_COUNT} {notebook}"
+        for index, notebook in enumerate(ALL_NOTEBOOKS, start=1)
+    )
+    return lines
+
+
+def notebook_cases():
+    return [
+        pytest.param(notebook_position(notebook), ALL_NOTEBOOK_COUNT, notebook, id=str(notebook))
+        for notebook in NOTEBOOKS
+    ]
+
+
+def format_table(rows):
+    headers = ("#", "Status", "Time", "Notebook")
+    widths = [len(header) for header in headers]
+    for row in rows:
+        values = (str(row["index"]), row["status"], f'{row["seconds"]:.1f}s', str(row["notebook"]))
+        widths = [max(width, len(value)) for width, value in zip(widths, values)]
+
+    def render(values):
+        return " | ".join(str(value).ljust(width) for value, width in zip(values, widths))
+
+    separator = "-+-".join("-" * width for width in widths)
+    lines = [render(headers), separator]
+    for row in rows:
+        lines.append(
+            render((str(row["index"]), row["status"], f'{row["seconds"]:.1f}s', str(row["notebook"])))
+        )
+    return lines
+
+
+def pytest_terminal_summary(terminalreporter, exitstatus, config):
+    if not RESULTS:
+        return
+
+    total = len(RESULTS)
+    passed = sum(row["status"] == "PASS" for row in RESULTS)
+    failed = sum(row["status"] == "FAIL" for row in RESULTS)
+
+    terminalreporter.write_sep("=", "Recipe notebook summary")
+    for line in format_table(RESULTS):
+        terminalreporter.write_line(line)
+    terminalreporter.write_line(f"Total: {total} | Success: {passed} | Fail: {failed}")
+
+
+@contextmanager
+def redirect_stderr_to(path):
+    original_stderr_fd = os.dup(2)
+    try:
+        with open(path, "ab", buffering=0) as stderr_file:
+            os.dup2(stderr_file.fileno(), 2)
+            yield
+    finally:
+        os.dup2(original_stderr_fd, 2)
+        os.close(original_stderr_fd)
+
+
+def strip_ansi(text):
+    return ANSI_ESCAPE.sub("", text)
+
+
+def compact_traceback(traceback):
+    lines = []
+    for line in traceback:
+        lines.extend(strip_ansi(line).splitlines())
+    lines = [line for line in lines if line.strip()]
+    return "\n".join(lines[-SUMMARY_TRACEBACK_LINES:])
+
+
+def notebook_error_summary(nb):
+    for cell_index, cell in enumerate(nb.cells, start=1):
+        for output in cell.get("outputs", []):
+            if output.get("output_type") == "error":
+                ename = strip_ansi(output.get("ename", "Error"))
+                evalue = strip_ansi(output.get("evalue", ""))
+                traceback = compact_traceback(output.get("traceback", []))
+                lines = [f"Cell {cell_index}: {ename}: {evalue}"]
+                if traceback:
+                    lines.extend(("Traceback excerpt:", traceback))
+                return "\n".join(lines)
+
+    return "No error output was captured in the executed notebook."
+
+
+def run_notebook(notebook_filename, tmp_path, notebook_index, notebook_count):
     '''
     Reads a notebook from a file, executes it, then writes the result back to a
-    new file. If an error occurs while executing a cell, it stops and outputs a
-    traceback.
+    temporary file. If an error occurs while executing a cell, it returns a
+    concise failure report instead of dumping noisy child-process tracebacks.
     '''
+    start = time.monotonic()
+    print(
+        f"\nNotebook {notebook_index}/{notebook_count}: Running {notebook_filename}",
+        flush=True,
+    )
+
     with open(notebook_filename) as f:
         nb = nbformat.read(f, as_version=4)
-    path = Path(notebook_filename)
-    notebook_filename_out = str(path.with_name(f"{path.stem}_converted{path.suffix}"))
+    path = Path(notebook_filename).resolve()
+    notebook_filename_out = tmp_path / f"{path.stem}_converted{path.suffix}"
+    stderr_log = tmp_path / f"{path.stem}_stderr.log"
 
-    ep = ExecutePreprocessor(timeout=2400, kernel_name='python3')
+    skip_cells = TagRemovePreprocessor(remove_cell_tags=("skip-execution",))
+    skip_cells.preprocess(nb, {})
+
+    ep = ExecutePreprocessor(timeout=2400, kernel_name="python3")
+    failure = None
     try:
-        out = ep.preprocess(nb)
+        with redirect_stderr_to(stderr_log):
+            ep.preprocess(nb, {"metadata": {"path": str(path.parent)}})
     except CellExecutionError:
-        out = None
-        msg = 'Error executing the notebook "%s".\n\n' % notebook_filename
-        msg += 'See notebook "%s" for the traceback.' % notebook_filename_out
-        print(msg)
-        raise
+        failure = notebook_error_summary(nb)
+    except Exception as exc:
+        failure = f"Notebook executor failed before a cell error was captured: {type(exc).__name__}: {exc}"
     finally:
-        with open(notebook_filename_out, mode='w', encoding='utf-8') as f:
+        with open(notebook_filename_out, mode="w", encoding="utf-8") as f:
             nbformat.write(nb, f)
 
+    seconds = time.monotonic() - start
 
-@pytest.mark.parametrize(
-    ("notebook_filename"),
-    [
-        ("COSIMA_CookBook_Tutorial.ipynb"),
-        ("Make_Your_Own_Database.ipynb"),
-        ("Making_Maps_with_Cartopy.ipynb"),
-        ("Model_Agnostic_Analysis.ipynb"), 
-        ("Spatial_selection.ipynb"),
-        ("Submitting_analysis_jobs_to_gadi.ipynb"),
-        ("Template_For_Notebooks.ipynb"),
-        ("Using_Intake_Catalog.ipynb"),
-        ("Using_Explorer_tools.ipynb"), 
-    ])
-def test_Tutorials(notebook_filename):
-    run_notebook("Tutorials/" + notebook_filename)
+    if failure is not None:
+        RESULTS.append({"index": notebook_index, "status": "FAIL", "seconds": seconds, "notebook": notebook_filename})
+        stderr_size = stderr_log.stat().st_size if stderr_log.exists() else 0
+        message = "\n".join(
+            (
+                f"Notebook {notebook_index}/{notebook_count}: FAILED {notebook_filename}",
+                failure,
+                f"Converted notebook: {notebook_filename_out}",
+                f"Suppressed stderr log: {stderr_log} ({stderr_size} bytes)",
+            )
+        )
+        print(message, flush=True)
+        return message
+
+    RESULTS.append({"index": notebook_index, "status": "PASS", "seconds": seconds, "notebook": notebook_filename})
+    print(
+        f"Notebook {notebook_index}/{notebook_count}: Successfully ran {notebook_filename}",
+        flush=True,
+    )
+    return None
 
 
-@pytest.mark.parametrize(
-    ("notebook_filename"),
-    [
-        ("Age_at_the_Bottom.ipynb"),
-        ("Atlantic_IndoPacific_Basin_Overturning_Circulation.ipynb"),
-        ("Barotropic_Streamfunction_model_agnostic.ipynb"),
-        ("Bathymetry.ipynb"),
-        ("Binning_transformation_from_depth_to_potential_density.ipynb"),
-        ("Compare_SSH_model_obs.ipynb"),
-        ("Compare_SST_SSS_TemperatureSalinity_to_WOA13.ipynb"),
-        ("Cross-contour_transport.ipynb"),
-        ("Cross-slope_section.ipynb"),
-        #("Decomposing_kinetic_energy_into_mean_and_transient.ipynb"), # Takes a long time (not sure if it runs till the end)
-        ("Equatorial_thermal_and_zonal_velocity_structure.ipynb"),
-        ("Meridional_heat_transport.ipynb"),
-        ("Model_Resolution_Comparison.ipynb"),
-        ("Particle_tracking_with_Parcels.ipynb"),
-        ("Querying_Scalar_Quantities_and_Annually_Averaged_Timeseries.ipynb"),
-        ("Regridding.ipynb"),
-        ("RelativeVorticity.ipynb"),
-        ("SeaIce_Obs_Model_Compare.ipynb"),
-        ("SeaIce_Plot_Example.ipynb"),
-        #("SeaIceSeasonality_DFA.ipynb"), # Does not run
-        ("Surface_Water_Mass_Transformation.ipynb"),
-        ("TemperatureSalinityDiagrams_mom5_mom6.ipynb"),
-        ("Transport_Through_Straits.ipynb"),
-        ("True_Zonal_Mean.ipynb"),
-        ("Zonally_Averaged_Global_Meridional_Overturning_Circulation.ipynb"),
-        ("NearestNeighbourDistance.ipynb"),
-    ])
-def test_Examples(notebook_filename):
-    run_notebook("Examples/" + notebook_filename)
+@pytest.mark.parametrize(("notebook_index", "notebook_count", "notebook_filename"), notebook_cases())
+def test_recipe_notebooks(notebook_index, notebook_count, notebook_filename, tmp_path):
+    failure = run_notebook(notebook_filename, tmp_path, notebook_index, notebook_count)
+    if failure is not None:
+        pytest.fail(failure, pytrace=False)
