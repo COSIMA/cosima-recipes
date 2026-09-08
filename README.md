@@ -86,7 +86,7 @@ We are always delighted to expand the cookbook with more recipes.
 If the process of contributing to the repository sounds a bit intimidating to you, rest assured that we will guide you and help you with submitting your contribution.
 
 To make a contribution follow the steps laid out in the [beginner's guide on how to contribute](
-https://cosima-recipes.readthedocs.io/en/latest/contributing.html). If they sound intimidating then don't worry!
+https://cosima-recipes.readthedocs.io/en/latest/contributing.html) and the [wiki](https://github.com/COSIMA/cosima-recipes/wiki). If they sound intimidating then don't worry!
 Just raise [an issue](https://github.com/COSIMA/cosima-recipes/issues) explaining briefly what the contribution you want to make is and we'll help out with the process!
 
 Contributors to the COSIMA Cookbook are added to the [**citable DOI**](https://github.com/COSIMA/cosima-recipes?tab=readme-ov-file#citation) entry associated with the repository.
