@@ -9,6 +9,10 @@
     <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14353852.svg" alt="DOI">
 </a>
 
+<a href="https://access-nri.github.io/COSIMA-recipes-workflow/">
+    <img alt="recipe tests dashboard" src="https://img.shields.io/badge/recipe%20tests-dashboard-brightgreen.svg">
+</a>
+
 # COSIMA Cookbook
 
 This repository is a Cookbook of Recipes 👩🏽‍🍳 👨🏻‍🍳.
@@ -25,6 +29,8 @@ To access the data used in these recipes you need an account with the Australian
 To **get started**, clone this repository in your local space on one of the NCI HPC machines so you can have access to model output. You should then be able to run these recipes (i.e., example analyses) through an [Australian Research Environment (ARE)](https://are.nci.org.au/) JupyterLab session running python or via any other way you might want to run a Jupyter notebook on an NCI HPC machine. You need to join projects _xp65_, _ik11_, _cj50_, and _ol01_ to run the recipes and access the data analysed.
 
 If you plan to use an ARE session, then remember to include the projects in the _Storage_ line: `gdata/xp65+gdata/ik11+gdata/cj50+gdata/ol01` as well as any of your own project you need access to. In _Module directories_, set `/g/data/xp65/public/modules` and in _Modules_ set `conda/analysis3`. Use a _Compute Size_ of `large` or greater.
+
+The recipes are run every week on Gadi by the [COSIMA recipes workflow](https://github.com/ACCESS-NRI/COSIMA-recipes-workflow) maintained by [ACCESS-NRI](https://www.access-nri.org.au/). Check the [**recipe testing dashboard**](https://access-nri.github.io/COSIMA-recipes-workflow/) to see which recipes currently run successfully.
 
 If you have never used the NCI see these [first steps instructions](https://access-hive.org.au/getting_started/) and [getting started with ARE](https://access-hive.org.au/getting_started/are/).
 
