@@ -20,7 +20,10 @@ Recipes
 .. _cf-xarray: https://cf-xarray.readthedocs.io/en/latest/
 .. _pint: https://pint.readthedocs.io/en/stable/
 
- 
+Brief instructions are given below; see the `wiki`_ for additional information.
+
+.. _wiki: https://github.com/COSIMA/cosima-recipes/wiki
+
 Getting started with git
 ------------------------
 
