@@ -26,9 +26,9 @@ Most recipes use output from the [ACCESS-OM2 model](https://doi.org/10.5194/gmd-
 
 To access the data used in these recipes you need an account with the Australian-based [National Computational Infrastructure (NCI)](https://nci.org.au/).
 
-To **get started**, clone this repository in your local space on one of the NCI HPC machines so you can have access to model output. You should then be able to run these recipes (i.e., example analyses) through an [Australian Research Environment (ARE)](https://are.nci.org.au/) JupyterLab session running python or via any other way you might want to run a Jupyter notebook on an NCI HPC machine. You need to join projects _xp65_, _ik11_, _cj50_, and _ol01_ to run the recipes and access the data analysed.
+To **get started**, clone this repository in your local space on one of the NCI HPC machines so you can have access to model output. You should then be able to run these recipes (i.e., example analyses) through an [Australian Research Environment (ARE)](https://are.nci.org.au/) JupyterLab session running python or via any other way you might want to run a Jupyter notebook on an NCI HPC machine. You need to join projects _xp65_, _ik11_, _cj50_, _av17_ and _ol01_ to run the recipes and access the data analysed.
 
-If you plan to use an ARE session, then remember to include the projects in the _Storage_ line: `gdata/xp65+gdata/ik11+gdata/cj50+gdata/ol01` as well as any of your own project you need access to. In _Module directories_, set `/g/data/xp65/public/modules` and in _Modules_ set `conda/analysis3`. Use a _Compute Size_ of `large` or greater.
+If you plan to use an ARE session, then remember to include the projects in the _Storage_ line: `gdata/xp65+gdata/ik11+gdata/cj50+gdata/ol01+gdata/av17` as well as any of your own project you need access to. In _Module directories_, set `/g/data/xp65/public/modules` and in _Modules_ set `conda/analysis3`. Use a _Compute Size_ of `large` or greater.
 
 The recipes are run every week on Gadi by the [COSIMA recipes workflow](https://github.com/ACCESS-NRI/COSIMA-recipes-workflow) maintained by [ACCESS-NRI](https://www.access-nri.org.au/). Check the [**recipe testing dashboard**](https://access-nri.github.io/COSIMA-recipes-workflow/) to see which recipes currently run successfully.
 
