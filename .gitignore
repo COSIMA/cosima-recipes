@@ -7,5 +7,9 @@ dask-worker-space/
 docs/_build/
 docs/Recipes/
 docs/Cooking-Lessons-101-Tutorials/
+docs/01-Cooking-Tutorials/
+docs/02-Easy-Recipes/
+docs/03-Advanced-Recipes/
+docs/02-Regional-Specialties/
 
 **/SWMT_temp/
