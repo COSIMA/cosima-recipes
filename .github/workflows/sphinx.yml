@@ -8,19 +8,13 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: "<=3.9"
-      - name: Cache pip
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-            ${{ runner.os }}-
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: docs/requirements.txt
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -29,6 +23,8 @@ jobs:
           sudo apt-get install -y pandoc
       - name: Ensure sphinx builds (warnings allowed)
         run: |
-          cp -r Recipes/ docs/
-          cp -r Cooking-Lessons-101-Tutorials/ docs/
+          cp -r 01-Cooking-Tutorials/ docs/
+          cp -r 02-Easy-Recipes/ docs/
+          cp -r 03-Advanced-Recipes/ docs/
+          cp -r 04-Regional-Specialties/ docs/
           make -C docs html O=-n

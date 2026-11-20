@@ -12,8 +12,10 @@ build:
     python: "3"
   jobs:
     post_checkout:
-      - cp -r Recipes/ docs/
-      - cp -r Cooking-Lessons-101-Tutorials/ docs/
+      - cp -r 01-Cooking-Tutorials/ docs/
+      - cp -r 02-Easy-Recipes/ docs/
+      - cp -r 03-Advanced-Recipes/ docs/
+      - cp -r 04-Regional-Specialties/ docs/
 
 python:
   install:
