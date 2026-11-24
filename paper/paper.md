@@ -55,9 +55,6 @@ authors:
   - name: Angus Gibson
     orcid: 0000-0001-7577-3604
     affiliation: 1
-  - name: Maurice F. Huguenin
-    orcid: 0000-0002-1476-0452
-    affiliation: 8
   - name: Aidan Heerdegen
     orcid: 0000-0002-4481-4896
     affiliation: "1, 2"
@@ -67,6 +64,9 @@ authors:
   - name: Ryan M. Holmes
     orcid: 0000-0002-6799-9109
     affiliation: 4
+  - name: Maurice F. Huguenin
+    orcid: 0000-0002-1476-0452
+    affiliation: 8
   - name: Wilma Huneke
     orcid: 0000-0001-8624-365X
     affiliation: 10
@@ -78,6 +78,9 @@ authors:
     affiliation: 1
   - name: Minghang Li
     orcid: 0000-0002-6167-9999
+    affiliation: "1, 2"
+  - name: Paige Martin
+    orcid: 0000-0003-3538-633X
     affiliation: "1, 2"
   - name: Josué Martínez-Moreno
     orcid: 0000-0002-8348-1588
@@ -91,9 +94,6 @@ authors:
   - name: Ruth Moorman
     orcid: 0000-0001-5054-1559
     affiliation: 5
-  - name: Paige Martin
-    orcid: 0000-0003-3538-633X
-    affiliation: "1, 2"
   - name: Adele K. Morrison
     orcid: 0009-0003-5143-5020
     affiliation: 1
@@ -226,8 +226,8 @@ Pedagogy is central to the project. "Cooking Tutorials" introduces generic skill
 as loading model output, working with labelled arrays, plotting, and interacting with
 shared data catalogues. These tutorials lead into domain-focused recipes giving learners an incremental path from first contact with the data ecosystem to adaptation of full
 workflows for their own science questions. The recipes provide the starting point for
-more elaborate analyses.  The categories of "easy" and "advanced" recipes provide
-a lightweight pedagogical cue about expected complexity and scope
+more elaborate analyses. The categories of "easy" and "advanced" recipes provide
+a lightweight pedagogical cue about expected complexity and scope.
 
 Within this structure, the tutorials leverage and demonstrate open source tools for
 scientific analysis of large data. This includes examples of loading model output
@@ -235,8 +235,8 @@ through Intake-based catalogues [@intake], using Xarray [@hoyer2017xarray]
 and Dask [@rocklin2015dask; @dask] to process very large multi-dimensional datasets
 in parallel. The recipe collection includes a Lagrangian particle-tracking workflow
 built with Parcels [@Delandmeter-vanSebille-2019], as well as analyses that use
-xgcm [@xgcm] to handle variables defined on staggered finite-volume grids, and xESMF [@xesmf]
-for regridding model output. Figures are generated using matplotlib [@Hunter2007matplotlib]
+xgcm [@xgcm] to handle variables defined on staggered finite-volume grids, xESMF [@xesmf]
+for regridding model output, and eofs [@dawson2016eofs] for empirical orthogonal function analysis. Figures are generated using matplotlib [@Hunter2007matplotlib]
 incorporating Cartopy [@cartopy] for map-based visualisation.
 
 The Cookbook grew from a practical need inside the COSIMA community [@cosima_movie]:
@@ -293,7 +293,7 @@ review conventions that encourage new analyses to be written in a reusable and
 pedagogically clear style. A caveat is that most recipes use high-resolution
 model output with datasets of order terabytes, so the underlying data are not
 always practical to distribute or mirror in full. However, beyond the data-loading step,
-which usually early on in each recipe, the analysis workflows are generally
+which usually happens early on in each recipe, the analysis workflows are generally
 applicable to most operational ocean--sea ice model outputs that can be
 loaded with Xarray [@hoyer2017xarray].
 
@@ -334,12 +334,18 @@ generalise workflows so that they remain useful to others. This is particularly 
 it is relatively rare for the computer code underlying scientific analyses to be peer reviewed
 with the same care as the manuscript itself. The COSIMA community provides several examples of
 the recipe ecosystem being extended into full research projects built on peer-authored software
-repositories on Github, where analysis workflows, methods, and implementation choices
+repositories on GitHub, where analysis workflows, methods, and implementation choices
 are exposed to community scrutiny and reuse. In that sense, the Cookbook functions both
 as a learning resource for end users and as a framework for teaching reproducible scientific
 communication through notebook design and peer review. During regularly organised hackathons,
-the commmunity reviews, updates, and extends existing recipes, ensuring the Cookbook remains
+the community reviews, updates, and extends existing recipes, ensuring the Cookbook remains
 a living resource that keeps pace with evolving tools and community best practices.
+The Cookbook also has an integrated continuous testing workflow: every recipe is run end to end
+each week on the NCI supercomputer Gadi, using the same shared software environment and data
+holdings that users access, and the results are published on a public
+[recipe testing dashboard](https://access-nri.github.io/COSIMA-recipes-workflow/). Breakages
+caused by changes in upstream packages, the software environment, or the data catalogue are
+therefore caught early and fixed, so that users can trust that the recipes they start from actually run.
 The easy access to data and analysis provided by the COSIMA Cookbook has enabled rapid
 adoption of ACCESS ocean and sea-ice model configurations internationally — not only within
 physical oceanography but also across adjacent disciplines such as marine ecology
