@@ -294,7 +294,14 @@
          "name":"Sholeninova, Polina",
          "orcid":"0000-0001-9476-1246",
          "type":"ProjectMember"
+      },
+      {
+         "affiliation":"Climate Change Research Centre, University of New South Wales",
+         "name":"Malan, Neil",
+         "orcid":"<your ORCID>",
+         "type":"ProjectMember"
       }
+
    ],
    "keywords": [
      "Ocean Modeling",
