@@ -104,7 +104,7 @@ preferred-citation:
   year: 2026
   doi: 10.48550/arXiv.2611.30182
   url: "https://arxiv.org/abs/2611.30182"
-  repository: arXiv
+  journal: arXiv
   identifiers:
     - type: other
       value: "arXiv:2611.30182"
