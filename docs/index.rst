@@ -58,10 +58,11 @@ Citation
 
 If you use a recipe from the Cookbook for your research or teaching, or even if you based your analysis on one of the recipes, **please cite the COSIMA Cookbook paper**:
 
-   Constantinou, N. C., Neme, J., et al. (2026). COSIMA Cookbook: a community-driven resource for ocean and sea-ice modelling science. arXiv:2611.30182. doi:`10.48550/arXiv.2611.30182 <https://doi.org/10.48550/arXiv.2611.30182>`_
+   Constantinou, N. C., Neme, J., et al. (2026). COSIMA Cookbook: a community-driven resource for ocean and sea-ice modelling science. arXiv:2611.30182. doi:`10.48550/arXiv.2611.30182 <https://doi.org/10.48550/arXiv.2611.30182>`_ |arxiv-badge|
 
-.. image:: https://img.shields.io/badge/arXiv-2611.30182-b31b1b.svg
-  :target: https://doi.org/10.48550/arXiv.2611.30182
+.. |arxiv-badge| image:: https://img.shields.io/badge/arXiv-2611.30182-b31b1b.svg
+   :target: https://doi.org/10.48550/arXiv.2611.30182
+   :alt: arXiv
 
 Citing the paper is the best way to acknowledge the many contributors to the Cookbook and to help us demonstrate its impact to funders. Machine-readable citation metadata is provided in `CITATION.cff <https://github.com/COSIMA/cosima-recipes/blob/main/CITATION.cff>`_; on GitHub you can also use the "Cite this repository" button.
 
