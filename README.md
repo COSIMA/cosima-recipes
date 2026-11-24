@@ -9,6 +9,10 @@
     <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14353852.svg" alt="DOI">
 </a>
 
+<a href="https://doi.org/10.48550/arXiv.2611.30182">
+    <img src="https://img.shields.io/badge/arXiv-2611.30182-b31b1b.svg" alt="arXiv">
+</a>
+
 <a href="https://access-nri.github.io/COSIMA-recipes-workflow/">
     <img alt="recipe tests dashboard" src="https://img.shields.io/badge/recipe%20tests-dashboard-brightgreen.svg">
 </a>
@@ -100,7 +104,8 @@ Hence, users who put together a pull request for a new contribution, should ensu
 
 ## Citation
 
-If you use a recipe from the Cookbook for your research or teaching, or have based your analysis on one of the recipes, we would be grateful if you could cite:
+If you use or a recipe from the Cookbook for your research or teaching, or even if you based your analysis on one of the recipes, **please cite the COSIMA Cookbook paper**:
 
-> Constantinou, N. C. et al. (2026). COSIMA Cookbook: A cookbook of recipes for analysing ocean and sea ice model output. Zenodo. doi:[10.5281/zenodo.14353852](https://doi.org/10.5281/zenodo.14353852) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14353852.svg)](https://doi.org/10.5281/zenodo.14353852)
+> Constantinou, N. C., Neme, J., et al. (2026). COSIMA Cookbook: a community-driven resource for ocean and sea-ice modelling science. arXiv:2611.30182. doi:[10.48550/arXiv.2611.30182](https://doi.org/10.48550/arXiv.2611.30182)
 
+Citing the paper is the best way to acknowledge the many contributors to the Cookbook and to help us demonstrate its impact to funders. Machine-readable citation metadata is provided in [`CITATION.cff`](CITATION.cff); on GitHub you can also use the "Cite this repository" button.
