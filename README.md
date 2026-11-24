@@ -48,6 +48,8 @@ If you have never used the NCI see these [first steps instructions](https://acce
 
       Also included here are some other tutorials, related to techniques (e.g., [Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/03-Maps_with_Cartopy.html)).
 
+      The [Understanding MOM5 and MOM6 grids](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/04-Understanding_MOM5_MOM6_grids.html) tutorial explains the B-grid (MOM5, used in ACCESS-OM2) and the C-grid (MOM6), where each variable sits on these grids, and the basics of using [xgcm](https://xgcm.readthedocs.io) to work with them.
+
    After going through the **Basic** Tutorials, feel free to browse some of the **Advanced** ones:
 
    * #### [Advanced](https://cosima-recipes.readthedocs.io/en/latest/cooking-tutorials/advanced.html)
