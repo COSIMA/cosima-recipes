@@ -42,11 +42,13 @@ If you have never used the NCI see these [first steps instructions](https://acce
 
    * #### [Basics](https://cosima-recipes.readthedocs.io/en/latest/cooking-tutorials/basics.html)
 
-      The [Introduction: loading, slicing, dicing model output](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/01-Loading-Slicing-Dicing-Output.html) should be the starting point.
+      The [Introduction: loading, slicing, dicing model output](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/01-Loading-Slicing-Dicing-Output.html) tutorial is the starting point.
 
-      Recipes load model output to using an [_intake catalogue_](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/02-ACCESS-NRI_Intake_Catalog.html). The intake package is available on the conda-analysis python environments on `xp65`. The [ACCESS-NRI_Intake_Catalog](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/02-ACCESS-NRI_Intake_Catalog.html) tutorial outlines the basic philosophy of the Intake catalog to load model output variables.
+      All recipes load model output using the [ACCESS-NRI Intake catalog](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/02-ACCESS-NRI_Intake_Catalog.html), available in the `conda/analysis3` environments on `xp65`. This tutorial outlines the basic philosophy of the catalog and how to find and load model variables.
 
-      Also included here are some other tutorials, related to techniques (e.g., [Maps_with_Cartopy.ipynb](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/03-Maps_with_Cartopy.html)).
+      Recipes use a mix of ACCESS-OM2 (MOM5) and ACCESS-OM3 (MOM6) output, which use different grids. [Understanding model grids: MOM5's B-grid and MOM6's C-grid](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/03-Understanding_MOM5_MOM6_grids.html) explains the B-grid (MOM5) and the C-grid (MOM6), where each variable sits on these grids, and the basics of using [xgcm](https://xgcm.readthedocs.io) to work with them.
+
+      Finally, [Maps with Cartopy](https://cosima-recipes.readthedocs.io/en/latest/01-Cooking-Tutorials/01-Basics/04-Maps_with_Cartopy.html) shows how to turn model output into publication-quality maps with `cartopy`. It covers map projections (including polar views), adding land and coastlines, and correctly plotting the model's curvilinear grid in the Arctic.
 
    After going through the **Basic** Tutorials, feel free to browse some of the **Advanced** ones:
 
