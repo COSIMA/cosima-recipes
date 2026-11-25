@@ -1,4 +1,4 @@
-"""Schematic figures for the tutorial `04-Understanding_MOM5_MOM6_grids.ipynb`.
+"""Schematic figures for the tutorial `03-Understanding_MOM5_MOM6_grids.ipynb`.
 
 The plotting code lives here so that the notebook only shows the figures.
 Each public function draws one figure.

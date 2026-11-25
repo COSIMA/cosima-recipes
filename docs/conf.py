@@ -118,7 +118,7 @@ for old_prefix, new_prefix in _renamed_doc_prefixes:
 _historical_redirects = {
     "Cooking-Lessons-101-Tutorials/COSIMA_CookBook_Tutorial": "/01-Cooking-Tutorials/01-Basics/01-Loading-Slicing-Dicing-Output.html",
     "Cooking-Lessons-101-Tutorials/ACCESS-NRI_Intake_Catalog": "/01-Cooking-Tutorials/01-Basics/02-ACCESS-NRI_Intake_Catalog.html",
-    "Cooking-Lessons-101-Tutorials/Making_Maps_with_Cartopy": "/01-Cooking-Tutorials/01-Basics/03-Maps_with_Cartopy.html",
+    "Cooking-Lessons-101-Tutorials/Making_Maps_with_Cartopy": "/01-Cooking-Tutorials/01-Basics/04-Maps_with_Cartopy.html",
     "Cooking-Lessons-101-Tutorials/Animations_with_xmovie": "/01-Cooking-Tutorials/02-Advanced/Animations_with_xmovie.html",
     "Cooking-Lessons-101-Tutorials/Apply_function_to_every_gridpoint": "/01-Cooking-Tutorials/02-Advanced/Apply_function_to_every_gridpoint.html",
     "Cooking-Lessons-101-Tutorials/Make_Your_Own_Intake_Datastore": "/01-Cooking-Tutorials/02-Advanced/Make_Your_Own_Intake_Datastore.html",
@@ -155,4 +155,10 @@ _historical_redirects = {
 }
 
 redirects.update(_historical_redirects)
+
+# the Basics tutorials on grids and on maps swapped places
+redirects.update({
+    "01-Cooking-Tutorials/01-Basics/03-Maps_with_Cartopy": "/01-Cooking-Tutorials/01-Basics/04-Maps_with_Cartopy.html",
+    "01-Cooking-Tutorials/01-Basics/04-Understanding_MOM5_MOM6_grids": "/01-Cooking-Tutorials/01-Basics/03-Understanding_MOM5_MOM6_grids.html",
+})
 from pathlib import Path
